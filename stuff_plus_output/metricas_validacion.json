@@ -1,0 +1,140 @@
+[
+  {
+    "split": "season_holdout_2026",
+    "task": "whiff",
+    "n_train": 499398,
+    "n_test": 135604,
+    "positive_rate_test": 0.11246718385888321,
+    "brier": 0.09246929826008249,
+    "roc_auc": 0.7324484540932824,
+    "average_precision": 0.25009226642344273
+  },
+  {
+    "split": "season_holdout_2026",
+    "task": "ball_in_play",
+    "n_train": 499398,
+    "n_test": 135604,
+    "positive_rate_test": 0.1806805108993835,
+    "brier": 0.12954260364073017,
+    "roc_auc": 0.7657621510349685,
+    "average_precision": 0.36268811458066924
+  },
+  {
+    "split": "season_holdout_2026",
+    "task": "called_strike",
+    "n_train": 499398,
+    "n_test": 135604,
+    "positive_rate_test": 0.16451579599421845,
+    "brier": 0.09720072934939508,
+    "roc_auc": 0.8775043956461366,
+    "average_precision": 0.5697948304539266
+  },
+  {
+    "split": "season_holdout_2026",
+    "task": "chase",
+    "n_train": 499398,
+    "n_test": 135604,
+    "positive_rate_test": 0.22197722781038906,
+    "brier": 0.09753070373067117,
+    "roc_auc": 0.9139108508805293,
+    "average_precision": 0.7381170618091649
+  },
+  {
+    "split": "season_holdout_2026",
+    "task": "groundball_given_in_play",
+    "n_train": 85365,
+    "n_test": 24033,
+    "positive_rate_test": 0.47093579661299045,
+    "brier": 0.2330110218739321,
+    "roc_auc": 0.6474760154673422,
+    "average_precision": 0.6108739567277659
+  },
+  {
+    "split": "season_holdout_2026",
+    "task": "home_run_per_pitch",
+    "n_train": 499398,
+    "n_test": 135604,
+    "positive_rate_test": 0.006799209462847703,
+    "brier": 0.006716286894973465,
+    "roc_auc": 0.7481873063829215,
+    "average_precision": 0.01746618259984959
+  },
+  {
+    "split": "season_holdout_2026",
+    "task": "exit_speed_given_in_play",
+    "n_train": 84368,
+    "n_test": 23814,
+    "mae": 11.317134625888267,
+    "rmse": 14.553187274963415,
+    "r2": 0.10555124290205042
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "whiff",
+    "n_train": 505302,
+    "n_test": 129700,
+    "positive_rate_test": 0.11472629144178874,
+    "brier": 0.09426436502359671,
+    "roc_auc": 0.7286754604097484,
+    "average_precision": 0.24896265309563462
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "ball_in_play",
+    "n_train": 505302,
+    "n_test": 129700,
+    "positive_rate_test": 0.18111025443330764,
+    "brier": 0.13052631160721576,
+    "roc_auc": 0.7605312923956968,
+    "average_precision": 0.35507956684383424
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "called_strike",
+    "n_train": 505302,
+    "n_test": 129700,
+    "positive_rate_test": 0.15424055512721666,
+    "brier": 0.0909880764691595,
+    "roc_auc": 0.8838381477605665,
+    "average_precision": 0.5649729275757036
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "chase",
+    "n_train": 505302,
+    "n_test": 129700,
+    "positive_rate_test": 0.22079414032382422,
+    "brier": 0.09725134406086328,
+    "roc_auc": 0.9138520584468346,
+    "average_precision": 0.7383652744313787
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "groundball_given_in_play",
+    "n_train": 87211,
+    "n_test": 22187,
+    "positive_rate_test": 0.4549060260512913,
+    "brier": 0.23319035133816204,
+    "roc_auc": 0.6404485416435812,
+    "average_precision": 0.5915523860068934
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "home_run_per_pitch",
+    "n_train": 505302,
+    "n_test": 129700,
+    "positive_rate_test": 0.0072320740169622205,
+    "brier": 0.007139687595250085,
+    "roc_auc": 0.744074144131771,
+    "average_precision": 0.01870203129960354
+  },
+  {
+    "split": "pitcher_holdout_20pct",
+    "task": "exit_speed_given_in_play",
+    "n_train": 86236,
+    "n_test": 21946,
+    "mae": 11.014388233967258,
+    "rmse": 14.161025050220617,
+    "r2": 0.10389411309144947
+  }
+]
