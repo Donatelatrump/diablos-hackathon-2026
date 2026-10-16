@@ -1,0 +1,29 @@
+{
+  "n_pitches_elite": 29992,
+  "umbral_stuff_plus_top10": 113.95421016043295,
+  "velocidad_media_elite_mph": 84.22494109295813,
+  "spin_rate_media_elite_rpm": 2242.7362492323955,
+  "ivb_media_elite_pulg": 0.48139560544126514,
+  "hb_media_elite_pulg": 0.6875876743952289,
+  "extension_media_elite_ft": 5.790556746002604,
+  "release_height_media_elite_ft": 5.684510531141638,
+  "release_side_media_elite_ft": 1.164056609095759,
+  "tipos_elite": {
+    "Slider": 13868,
+    "Changeup": 6826,
+    "Curveball": 4203,
+    "Sinker": 2933,
+    "Splitter": 1124,
+    "Cutter": 551,
+    "Four-Seam": 259,
+    "Sweeper": 224,
+    "TwoSeamFastBall": 2,
+    "Other": 2
+  },
+  "mano_lanzadora_elite": {
+    "Right": 24241,
+    "Left": 5740
+  },
+  "stuff_plus_medio_elite": 118.04311325520895,
+  "stuff_plus_medio_todos_harp": 100.99435140048733
+}

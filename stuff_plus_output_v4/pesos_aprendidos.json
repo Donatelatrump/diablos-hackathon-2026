@@ -1,0 +1,10 @@
+{
+  "weights": {
+    "p_whiff_given_swing": 1.0,
+    "p_groundball_per_pitch": 1.0,
+    "pred_exit_speed_given_in_play": 1.0,
+    "p_called_strike": 1.0,
+    "p_chase": 1.0
+  },
+  "intercept": 0.0
+}
