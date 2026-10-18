@@ -1,0 +1,35 @@
+[
+  {
+    "category": "Revisar",
+    "reason": "Mayor Pitching+ regularizado entre muestras de al menos 300 pitches y cinco juegos.",
+    "pitcher": "pitcher_00036",
+    "n_pitches": 529,
+    "n_games": 7,
+    "stuff_plus": 105.72099065524498,
+    "pitching_plus": 103.97064127809357,
+    "ci_low": 103.09941739546481,
+    "ci_high": 104.63438563491803
+  },
+  {
+    "category": "Cautela",
+    "reason": "Mayor diferencia entre Stuff+ y Pitching+ entre muestras amplias: revisar ubicaci\u00f3n y contexto.",
+    "pitcher": "pitcher_01050",
+    "n_pitches": 331,
+    "n_games": 19,
+    "stuff_plus": 111.78838895329898,
+    "pitching_plus": 101.56556469431125,
+    "ci_low": 100.1249597937533,
+    "ci_high": 103.10227791873804
+  },
+  {
+    "category": "Informaci\u00f3n insuficiente",
+    "reason": "Menos de 50 pitches; solicitar una muestra adicional antes de comparar talento.",
+    "pitcher": "pitcher_00408",
+    "n_pitches": 48,
+    "n_games": 1,
+    "stuff_plus": 95.36150951187018,
+    "pitching_plus": 99.23036116812467,
+    "ci_low": null,
+    "ci_high": null
+  }
+]

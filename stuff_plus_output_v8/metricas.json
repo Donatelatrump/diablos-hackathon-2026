@@ -1,0 +1,203 @@
+[
+  {
+    "task": "whiff",
+    "n": 135604,
+    "v7": {
+      "roc_auc": 0.6442908693108134,
+      "average_precision": 0.17707587554892779,
+      "brier": 0.09727896670120954,
+      "brier_baseline": 0.09981923644635192,
+      "brier_skill": 0.025448699424861387,
+      "ece_10_bins": 0.006169050038279378,
+      "positive_rate_test": 0.11246718385888321,
+      "mean_probability": 0.11671577626550088
+    },
+    "v8": {
+      "roc_auc": 0.6498534593178894,
+      "average_precision": 0.1783776284469391,
+      "brier": 0.09713902540057741,
+      "brier_baseline": 0.09981923644635192,
+      "brier_skill": 0.02685064664079051,
+      "ece_10_bins": 0.005470655646252291,
+      "positive_rate_test": 0.11246718385888321,
+      "mean_probability": 0.11631773074420164
+    },
+    "bootstrap": {
+      "relative_mse_reduction": 0.001438556610721009,
+      "ci95_low": 0.0006614743111122174,
+      "ci95_high": 0.0021800838238909964,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "n": 63044,
+    "v7": {
+      "roc_auc": 0.6751576888289461,
+      "average_precision": 0.40428660299997143,
+      "brier": 0.16906833388907822,
+      "brier_baseline": 0.18339059770450308,
+      "brier_skill": 0.07809704529401396,
+      "ece_10_bins": 0.012781819424753284,
+      "positive_rate_test": 0.24191041177590256,
+      "mean_probability": 0.24861038151529463
+    },
+    "v8": {
+      "roc_auc": 0.6936645659946736,
+      "average_precision": 0.4428848934159101,
+      "brier": 0.16535892158312604,
+      "brier_baseline": 0.18339059770450308,
+      "brier_skill": 0.09832388545039505,
+      "ece_10_bins": 0.021505366808433696,
+      "positive_rate_test": 0.24191041177590256,
+      "mean_probability": 0.24617290762367414
+    },
+    "bootstrap": {
+      "relative_mse_reduction": 0.021940313840117742,
+      "ci95_low": 0.01593406841630538,
+      "ci95_high": 0.028663502878844956,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "ball_in_play",
+    "n": 135604,
+    "v7": {
+      "roc_auc": 0.5755001989150351,
+      "average_precision": 0.21912754044507754,
+      "brier": 0.14665551165911409,
+      "brier_baseline": 0.14804319949626807,
+      "brier_skill": 0.009373533143540058,
+      "ece_10_bins": 0.007973451076382353,
+      "positive_rate_test": 0.1806805108993835,
+      "mean_probability": 0.1841155333336482
+    },
+    "v8": {
+      "roc_auc": 0.6062214666685974,
+      "average_precision": 0.23416059088194008,
+      "brier": 0.1454450448869506,
+      "brier_baseline": 0.14804319949626807,
+      "brier_skill": 0.017549976075618146,
+      "ece_10_bins": 0.013188695901594856,
+      "positive_rate_test": 0.1806805108993835,
+      "mean_probability": 0.18355820192733474
+    },
+    "bootstrap": {
+      "relative_mse_reduction": 0.008253810296452335,
+      "ci95_low": 0.0075867587256199295,
+      "ci95_high": 0.008962344285802412,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "groundball_given_in_play",
+    "n": 24033,
+    "v7": {
+      "roc_auc": 0.6230038878211184,
+      "average_precision": 0.5880034785506107,
+      "brier": 0.23770652964283737,
+      "brier_baseline": 0.24996952280453186,
+      "brier_skill": 0.04905795324209883,
+      "ece_10_bins": 0.011632081014353023,
+      "positive_rate_test": 0.47093579661299045,
+      "mean_probability": 0.461387916479593
+    },
+    "v8": {
+      "roc_auc": 0.6230038878211184,
+      "average_precision": 0.5880034785506107,
+      "brier": 0.23770652964283737,
+      "brier_baseline": 0.24996952280453186,
+      "brier_skill": 0.04905795324209883,
+      "ece_10_bins": 0.011632081014353023,
+      "positive_rate_test": 0.47093579661299045,
+      "mean_probability": 0.461387916479593
+    },
+    "bootstrap": {
+      "relative_mse_reduction": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_games": 453,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "home_run_per_pitch",
+    "n": 135604,
+    "v7": {
+      "roc_auc": 0.5729203056313158,
+      "average_precision": 0.00878946800287866,
+      "brier": 0.00675084104652121,
+      "brier_baseline": 0.006753520624413937,
+      "brier_skill": 0.0003967675589884312,
+      "ece_10_bins": 0.0008294371383460696,
+      "positive_rate_test": 0.006799209462847703,
+      "mean_probability": 0.007628646601193773
+    },
+    "v8": {
+      "roc_auc": 0.5729203056313158,
+      "average_precision": 0.00878946800287866,
+      "brier": 0.00675084104652121,
+      "brier_baseline": 0.006753520624413937,
+      "brier_skill": 0.0003967675589884312,
+      "ece_10_bins": 0.0008294371383460696,
+      "positive_rate_test": 0.006799209462847703,
+      "mean_probability": 0.007628646601193773
+    },
+    "bootstrap": {
+      "relative_mse_reduction": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "exit_speed_given_in_play",
+    "n": 23814,
+    "v7": {
+      "rmse": 15.295925749448319,
+      "r2": 0.011923063059175676,
+      "mse_skill": 0.011967213598632398,
+      "baseline_rmse": 15.388280306436211
+    },
+    "v8": {
+      "rmse": 15.30119397702454,
+      "r2": 0.011242318306998178,
+      "mse_skill": 0.011286499264377858,
+      "baseline_rmse": 15.388280306436211
+    },
+    "bootstrap": {
+      "relative_mse_reduction": -0.0006889592568419811,
+      "ci95_low": -0.001615968118906308,
+      "ci95_high": 0.00020949872941338738,
+      "n_games": 453,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "physical_control",
+    "n": 135604,
+    "v7": {
+      "rmse": 0.2176387755069361,
+      "r2": 0.001674202665972735,
+      "mse_skill": 0.0018162567759381076,
+      "baseline_rmse": 0.2178366890945595
+    },
+    "v8": {
+      "rmse": 0.2176387755069361,
+      "r2": 0.001674202665972735,
+      "mse_skill": 0.0018162567759381076,
+      "baseline_rmse": 0.2178366890945595
+    },
+    "bootstrap": {
+      "relative_mse_reduction": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  }
+]

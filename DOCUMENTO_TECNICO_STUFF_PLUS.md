@@ -1,9 +1,11 @@
+> Documento historico de v3/v4. Para el modelo vigente, instrucciones y limites, consultar [README.md](README.md) y el [resultado v5](stuff_plus_output_v5/RESULTADO_MEJORA.md). Las afirmaciones de altitud y metricas de este documento no describen v5.
+
 # Documento Técnico — Stuff+ Model para Diablos Rojos (ISAC Hackathon 2026)
 
 **Equipo:** Diablos Hackathon 2026  
 **Fecha:** 15 de octubre de 2026  
 **Versión:** 3.0  
-**Estado:** Listo para entrega
+**Estado:** Histórico; no entregar. Documento vigente: [PDF v8](entrega_v8/DOCUMENTO_TECNICO_V8.pdf).
 
 ---
 

@@ -1,0 +1,23 @@
+{
+  "rows": 391748,
+  "unique_pitchuids": 391748,
+  "source_and_code_hashes_match": true,
+  "folds": [
+    {
+      "year": 2025,
+      "fit_rows": 194247,
+      "validation_rows": 49007,
+      "test_rows": 256144,
+      "inference_matches_export": true,
+      "stuff_invariant_to_location_and_altitude": true
+    },
+    {
+      "year": 2026,
+      "fit_rows": 399541,
+      "validation_rows": 99857,
+      "test_rows": 135604,
+      "inference_matches_export": true,
+      "stuff_invariant_to_location_and_altitude": true
+    }
+  ]
+}

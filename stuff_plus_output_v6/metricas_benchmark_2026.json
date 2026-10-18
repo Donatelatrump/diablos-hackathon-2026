@@ -1,0 +1,205 @@
+[
+  {
+    "task": "whiff",
+    "n_test": 135604,
+    "selection": {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 0.09605452730519998,
+      "relative_gain": 0.006807405867619298
+    },
+    "v5": {
+      "roc_auc": 0.6259764034906119,
+      "average_precision": 0.16090660612476934,
+      "brier": 0.09795437872703552,
+      "brier_baseline": 0.09981925825655368,
+      "brier_skill": 0.018682562484336196,
+      "ece_10_bins": 0.0022148123136276903,
+      "positive_rate_test": 0.11246718385888321,
+      "mean_probability": 0.11468199617251092
+    },
+    "v6": {
+      "roc_auc": 0.6507859598028803,
+      "average_precision": 0.18346671288218602,
+      "brier": 0.09692579656194701,
+      "brier_baseline": 0.09981925825655368,
+      "brier_skill": 0.028987008570730333,
+      "ece_10_bins": 0.0033549896823346754,
+      "positive_rate_test": 0.11246718385888321,
+      "mean_probability": 0.11452953191616212
+    },
+    "paired_game_bootstrap": {
+      "relative_mse_reduction": 0.010500624662781122,
+      "ci95_low": 0.009610261908102408,
+      "ci95_high": 0.011454515576594822,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "n_test": 63044,
+    "selection": {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 0.16704457924380817,
+      "relative_gain": 0.03922883829231061
+    },
+    "v5": {
+      "roc_auc": 0.6355516924633137,
+      "average_precision": 0.33459752041061674,
+      "brier": 0.1760515607645781,
+      "brier_baseline": 0.18339033438890526,
+      "brier_skill": 0.04001723236277144,
+      "ece_10_bins": 0.005096971658455582,
+      "positive_rate_test": 0.24191041177590256,
+      "mean_probability": 0.2435605012143111
+    },
+    "v6": {
+      "roc_auc": 0.6815249395237801,
+      "average_precision": 0.42050255007219506,
+      "brier": 0.1696943795559407,
+      "brier_baseline": 0.18339033438890526,
+      "brier_skill": 0.07468198844067953,
+      "ece_10_bins": 0.023401198844300378,
+      "positive_rate_test": 0.24191041177590256,
+      "mean_probability": 0.245942585572464
+    },
+    "paired_game_bootstrap": {
+      "relative_mse_reduction": 0.03610976909848829,
+      "ci95_low": 0.019275551081263612,
+      "ci95_high": 0.04834474593958767,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "exit_speed_given_in_play",
+    "n_test": 23814,
+    "selection": {
+      "members": [],
+      "weight": 0.0,
+      "mse": 233.20116120161714,
+      "relative_gain": 0.0
+    },
+    "v5": {
+      "rmse": 15.303042116988703,
+      "r2": 0.011003451595385072,
+      "mse_skill": 0.011089876027921441,
+      "baseline_rmse": 15.388608892036688
+    },
+    "v6": {
+      "rmse": 15.303042116988703,
+      "r2": 0.011003451595385072,
+      "mse_skill": 0.011089876027921441,
+      "baseline_rmse": 15.388608892036688
+    },
+    "paired_game_bootstrap": {
+      "relative_mse_reduction": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_games": 453,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "stuff_run_value",
+    "n_test": 135604,
+    "selection": {
+      "members": [],
+      "weight": 0.0,
+      "mse": 0.04926551960662825,
+      "relative_gain": 0.0
+    },
+    "v5": {
+      "rmse": 0.2176387755069361,
+      "r2": 0.001674202665972735,
+      "mse_skill": 0.0017852015679648003,
+      "baseline_rmse": 0.2178333005371512
+    },
+    "v6": {
+      "rmse": 0.2176387755069361,
+      "r2": 0.001674202665972735,
+      "mse_skill": 0.0017852015679648003,
+      "baseline_rmse": 0.2178333005371512,
+      "count_baseline_rmse": 0.21645702939015837,
+      "mse_skill_vs_count": -0.010948796523289062
+    },
+    "paired_game_bootstrap": {
+      "relative_mse_reduction": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "n_test": 135604,
+    "selection": {
+      "members": [],
+      "weight": 0.0,
+      "mse": 0.0473696172534302,
+      "relative_gain": 0.0
+    },
+    "v5": {
+      "rmse": 0.21308187947934834,
+      "r2": 0.04304220643767975,
+      "mse_skill": 0.043148605836174414,
+      "baseline_rmse": 0.2178333005371512
+    },
+    "v6": {
+      "rmse": 0.21308187947934834,
+      "r2": 0.04304220643767975,
+      "mse_skill": 0.043148605836174414,
+      "baseline_rmse": 0.2178333005371512,
+      "count_baseline_rmse": 0.21645702939015837,
+      "mse_skill_vs_count": 0.0309422712416213
+    },
+    "paired_game_bootstrap": {
+      "relative_mse_reduction": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "n_games": 455,
+      "bootstrap_repetitions": 1000
+    }
+  },
+  {
+    "task": "exit_speed_contextual",
+    "n_test": 23814,
+    "selection": {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 199.64516345734938,
+      "relative_gain": 0.14389292733948467
+    },
+    "v5": {
+      "rmse": 15.303042116988703,
+      "r2": 0.011003451595385072,
+      "mse_skill": 0.011089876027921441,
+      "baseline_rmse": 15.388608892036688
+    },
+    "v6": {
+      "rmse": 14.020197879706757,
+      "r2": 0.1698673118712143,
+      "mse_skill": 0.16993985382964383,
+      "baseline_rmse": 15.388608892036688
+    },
+    "paired_game_bootstrap": {
+      "relative_mse_reduction": 0.1606313596666219,
+      "ci95_low": 0.15073828604548353,
+      "ci95_high": 0.17027552458826486,
+      "n_games": 453,
+      "bootstrap_repetitions": 1000
+    }
+  }
+]

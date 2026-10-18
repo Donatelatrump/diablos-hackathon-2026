@@ -1,0 +1,2 @@
+-r requirements-hackathon.txt
+streamlit>=1.40

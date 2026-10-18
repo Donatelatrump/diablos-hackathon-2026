@@ -1,0 +1,43 @@
+{
+  "rows": 135604,
+  "hashes_match": true,
+  "same_training_partitions_as_v7": true,
+  "games_disjoint": true,
+  "selection_reproduced": true,
+  "prediction_reproduced": true,
+  "fallback_exact": true,
+  "physical_invariance": true,
+  "outcomes_not_required": true,
+  "batch_invariant": true,
+  "decisions": {
+    "whiff": {
+      "candidate": "family_0.5|sigmoid",
+      "promoted": true
+    },
+    "whiff_given_swing": {
+      "candidate": "family_0.75|sigmoid",
+      "promoted": true
+    },
+    "ball_in_play": {
+      "candidate": "family_0.75|raw",
+      "promoted": true
+    },
+    "groundball_given_in_play": {
+      "candidate": "control",
+      "promoted": false
+    },
+    "home_run_per_pitch": {
+      "candidate": "velocity|raw",
+      "promoted": false
+    },
+    "exit_speed_given_in_play": {
+      "candidate": "velocity|raw",
+      "promoted": true
+    },
+    "physical_control": {
+      "candidate": "velocity|raw",
+      "promoted": false
+    }
+  },
+  "benchmark_reused": true
+}

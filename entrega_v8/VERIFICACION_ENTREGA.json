@@ -1,0 +1,11 @@
+{
+  "audit_groups_disjoint": true,
+  "temporal_boundary": true,
+  "model_hashes": true,
+  "aggregate_counts": true,
+  "cases_reproduced": true,
+  "pdf_pages": 8,
+  "zip_no_raw_data_or_models": true,
+  "manifest_hashes": true,
+  "benchmark_reused": true
+}

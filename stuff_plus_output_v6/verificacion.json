@@ -1,0 +1,14 @@
+{
+  "rows": 135604,
+  "unique_pitchuids": 135604,
+  "selection_frozen_on_2025": true,
+  "code_source_and_models_hashes_match": true,
+  "fit_validation_and_benchmark_disjoint": true,
+  "inference_matches_export": true,
+  "stuff_invariant_to_location_count_batter_and_altitude": true,
+  "physical_probabilities_invariant_to_location_count_batter_and_altitude": true,
+  "outcomes_not_needed_for_inference": true,
+  "missing_extra_measurements_match_v5": true,
+  "batch_size_invariant": true,
+  "benchmark_is_reused": true
+}

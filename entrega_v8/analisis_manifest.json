@@ -1,0 +1,11 @@
+{
+  "source_sha256": "52d439289aa66f7e235bc60982bd7a2ea728e0ab533b7c10eb8e837e47f1415b",
+  "v8_bundle_sha256": "c6019a53e938f138cc8b88e103502251ae4155583dafe216bb424b7a076b932e",
+  "script_sha256": "bf2e4d515bd25dac04925da6b4724413bcb6bbd7b83ff7d746d13ccb0cd89b2c",
+  "environment_rows": 96,
+  "scored_rows": 135604,
+  "pitcher_rows": 550,
+  "excluded_missing_pitcher_scores": 3122,
+  "environment_is_association": true,
+  "multiple_comparisons_exploratory": true
+}

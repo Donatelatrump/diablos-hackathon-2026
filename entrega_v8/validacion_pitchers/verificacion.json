@@ -1,0 +1,28 @@
+{
+  "pitchers_disjoint": true,
+  "cold_start": true,
+  "test_rows": 26536,
+  "test_pitchers": 105,
+  "training_max_year": 2025,
+  "model_hashes": {
+    "modelos\\ball_in_play__breaking.cbm": "f0adc7315659fce2f5863a4d60525ed6f52d749b5f5b488480e315a41cff5d7d",
+    "modelos\\ball_in_play__fast.cbm": "6ca733d78e731558a579386059082a68dc89df4b2fe4477ee34816e85efdbd03",
+    "modelos\\ball_in_play__global.cbm": "d35d787ac52db712c118a02a272d531aa82b48bb384d1712793f03608447898d",
+    "modelos\\ball_in_play__offspeed.cbm": "780fb192ca72e29026a55d7aeda913a357daf21b7ec6a76b7b1e63defb0bea9c",
+    "modelos\\environment_run_value__global.cbm": "74f0e04b413b497ac62d79cbfafedbca61c9c9fbb474dab0eae8939c59f34c0c",
+    "modelos\\exit_speed_given_in_play__global.cbm": "36266a76e459507c0e7f7634d425cc1633e7037ba23c0db8612fb0fdb9c9cfd6",
+    "modelos\\groundball_given_in_play__global.cbm": "4d3004ee228eeaefcb6c530d24cbfb347fcc1b260d4ea2c683f89a31081ffa5f",
+    "modelos\\home_run_per_pitch__global.cbm": "069877fc549f0254dc678cd59eae01d77d5cd9d02c38cc2919ea07a1b74dbf13",
+    "modelos\\physical_control__global.cbm": "e04164b62250f231db74c2e2a3dee4cebc50437561139a48ea4277017f317a7f",
+    "modelos\\whiff_given_swing__breaking.cbm": "4c9b728b78576fef2353d24149f1fb6d36a29cb3fe766efb26e8735422d4c273",
+    "modelos\\whiff_given_swing__fast.cbm": "9635ff4b0df005085e9070fb76edd1721249eeedcb8aef71b38f6955dbdf66bf",
+    "modelos\\whiff_given_swing__global.cbm": "cc20eaf5a8c022139f138bee253678dfe2aa0d76b30b773f508fd5aeffa9b7ac",
+    "modelos\\whiff_given_swing__offspeed.cbm": "cfcfc5371d70455bccea65ff05558d5ddb8ebb04ae785e26e582d70d39d0e6af",
+    "modelos\\whiff__breaking.cbm": "935467b182ec02c7bdebec340931a2acbc0eacc083f419389ddee03bbcddecb1",
+    "modelos\\whiff__fast.cbm": "8985016afa89ec90cd3f1c7a0b6d1d330e433698549c0fba901569af858cd64b",
+    "modelos\\whiff__global.cbm": "4908de22cb8e5ecc55dfe914b57d036fbbb4fa16b9b00209053ff8002f1c217d",
+    "modelos\\whiff__offspeed.cbm": "93fad0f39ce84b5ee3a0c17a83afba905d251389542b6ea46bf47389e08e5c1e",
+    "modelos\\xrunvalue__global.cbm": "fbc78e92f4815437934889ffaf519d416e31fb6a4204d173dc535b825631fb77"
+  },
+  "test_is_reused": true
+}

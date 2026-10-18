@@ -1,0 +1,30 @@
+{
+  "version": 5,
+  "source_sha256": "52d439289aa66f7e235bc60982bd7a2ea728e0ab533b7c10eb8e837e47f1415b",
+  "script_sha256": "49206c8b17fffdc6237d0e813147434d75ee56ee1e430bff11708b9f9a12ac13",
+  "python": "3.14.7",
+  "catboost": "1.2.10",
+  "pandas": "3.0.6",
+  "numpy": "2.5.4",
+  "duckdb": "1.5.6",
+  "args": {
+    "parquet": "stuff_model_df.parquet",
+    "salida": "stuff_plus_output_v5",
+    "iteraciones": 250,
+    "profundidad": 6,
+    "hilos": 6,
+    "semilla": 42,
+    "temporadas": [
+      2025,
+      2026
+    ]
+  },
+  "source_rows": 635002,
+  "oos_rows": 391748,
+  "unique_pitchuids": 391748,
+  "heldout_years": [
+    2025,
+    2026
+  ],
+  "production_refit_including_test": false
+}

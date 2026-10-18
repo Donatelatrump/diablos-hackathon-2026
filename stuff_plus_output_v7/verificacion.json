@@ -1,0 +1,42 @@
+{
+  "benchmark_rows": 135604,
+  "fit_rows": 299031,
+  "partitions": {
+    "fit": 299031,
+    "early_stop": 49704,
+    "calibration": 74996,
+    "selection": 75667
+  },
+  "four_roles_have_disjoint_games": true,
+  "oof_excludes_own_game": true,
+  "folds": [
+    {
+      "fold": 0,
+      "train_rows": 198636,
+      "oof_rows": 100395,
+      "games_disjoint": true
+    },
+    {
+      "fold": 1,
+      "train_rows": 200404,
+      "oof_rows": 98627,
+      "games_disjoint": true
+    },
+    {
+      "fold": 2,
+      "train_rows": 199022,
+      "oof_rows": 100009,
+      "games_disjoint": true
+    }
+  ],
+  "calibrators_use_only_calibration_games": true,
+  "stack_fit_uses_only_oof_predictions": true,
+  "selection_reproduced_without_2026": true,
+  "code_data_and_models_hashes_match": true,
+  "inference_matches_export": true,
+  "outcomes_not_required": true,
+  "physical_invariance": true,
+  "fallback_matches_v6": true,
+  "batch_size_invariant": true,
+  "benchmark_is_reused": true
+}

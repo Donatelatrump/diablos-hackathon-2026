@@ -1,0 +1,35 @@
+{
+  "version": 8,
+  "source_sha256": "52d439289aa66f7e235bc60982bd7a2ea728e0ab533b7c10eb8e837e47f1415b",
+  "code_hashes": {
+    "entrenar_stuff_plus_v8.py": "3226d9e41f37fcd49d191c029d65c43023a82e846995cb41a6efeee992243f87",
+    "entrenar_stuff_plus_v5.py": "49206c8b17fffdc6237d0e813147434d75ee56ee1e430bff11708b9f9a12ac13",
+    "entrenar_stuff_plus_v6.py": "46e2ea125eaca41e672a5cf74502ef77bc1ef56212879fb50bfaf62d2e6c49d9",
+    "entrenar_stuff_plus_v7.py": "7b0a7c23ccc805b632d1b66c9e8e6abdb256a58017d99dfbd5f7812e37c31782"
+  },
+  "minimum_gain": 0.001,
+  "confirmation_year_max_degradation": 0.001,
+  "extra_features": [
+    "ZoneSpeed",
+    "SpeedDrop",
+    "ZoneTime"
+  ],
+  "families": {
+    "Four-Seam": "fast",
+    "Sinker": "fast",
+    "Cutter": "fast",
+    "Slider": "breaking",
+    "Curveball": "breaking",
+    "Sweeper": "breaking",
+    "Changeup": "offspeed",
+    "Splitter": "offspeed"
+  },
+  "family_weights": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "selection_seed": 808,
+  "benchmark_reused": true,
+  "threads": 6
+}

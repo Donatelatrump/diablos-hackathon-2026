@@ -1,0 +1,186 @@
+{
+  "chosen": {
+    "candidate": "deep",
+    "members": [
+      "deep"
+    ],
+    "weight": 1.0,
+    "mse": 199.64516345734938,
+    "relative_gain": 0.14389292733948467
+  },
+  "trials": [
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 0.25,
+      "mse": 219.93757337159187,
+      "relative_gain": 0.05687616546024854
+    },
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 0.5,
+      "mse": 210.060781869612,
+      "relative_gain": 0.09922926289375911
+    },
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 0.75,
+      "mse": 203.57078669567747,
+      "relative_gain": 0.1270592923005316
+    },
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 1.0,
+      "mse": 200.46758784978826,
+      "relative_gain": 0.14036625368056654
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 0.25,
+      "mse": 219.42102677677187,
+      "relative_gain": 0.05909119128669982
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 0.5,
+      "mse": 209.23498234444557,
+      "relative_gain": 0.10277040960551342
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 0.75,
+      "mse": 202.64302790463807,
+      "relative_gain": 0.13103765495644182
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 199.64516345734938,
+      "relative_gain": 0.14389292733948467
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 0.25,
+      "mse": 219.6686137944574,
+      "relative_gain": 0.05802950267241591
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 0.5,
+      "mse": 209.60513698813062,
+      "relative_gain": 0.10118313344540453
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 0.75,
+      "mse": 203.01073078263695,
+      "relative_gain": 0.12946089231896518
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 199.88539517797628,
+      "relative_gain": 0.14286277929309832
+    }
+  ],
+  "candidates": {
+    "regularized": {
+      "trees": 386,
+      "config": {
+        "depth": 5,
+        "iterations": 400,
+        "l2_leaf_reg": 15.0,
+        "learning_rate": 0.05,
+        "random_seed": 91
+      }
+    },
+    "deep": {
+      "trees": 464,
+      "config": {
+        "depth": 7,
+        "iterations": 500,
+        "l2_leaf_reg": 20.0,
+        "learning_rate": 0.045,
+        "random_seed": 137
+      }
+    }
+  },
+  "n_development": 45299,
+  "target": "ExitSpeed",
+  "features": [
+    "RelSpeed",
+    "EffectiveVelo",
+    "SpinRate",
+    "SpinAxis_sin",
+    "SpinAxis_cos",
+    "RelHeight",
+    "RelSide",
+    "Extension",
+    "VertBreak",
+    "InducedVertBreak",
+    "HorzBreak",
+    "velo_diff_vs_fb",
+    "ivb_diff_vs_fb",
+    "hb_diff_vs_fb",
+    "release_distance_vs_fb",
+    "pitch_usage_pct",
+    "arsenal_history_available",
+    "AutoPitchType",
+    "PitcherThrows",
+    "PlateLocHeight",
+    "PlateLocSide",
+    "Balls",
+    "Strikes",
+    "BatterSide",
+    "hb_arm_side",
+    "release_side_arm_side",
+    "movement_magnitude",
+    "movement_angle_sin",
+    "movement_angle_cos",
+    "spin_per_mph",
+    "effective_speed_delta",
+    "extension_per_height",
+    "spin_axis_sin2",
+    "spin_axis_cos2"
+  ],
+  "kind": "regression"
+}

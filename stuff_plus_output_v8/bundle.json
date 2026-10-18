@@ -1,0 +1,356 @@
+{
+  "version": 8,
+  "selection": {
+    "whiff": {
+      "candidate": "family_0.5|sigmoid",
+      "promoted": true,
+      "gains": {
+        "tune": 0.002664869011395621,
+        "confirmation": 0.004190988636041948
+      },
+      "year_gains": {
+        "2024": 0.005062800452986793,
+        "2025": 0.0033625245682619154
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 0.09756489991723022,
+          "confirmation_mse": 0.09997163606278331
+        },
+        "control|raw": {
+          "tune_mse": 0.09756489991723022,
+          "confirmation_mse": 0.09997163606278331
+        },
+        "control|sigmoid": {
+          "tune_mse": 0.09753246449735023,
+          "confirmation_mse": 0.09992015143660551
+        },
+        "velocity|raw": {
+          "tune_mse": 0.09744489807140418,
+          "confirmation_mse": 0.09976495381707873
+        },
+        "velocity|sigmoid": {
+          "tune_mse": 0.09740900070643742,
+          "confirmation_mse": 0.09969250269968569
+        },
+        "family_0.25|raw": {
+          "tune_mse": 0.09737427240810657,
+          "confirmation_mse": 0.09967845957490437
+        },
+        "family_0.25|sigmoid": {
+          "tune_mse": 0.09733433478273712,
+          "confirmation_mse": 0.09959757455827117
+        },
+        "family_0.5|raw": {
+          "tune_mse": 0.09733773020836858,
+          "confirmation_mse": 0.09962752505797745
+        },
+        "family_0.5|sigmoid": {
+          "tune_mse": 0.09730490223884088,
+          "confirmation_mse": 0.09955265607211766
+        },
+        "family_0.75|raw": {
+          "tune_mse": 0.09733527147219019,
+          "confirmation_mse": 0.09961215026629798
+        },
+        "family_0.75|sigmoid": {
+          "tune_mse": 0.09731723689005098,
+          "confirmation_mse": 0.09955466304700601
+        }
+      },
+      "logloss_noninferior": true,
+      "calibrator": {
+        "method": "sigmoid",
+        "slope": 1.1428472588036074,
+        "intercept": 0.29880356880362835
+      }
+    },
+    "whiff_given_swing": {
+      "candidate": "family_0.75|sigmoid",
+      "promoted": true,
+      "gains": {
+        "tune": 0.029455573715645555,
+        "confirmation": 0.03459552147031264
+      },
+      "year_gains": {
+        "2024": 0.03565154222883271,
+        "2025": 0.03359119000131916
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 0.1685359345153016,
+          "confirmation_mse": 0.1704960286554584
+        },
+        "control|raw": {
+          "tune_mse": 0.1685359345153016,
+          "confirmation_mse": 0.1704960286554584
+        },
+        "control|sigmoid": {
+          "tune_mse": 0.16773873808518158,
+          "confirmation_mse": 0.16968575427770927
+        },
+        "velocity|raw": {
+          "tune_mse": 0.1670406125808818,
+          "confirmation_mse": 0.16840888074829174
+        },
+        "velocity|sigmoid": {
+          "tune_mse": 0.16591235889087289,
+          "confirmation_mse": 0.1670774607149458
+        },
+        "family_0.25|raw": {
+          "tune_mse": 0.1660415776040389,
+          "confirmation_mse": 0.1673546040379153
+        },
+        "family_0.25|sigmoid": {
+          "tune_mse": 0.16475588705937053,
+          "confirmation_mse": 0.16584793173930157
+        },
+        "family_0.5|raw": {
+          "tune_mse": 0.16525127610789406,
+          "confirmation_mse": 0.16651457867214153
+        },
+        "family_0.5|sigmoid": {
+          "tune_mse": 0.16398258372841892,
+          "confirmation_mse": 0.16502974762443967
+        },
+        "family_0.75|raw": {
+          "tune_mse": 0.16466970809244727,
+          "confirmation_mse": 0.16588880465097047
+        },
+        "family_0.75|sigmoid": {
+          "tune_mse": 0.16357161187245092,
+          "confirmation_mse": 0.16459762963550545
+        }
+      },
+      "logloss_noninferior": true,
+      "calibrator": {
+        "method": "sigmoid",
+        "slope": 1.2942800979799525,
+        "intercept": 0.3238628632503398
+      }
+    },
+    "ball_in_play": {
+      "candidate": "family_0.75|raw",
+      "promoted": true,
+      "gains": {
+        "tune": 0.008461030419250726,
+        "confirmation": 0.00846492817507094
+      },
+      "year_gains": {
+        "2024": 0.00899683458290046,
+        "2025": 0.007985903112269432
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 0.14746592813872075,
+          "confirmation_mse": 0.14725799723649874
+        },
+        "control|raw": {
+          "tune_mse": 0.14746592813872075,
+          "confirmation_mse": 0.14725799723649874
+        },
+        "velocity|raw": {
+          "tune_mse": 0.14704887776606984,
+          "confirmation_mse": 0.14685575119753902
+        },
+        "family_0.25|raw": {
+          "tune_mse": 0.14672865421346498,
+          "confirmation_mse": 0.1465312613572816
+        },
+        "family_0.5|raw": {
+          "tune_mse": 0.14645176643642036,
+          "confirmation_mse": 0.14624983391366422
+        },
+        "family_0.75|raw": {
+          "tune_mse": 0.146218214434936,
+          "confirmation_mse": 0.14601146886668698
+        }
+      },
+      "logloss_noninferior": true,
+      "calibrator": {
+        "method": "identity"
+      }
+    },
+    "groundball_given_in_play": {
+      "candidate": "control",
+      "promoted": false,
+      "gains": {
+        "tune": 0.0,
+        "confirmation": 0.0
+      },
+      "year_gains": {
+        "2024": 0.0,
+        "2025": 0.0
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 0.23661056947480233,
+          "confirmation_mse": 0.2360094649599246
+        },
+        "control|raw": {
+          "tune_mse": 0.23661056947480233,
+          "confirmation_mse": 0.2360094649599246
+        },
+        "velocity|raw": {
+          "tune_mse": 0.23668052381194277,
+          "confirmation_mse": 0.23587151095291267
+        }
+      },
+      "logloss_noninferior": true,
+      "calibrator": {
+        "method": "identity"
+      }
+    },
+    "home_run_per_pitch": {
+      "candidate": "velocity|raw",
+      "promoted": false,
+      "gains": {
+        "tune": 5.330080620302713e-05,
+        "confirmation": 0.00018520296164514782
+      },
+      "year_gains": {
+        "2024": 3.288084687258497e-05,
+        "2025": 0.00029821062786372643
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 0.007000146922762805,
+          "confirmation_mse": 0.007733613527073098
+        },
+        "control|raw": {
+          "tune_mse": 0.007000146922762805,
+          "confirmation_mse": 0.007733613527073098
+        },
+        "velocity|raw": {
+          "tune_mse": 0.006999773809288282,
+          "confirmation_mse": 0.0077321812389436655
+        }
+      },
+      "logloss_noninferior": true,
+      "calibrator": {
+        "method": "identity"
+      }
+    },
+    "exit_speed_given_in_play": {
+      "candidate": "velocity|raw",
+      "promoted": true,
+      "gains": {
+        "tune": 0.0011809335085088968,
+        "confirmation": 0.0017146602358847352
+      },
+      "year_gains": {
+        "2024": 0.00126281908329684,
+        "2025": 0.0020358288237168898
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 220.52411697900027,
+          "confirmation_mse": 225.65615925131218
+        },
+        "control|raw": {
+          "tune_mse": 220.52411697900027,
+          "confirmation_mse": 225.65615925131218
+        },
+        "velocity|raw": {
+          "tune_mse": 220.26369265982544,
+          "confirmation_mse": 225.26923560806148
+        }
+      },
+      "calibrator": {
+        "method": "identity"
+      }
+    },
+    "physical_control": {
+      "candidate": "velocity|raw",
+      "promoted": false,
+      "gains": {
+        "tune": 9.927161881351232e-05,
+        "confirmation": 0.00016805103351236195
+      },
+      "year_gains": {
+        "2024": 0.00011350675580179548,
+        "2025": 0.0002143103393823509
+      },
+      "trials": {
+        "control": {
+          "tune_mse": 0.046982713887909075,
+          "confirmation_mse": 0.04920079960080506
+        },
+        "control|raw": {
+          "tune_mse": 0.046982713887909075,
+          "confirmation_mse": 0.04920079960080506
+        },
+        "velocity|raw": {
+          "tune_mse": 0.04697804983784517,
+          "confirmation_mse": 0.04919253135558251
+        }
+      },
+      "calibrator": {
+        "method": "identity"
+      }
+    }
+  },
+  "reference": {},
+  "models": [
+    "whiff__global",
+    "whiff__fast",
+    "whiff__breaking",
+    "whiff__offspeed",
+    "whiff_given_swing__global",
+    "whiff_given_swing__fast",
+    "whiff_given_swing__breaking",
+    "whiff_given_swing__offspeed",
+    "ball_in_play__global",
+    "ball_in_play__fast",
+    "ball_in_play__breaking",
+    "ball_in_play__offspeed",
+    "groundball_given_in_play__global",
+    "home_run_per_pitch__global",
+    "exit_speed_given_in_play__global",
+    "physical_control__global"
+  ],
+  "model_hashes": {
+    "modelos\\ball_in_play__breaking.cbm": "8e1a04af353a1267a79d0c19dc9d720ab29bc629b1bee2b3bccf2e64b1b88dcc",
+    "modelos\\ball_in_play__fast.cbm": "be7347807e012d797c1bd12a2d1749764efad8cc3f9bae3b380a79345ee4be8e",
+    "modelos\\ball_in_play__global.cbm": "1ad8948acf5f787553c9015afc60f8d63c90e18eff93c6acffc2b3f6437a5c87",
+    "modelos\\ball_in_play__offspeed.cbm": "2242806167182ffb18641c171ca007891a878a6e41c79efe57aad41655e9a954",
+    "modelos\\exit_speed_given_in_play__global.cbm": "03889ce70629fae21a9d44213f0a0cfda261b60281e7746719a5c41377620cca",
+    "modelos\\groundball_given_in_play__global.cbm": "9450ae160830635ae811bd43f33248973fb6bbfc0d14a132add2695042bf7593",
+    "modelos\\home_run_per_pitch__global.cbm": "55412cbb630d62301bc722a75a260e835ef52a4a564fdbc3b491165001f446e6",
+    "modelos\\physical_control__global.cbm": "6fb77726253208b4102897403033aeba0b87fcb27af79de99ddaaaf73fa3703d",
+    "modelos\\whiff_given_swing__breaking.cbm": "64bb25590f1e8226cb748cf313667f7e8a3ef81d0dbd5e100746ab5d75954472",
+    "modelos\\whiff_given_swing__fast.cbm": "3fb410c83ea7b33ce46074f5a1860bb2bb979bbde99c5c6687b84f6db2629a49",
+    "modelos\\whiff_given_swing__global.cbm": "f8c429565b573c00bade2b92495f9ab3d01f5d5e199f1b8e1840601fa5881064",
+    "modelos\\whiff_given_swing__offspeed.cbm": "2b6dc613d4093f0790b7c62bead41800356be744a928af25be4ef766be1cafea",
+    "modelos\\whiff__breaking.cbm": "2f1fe6f9de1d66945f540d3d0db3702571bd8d5a6ef7fb4285be6c5d4cdebfb9",
+    "modelos\\whiff__fast.cbm": "8c4c59d5d9f1c54a3caf06ec2d88dbb59ab12642b26dd8244d1eb7611278c1dd",
+    "modelos\\whiff__global.cbm": "1e229979a88eb6273c57a7168954786849975683bc5d4b025e8e8b12c7dd4e2c",
+    "modelos\\whiff__offspeed.cbm": "cc26dde953891eaec20ee110414b5dd16f5b561ac59963018a8f57abfe8030fa",
+    "parent_v7\\modelos\\ball_in_play.cbm": "ac2eb7b2f844d5e2599e33638ee29bf8f0769e13619f3a9d6eac0687991cbba6",
+    "parent_v7\\modelos\\exit_speed_given_in_play.cbm": "0ab024b42426b589e6cf70baaf9436e3ae00de2883ce16f0334c413adadb6ea8",
+    "parent_v7\\modelos\\groundball_given_in_play.cbm": "2cdb8c7cec8e1a300ccd173fe3b401cb4c43fe686d55b57b4654e9d6a4d4b639",
+    "parent_v7\\modelos\\home_run_per_pitch.cbm": "61308bdbbc1e1887c3e0f8cb8eb6712127d0d5397ed7cc326fc3b26aface4080",
+    "parent_v7\\modelos\\physical_control.cbm": "ee9924d437b4949451930f7a2db4088dd7456e83671863c58cb4db625f5f119c",
+    "parent_v7\\modelos\\whiff.cbm": "3de915f9bbe29261520102c36348404c49307127a7b43d92303aa024de6dd860",
+    "parent_v7\\modelos\\whiff_given_swing.cbm": "f16ce71f206daf3ca7bbb8c93a6bc590bd736843806496a71cf9e8775037e2e6",
+    "parent_v7\\parent_v6\\modelos\\exit_speed_contextual_deep.cbm": "52ebca91eeea3ab22619e0937a4eebacf675fce3d4f90b8bcea2d024a80a5050",
+    "parent_v7\\parent_v6\\modelos\\whiff_deep.cbm": "d28623218782f6a916cb64146567f6d2f52e6a5cd83c0ebd7cb08048b0094bf4",
+    "parent_v7\\parent_v6\\modelos\\whiff_given_swing_deep.cbm": "2c3e9b8e51b2ed5f962d8966c7a1aa2a5b25ce077bb994389d1daa700260f43d",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\ball_in_play.cbm": "fe279a0fce354644a8160fe2f95789ff28dc10a28cc95331706834409d8b2cf0",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\barrel_or_hard_contact.cbm": "0e5ff95a59c130c2b1f81987e40386aa210121b20ec09ff6071d1e36850786b5",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\called_strike.cbm": "da9df252d0c10055cd1af432e4b9a4e644c9f28af2f756d5d24fb0b7861a9404",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\chase.cbm": "a4c77ec5007c09da8e6b852d8f30b6e027753d2dd9b2f38b69095bfa95491b8d",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\environment_run_value.cbm": "0930623823158827c1d74d957c9ae993c9619f4a9c0b2646b977e95d28174500",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\exit_speed_given_in_play.cbm": "b19aa46e0d2b0e206ff575dffc814539256df20327b3870d65155cce952a84be",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\groundball_given_in_play.cbm": "9e303e60faa27183c57ecbc4d952524986d42b2e25b6febe43aba8634fafb9d7",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\home_run_per_pitch.cbm": "f0b4ef29e0e5b58bf037f637ce0f5d23ba6fd8256663310b8ef76ce8c8240913",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\stuff_run_value.cbm": "2591f5a916eff97c6ec2a427628cad38af2f2d342fb269bdd7a799d6e9c60076",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\weak_contact.cbm": "755ca041fc1103233dbc0f32be131dfaa0dd4633edb641ce1b7e93620d97d90f",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\whiff.cbm": "09deb7a773ee850939815743cf6f3353f25972db372ab9ec806d072186e377df",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\whiff_given_swing.cbm": "dd8e03510674dc595ef3164a16c0a765c17afa3a0c02436728046f397bfe7a33",
+    "parent_v7\\parent_v6\\base_v5\\modelos\\xrunvalue.cbm": "107bd6d3ee86765c79a48e8e38c09bbe4efedb2f1b2ad71de9d25fc39e55930c"
+  },
+  "parent_hash": "5603e793d423e264906a59c3a2cd70fa8d3e456402d2dd9a1b52e684a518ee41",
+  "protocol_hash": "e2a893ff13c98f15cc118b9d8a4c94558a2e46d6a68153a8071d58827b353bdb",
+  "benchmark_reused": true
+}

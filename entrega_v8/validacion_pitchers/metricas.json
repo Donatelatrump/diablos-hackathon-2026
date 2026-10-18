@@ -1,0 +1,221 @@
+[
+  {
+    "task": "whiff",
+    "n": 26536,
+    "metrics": {
+      "roc_auc": 0.6469717803599104,
+      "average_precision": 0.17587697919322431,
+      "brier": 0.09925672141357395,
+      "brier_baseline": 0.1017022927762157,
+      "brier_skill": 0.024046373939896948,
+      "ece_10_bins": 0.005271407326762027,
+      "positive_rate_test": 0.1149005125113054,
+      "mean_probability": 0.12017191983806741
+    },
+    "vs_constant": {
+      "gain": 0.024046373939896948,
+      "low": 0.0165825470439697,
+      "high": 0.03191629507632083,
+      "n_pitchers": 105
+    },
+    "calibrator": {
+      "method": "sigmoid",
+      "slope": 1.188913046279271,
+      "intercept": 0.40007714532305383
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "n": 12269,
+    "metrics": {
+      "roc_auc": 0.6962793889252121,
+      "average_precision": 0.44289749643238663,
+      "brier": 0.16842483424749966,
+      "brier_baseline": 0.18683188027077494,
+      "brier_skill": 0.09852197599573476,
+      "ece_10_bins": 0.013698237125483927,
+      "positive_rate_test": 0.24851251120710735,
+      "mean_probability": 0.25232485826227347
+    },
+    "vs_constant": {
+      "gain": 0.09852197599573476,
+      "low": 0.0804760465787006,
+      "high": 0.1160111594268229,
+      "n_pitchers": 104
+    },
+    "calibrator": {
+      "method": "sigmoid",
+      "slope": 1.3503856436615622,
+      "intercept": 0.41415068866614807
+    }
+  },
+  {
+    "task": "ball_in_play",
+    "n": 26536,
+    "metrics": {
+      "roc_auc": 0.6117241034647648,
+      "average_precision": 0.2304373152324126,
+      "brier": 0.1425631053409334,
+      "brier_baseline": 0.14529265983575346,
+      "brier_skill": 0.018786595949896623,
+      "ece_10_bins": 0.016074987677669524,
+      "positive_rate_test": 0.17632649984926138,
+      "mean_probability": 0.18231435546395863
+    },
+    "vs_constant": {
+      "gain": 0.018786595949896623,
+      "low": 0.016512158294567418,
+      "high": 0.02123697174071425,
+      "n_pitchers": 105
+    },
+    "calibrator": {
+      "method": "identity"
+    }
+  },
+  {
+    "task": "groundball_given_in_play",
+    "n": 4602,
+    "metrics": {
+      "roc_auc": 0.6180431827761439,
+      "average_precision": 0.5779096446799882,
+      "brier": 0.23954330033636703,
+      "brier_baseline": 0.25030079923287596,
+      "brier_skill": 0.04297828424630923,
+      "ece_10_bins": 0.0355829293415315,
+      "positive_rate_test": 0.4726205997392438,
+      "mean_probability": 0.4419791537834387
+    },
+    "vs_constant": {
+      "gain": 0.04297828424630956,
+      "low": 0.030787142856357738,
+      "high": 0.055395196881230235,
+      "n_pitchers": 104
+    },
+    "calibrator": {
+      "method": "identity"
+    }
+  },
+  {
+    "task": "home_run_per_pitch",
+    "n": 26536,
+    "metrics": {
+      "roc_auc": 0.5985477157715072,
+      "average_precision": 0.00952698139295967,
+      "brier": 0.006398729016245819,
+      "brier_baseline": 0.0064041027734298645,
+      "brier_skill": 0.0008391116404847798,
+      "ece_10_bins": 0.0006904907435294205,
+      "positive_rate_test": 0.006444075972264094,
+      "mean_probability": 0.007134566715793515
+    },
+    "vs_constant": {
+      "gain": 0.0008391116404850019,
+      "low": 0.0004276975863241189,
+      "high": 0.0013667011649726,
+      "n_pitchers": 105
+    },
+    "calibrator": {
+      "method": "identity"
+    }
+  },
+  {
+    "task": "exit_speed_given_in_play",
+    "n": 4555,
+    "metrics": {
+      "rmse": 15.169105246907362,
+      "r2": 0.01087924277847363,
+      "mse_skill": 0.010893951869449858,
+      "baseline_rmse": 15.252412276526213
+    },
+    "vs_constant": {
+      "gain": 0.010893951869449636,
+      "low": 0.004062614847032775,
+      "high": 0.01695980931092305,
+      "n_pitchers": 104
+    },
+    "calibrator": {
+      "method": "identity"
+    }
+  },
+  {
+    "task": "physical_control",
+    "n": 26536,
+    "metrics": {
+      "rmse": 0.21310967694246624,
+      "r2": 0.0015450654927032792,
+      "mse_skill": 0.0023202962185174814,
+      "baseline_rmse": 0.213357346815272,
+      "count_baseline_rmse": 0.21183638063899912,
+      "mse_skill_vs_count": -0.012057636510145464
+    },
+    "vs_constant": {
+      "gain": 0.0023202962185168152,
+      "low": 0.000901959584950482,
+      "high": 0.003771191148468539,
+      "n_pitchers": 105
+    },
+    "calibrator": {
+      "method": "identity"
+    },
+    "vs_count": {
+      "gain": -0.012057636510145686,
+      "low": -0.01580421987681508,
+      "high": -0.008206081441745422,
+      "n_pitchers": 105
+    }
+  },
+  {
+    "task": "xrunvalue",
+    "n": 26536,
+    "metrics": {
+      "rmse": 0.20846537751340347,
+      "r2": 0.044589523419466315,
+      "mse_skill": 0.045331333121248596,
+      "baseline_rmse": 0.213357346815272,
+      "count_baseline_rmse": 0.21183638063899912,
+      "mse_skill_vs_count": 0.031573248418794386
+    },
+    "vs_constant": {
+      "gain": 0.04533133312124815,
+      "low": 0.039569981864111925,
+      "high": 0.05170148167413432,
+      "n_pitchers": 105
+    },
+    "calibrator": {
+      "method": "identity"
+    },
+    "vs_count": {
+      "gain": 0.031573248418794386,
+      "low": 0.02742402096970386,
+      "high": 0.035944287448750216,
+      "n_pitchers": 105
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "n": 26536,
+    "metrics": {
+      "rmse": 0.20845096479332356,
+      "r2": 0.04472162773254251,
+      "mse_skill": 0.04546333486452525,
+      "baseline_rmse": 0.213357346815272,
+      "count_baseline_rmse": 0.21183638063899912,
+      "mse_skill_vs_count": 0.031707152488215984
+    },
+    "vs_constant": {
+      "gain": 0.04546333486452481,
+      "low": 0.03948642487458193,
+      "high": 0.05191281813227241,
+      "n_pitchers": 105
+    },
+    "calibrator": {
+      "method": "identity"
+    },
+    "vs_count": {
+      "gain": 0.031707152488216095,
+      "low": 0.02750638850904181,
+      "high": 0.03621917244568649,
+      "n_pitchers": 105
+    }
+  }
+]

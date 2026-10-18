@@ -1,0 +1,191 @@
+{
+  "chosen": {
+    "members": [],
+    "weight": 0.0,
+    "mse": 0.0473696172534302,
+    "relative_gain": 0.0
+  },
+  "trials": [
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 0.25,
+      "mse": 0.04737222107842338,
+      "relative_gain": -5.496825062456523e-05
+    },
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 0.5,
+      "mse": 0.047378372159721203,
+      "relative_gain": -0.00018482113216489182
+    },
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 0.75,
+      "mse": 0.047388070497323666,
+      "relative_gain": -0.0003895586446209798
+    },
+    {
+      "candidate": "regularized",
+      "members": [
+        "regularized"
+      ],
+      "weight": 1.0,
+      "mse": 0.047401316091230786,
+      "relative_gain": -0.0006691807879930511
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 0.25,
+      "mse": 0.047386454546213014,
+      "relative_gain": -0.0003554449826506101
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 0.5,
+      "mse": 0.04740941412657797,
+      "relative_gain": -0.0008401349948607972
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 0.75,
+      "mse": 0.04743849599452509,
+      "relative_gain": -0.0014540700366310055
+    },
+    {
+      "candidate": "deep",
+      "members": [
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 0.047473700150054365,
+      "relative_gain": -0.002197250107960791
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 0.25,
+      "mse": 0.04737864181626003,
+      "relative_gain": -0.00019051373756195922
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 0.5,
+      "mse": 0.047391109158916936,
+      "relative_gain": -0.00045370654721033077
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 0.75,
+      "mse": 0.04740701928140092,
+      "relative_gain": -0.0007895784289455587
+    },
+    {
+      "candidate": "ensemble",
+      "members": [
+        "regularized",
+        "deep"
+      ],
+      "weight": 1.0,
+      "mse": 0.047426372183711984,
+      "relative_gain": -0.001198129382767421
+    }
+  ],
+  "candidates": {
+    "regularized": {
+      "trees": 398,
+      "config": {
+        "depth": 5,
+        "iterations": 400,
+        "l2_leaf_reg": 15.0,
+        "learning_rate": 0.05,
+        "random_seed": 91
+      }
+    },
+    "deep": {
+      "trees": 487,
+      "config": {
+        "depth": 7,
+        "iterations": 500,
+        "l2_leaf_reg": 20.0,
+        "learning_rate": 0.045,
+        "random_seed": 137
+      }
+    }
+  },
+  "n_development": 256144,
+  "target": "run_value_proxy",
+  "features": [
+    "RelSpeed",
+    "EffectiveVelo",
+    "SpinRate",
+    "SpinAxis_sin",
+    "SpinAxis_cos",
+    "RelHeight",
+    "RelSide",
+    "Extension",
+    "VertBreak",
+    "InducedVertBreak",
+    "HorzBreak",
+    "velo_diff_vs_fb",
+    "ivb_diff_vs_fb",
+    "hb_diff_vs_fb",
+    "release_distance_vs_fb",
+    "pitch_usage_pct",
+    "arsenal_history_available",
+    "AutoPitchType",
+    "PitcherThrows",
+    "hb_arm_side",
+    "release_side_arm_side",
+    "movement_magnitude",
+    "movement_angle_sin",
+    "movement_angle_cos",
+    "spin_per_mph",
+    "effective_speed_delta",
+    "extension_per_height",
+    "spin_axis_sin2",
+    "spin_axis_cos2",
+    "pfxx_arm_side",
+    "pfxz",
+    "drag_proxy",
+    "lift_vertical_proxy",
+    "lift_horizontal_arm_side_proxy",
+    "lift_magnitude_proxy",
+    "movement_per_spin",
+    "PlateLocHeight",
+    "PlateLocSide",
+    "Balls",
+    "Strikes",
+    "BatterSide",
+    "altitude_category"
+  ],
+  "kind": "regression"
+}

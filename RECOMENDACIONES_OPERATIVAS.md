@@ -1,3 +1,5 @@
+> Documento historico de v3/v4. Para el modelo vigente, instrucciones y limites, consultar [README.md](README.md) y el [resultado v5](stuff_plus_output_v5/RESULTADO_MEJORA.md). Las afirmaciones de altitud y metricas de este documento no describen v5.
+
 # Recomendaciones Operativas — Stuff+ Diablos Rojos (ISAC Hackathon 2026)
 
 **Base:** modelo Stuff+ v3 entrenado con 635,002 lanzamientos de LMB (2024–2026)  
