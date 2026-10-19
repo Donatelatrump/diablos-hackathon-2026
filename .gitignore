@@ -1,4 +1,4 @@
-ï»¿.venv/
+.venv/
 .pip-tmp/
 pip-build-tracker-*/
 pip-ephem-wheel-cache-*/
