@@ -11,6 +11,7 @@ from sklearn.isotonic import IsotonicRegression
 import entrenar_stuff_plus_v5 as v5
 import entrenar_stuff_plus_v6 as v6
 import entrenar_stuff_plus_v7 as v7
+from proyecto_io import bundle_ready, data_path
 
 ROOT = Path(__file__).resolve().parent
 
@@ -116,11 +117,11 @@ class StackTests(unittest.TestCase):
         np.testing.assert_allclose(v7.predict_stack(x[:1], model), v7.predict_stack(x, model)[:1], atol=1e-12)
 
 
-@unittest.skipUnless((ROOT / "stuff_model_df.parquet").exists() and (ROOT / "stuff_plus_output_v6/bundle.json").exists(), "Requiere datos y modelo padre local")
+@unittest.skipUnless(bundle_ready(ROOT / "stuff_plus_output_v6"), "Requiere modelos padre completos, no punteros LFS")
 class InferenceSmokeTests(unittest.TestCase):
     def test_small_models_exercise_complete_and_fallback_inference(self):
         with duckdb.connect() as con:
-            raw = con.execute("SELECT * FROM read_parquet(?) WHERE year=2024 LIMIT 10000", [str(ROOT / "stuff_model_df.parquet")]).fetchdf()
+            raw = con.execute("SELECT * FROM read_parquet(?) WHERE year=2024 LIMIT 10000", [str(data_path())]).fetchdf()
         raw = v5.prepare_raw(raw)
         frame = v6.enhance(v5.historical_features(raw))
         train, stop = frame.iloc[:8000], frame.iloc[8000:]

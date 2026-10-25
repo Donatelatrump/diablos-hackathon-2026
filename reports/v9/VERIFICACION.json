@@ -1,0 +1,37 @@
+{
+  "source_sha256": "52d439289aa66f7e235bc60982bd7a2ea728e0ab533b7c10eb8e837e47f1415b",
+  "protocol_sha256": "6594d24f683ada5b78c90789485ccc1868c5739945b0e3a617f8e887e36a97fa",
+  "bundle_sha256": "9ef3a1f89e83968b82885f770e85bcf29b6683fdb2637c3f6bfd9c405b8accf9",
+  "n_test": 135604,
+  "missing_pitcher_test": 3122,
+  "python": "3.14.4",
+  "saved_predictions_reproduced": true,
+  "physical_invariance": true,
+  "outcomes_not_required": true,
+  "batch_invariance": true,
+  "v8_scale_inverse_verified_against_archived_rmse": true,
+  "development_games_disjoint": true,
+  "development_test_disjoint": true,
+  "selection_decisions_reproduced": [
+    "stuff_run_value",
+    "xrunvalue",
+    "arsenal_run_value",
+    "environment_run_value",
+    "whiff",
+    "whiff_given_swing",
+    "ball_in_play",
+    "groundball_given_in_play",
+    "weak_contact",
+    "hard_contact",
+    "home_run_per_pitch",
+    "called_strike",
+    "chase"
+  ],
+  "report_script_sha256": "0396d5efea4c5c2457b9fb7f9d9e871e456587b8360f462a8b11517316acd27a",
+  "benchmark_reused": true,
+  "holdouts_completed": [
+    "environment",
+    "pitcher"
+  ],
+  "park_holdout": "unavailable_without_stadium_mapping"
+}

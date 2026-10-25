@@ -1,0 +1,78 @@
+[
+  {
+    "task": "stuff_run_value",
+    "n": 43928,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.22883716062980913,
+      "r2": -0.00040110062228637666,
+      "mse_skill": 0.0014571758235772947,
+      "baseline_rmse": 0.22900407105435544,
+      "count_baseline_rmse": 0.22757463159987765,
+      "mse_skill_vs_count": -0.011126294033075634
+    },
+    "vs_baseline": {
+      "gain": 0.0014571758235775167,
+      "ci_low": 0.00048605816197071217,
+      "ci_high": 0.0023550783944082747,
+      "groups": 144
+    }
+  },
+  {
+    "task": "xrunvalue",
+    "n": 43928,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.2249093482139113,
+      "r2": 0.03364638891405847,
+      "mse_skill": 0.03544142107939641,
+      "baseline_rmse": 0.22900407105435544,
+      "count_baseline_rmse": 0.22757463159987765,
+      "mse_skill_vs_count": 0.023286215004149513
+    },
+    "vs_baseline": {
+      "gain": 0.023286215004149513,
+      "ci_low": 0.020753481789591695,
+      "ci_high": 0.025725215191774297,
+      "groups": 144
+    }
+  },
+  {
+    "task": "arsenal_run_value",
+    "n": 43928,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.22491698887389658,
+      "r2": 0.03358072952866942,
+      "mse_skill": 0.03537588365837674,
+      "baseline_rmse": 0.22900407105435544,
+      "count_baseline_rmse": 0.22757463159987765,
+      "mse_skill_vs_count": 0.02321985169149865
+    },
+    "vs_baseline": {
+      "gain": 0.02321985169149865,
+      "ci_low": 0.020789929203566364,
+      "ci_high": 0.02561127758612284,
+      "groups": 144
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "n": 43928,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.22499689437369494,
+      "r2": 0.03289393452535416,
+      "mse_skill": 0.034690364398337836,
+      "baseline_rmse": 0.22900407105435544,
+      "count_baseline_rmse": 0.22757463159987765,
+      "mse_skill_vs_count": 0.022525693632265642
+    },
+    "vs_baseline": {
+      "gain": 0.02252569363226553,
+      "ci_low": 0.01992693716123882,
+      "ci_high": 0.025120956741964105,
+      "groups": 144
+    }
+  }
+]

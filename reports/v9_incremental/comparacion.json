@@ -1,0 +1,56 @@
+[
+  {
+    "task": "stuff_run_value",
+    "n": 135604,
+    "rmse_original": 0.2175950946554369,
+    "rmse_incremental": 0.2175950946554369,
+    "processor": {
+      "method": "identity"
+    },
+    "gain": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "groups": 455
+  },
+  {
+    "task": "xrunvalue",
+    "n": 135604,
+    "rmse_original": 0.21338385814675218,
+    "rmse_incremental": 0.21338385814675218,
+    "processor": {
+      "method": "identity"
+    },
+    "gain": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "groups": 455
+  },
+  {
+    "task": "arsenal_run_value",
+    "n": 135604,
+    "rmse_original": 0.21344874141203454,
+    "rmse_incremental": 0.21338385814675218,
+    "processor": {
+      "method": "parent",
+      "task": "xrunvalue"
+    },
+    "gain": 0.0006078593237882624,
+    "ci_low": 0.0003637410990845635,
+    "ci_high": 0.0008472946614800857,
+    "groups": 455
+  },
+  {
+    "task": "environment_run_value",
+    "n": 135604,
+    "rmse_original": 0.21345663213153152,
+    "rmse_incremental": 0.21338385814675218,
+    "processor": {
+      "method": "parent",
+      "task": "arsenal_run_value"
+    },
+    "gain": 0.000681745782258214,
+    "ci_low": 0.00038682204125835843,
+    "ci_high": 0.0010413811311479892,
+    "groups": 455
+  }
+]
