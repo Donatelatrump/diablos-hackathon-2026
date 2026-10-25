@@ -1,9 +1,10 @@
 import unittest
 from pathlib import Path
+from proyecto_io import bundle_ready
 ROOT=Path(__file__).resolve().parent
 
 
-@unittest.skipUnless((ROOT/"stuff_plus_output_v8/verificacion.json").exists(),"Requiere v8 verificada")
+@unittest.skipUnless(bundle_ready(ROOT/"stuff_plus_output_v8") and (ROOT/"stuff_plus_output_v8/verificacion.json").exists(),"Requiere modelos v8 completos y verificados")
 class DashboardV8Tests(unittest.TestCase):
     def test_simulation_velocity_and_ranking(self):
         from streamlit.testing.v1 import AppTest

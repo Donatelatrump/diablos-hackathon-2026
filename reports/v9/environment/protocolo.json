@@ -1,0 +1,42 @@
+{
+  "version": 9,
+  "seed": 904,
+  "source_sha256": "52d439289aa66f7e235bc60982bd7a2ea728e0ab533b7c10eb8e837e47f1415b",
+  "source_development_rows": 499398,
+  "included_development_rows": 359112,
+  "missing_pitcher_development_rows": 92,
+  "test_year": 2026,
+  "holdout": "environment",
+  "held_group": "Extreme Altitude",
+  "benchmark_reused": true,
+  "iterations": 300,
+  "threads": 3,
+  "tasks": [
+    "stuff_run_value",
+    "xrunvalue",
+    "arsenal_run_value",
+    "environment_run_value"
+  ],
+  "depth": 6,
+  "learning_rate": 0.045,
+  "l2_leaf_reg": 20.0,
+  "partitions": {
+    "fit": 0.5,
+    "early_stop": 0.15,
+    "calibration": 0.15,
+    "tune": 0.1,
+    "confirmation": 0.1
+  },
+  "gate": {
+    "min_gain": 0.001,
+    "min_ci_low": 0.0,
+    "max_year_degradation": 0.001,
+    "max_logloss_ratio": 1.0015,
+    "bootstrap_repetitions": 500
+  },
+  "code_hashes": {
+    "entrenar_stuff_plus_v9.py": "935cf7a8737507b2ec397b62eb928c278ec2929d160b58393d033eead30537c4",
+    "entrenar_stuff_plus_v5.py": "49206c8b17fffdc6237d0e813147434d75ee56ee1e430bff11708b9f9a12ac13",
+    "entrenar_stuff_plus_v6.py": "46e2ea125eaca41e672a5cf74502ef77bc1ef56212879fb50bfaf62d2e6c49d9"
+  }
+}

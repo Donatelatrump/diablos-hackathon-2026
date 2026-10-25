@@ -1,5 +1,6 @@
 import unittest
 from pathlib import Path
+from proyecto_io import bundle_ready
 import numpy as np
 import pandas as pd
 from analisis_operativo_v8 import paired_environment,pitcher_summary
@@ -33,7 +34,7 @@ class AnalysisTests(unittest.TestCase):
         self.assertFalse(result.eligible.any())
 
 
-@unittest.skipUnless(Path('entrega_v8/MANIFIESTO.json').exists(),'Requiere paquete generado')
+@unittest.skipUnless(bundle_ready(Path(__file__).resolve().parent/'stuff_plus_output_v8') and Path('entrega_v8/MANIFIESTO.json').exists(),'Requiere paquete y modelos v8 completos')
 class DeliveryDashboardTests(unittest.TestCase):
     def test_operational_views(self):
         from streamlit.testing.v1 import AppTest

@@ -2,9 +2,10 @@
 import importlib.util
 import unittest
 from pathlib import Path
+from proyecto_io import bundle_ready
 
 ROOT = Path(__file__).resolve().parent
-AVAILABLE = importlib.util.find_spec("streamlit") is not None and (ROOT / "stuff_plus_output_v7" / "verificacion.json").exists()
+AVAILABLE = importlib.util.find_spec("streamlit") is not None and bundle_ready(ROOT / "stuff_plus_output_v7") and (ROOT / "stuff_plus_output_v7" / "verificacion.json").exists()
 
 
 @unittest.skipUnless(AVAILABLE, "Requiere Streamlit y artefactos v7 verificados")

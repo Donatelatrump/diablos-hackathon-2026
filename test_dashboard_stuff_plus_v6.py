@@ -2,9 +2,10 @@
 import importlib.util
 import unittest
 from pathlib import Path
+from proyecto_io import bundle_ready
 
 ROOT = Path(__file__).resolve().parent
-AVAILABLE = importlib.util.find_spec("streamlit") is not None and (ROOT / "stuff_plus_output_v6" / "verificacion.json").exists()
+AVAILABLE = importlib.util.find_spec("streamlit") is not None and bundle_ready(ROOT / "stuff_plus_output_v6") and (ROOT / "stuff_plus_output_v6" / "verificacion.json").exists()
 
 
 @unittest.skipUnless(AVAILABLE, "Requiere Streamlit y artefactos v6 verificados")
@@ -12,7 +13,7 @@ class DashboardTests(unittest.TestCase):
     def test_real_inference_fallback_physics_and_ranking(self):
         from streamlit.testing.v1 import AppTest
 
-        app = AppTest.from_file(str(ROOT / "dashboard_stuff_plus.py")).run(timeout=45)
+        app = AppTest.from_file(str(ROOT / "dashboard_stuff_plus_v6.py")).run(timeout=45)
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(len(app.metric), 5)
         self.assertTrue(any("Faltan mediciones" in element.value for element in app.info))

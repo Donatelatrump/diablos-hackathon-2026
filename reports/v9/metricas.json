@@ -1,0 +1,276 @@
+[
+  {
+    "task": "stuff_run_value",
+    "n": 135604,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.2175950946554369,
+      "r2": 0.002074897300371137,
+      "mse_skill": 0.002184308899510823,
+      "baseline_rmse": 0.2178331321379138,
+      "count_baseline_rmse": 0.21645095655457422,
+      "mse_skill_vs_count": -0.010599740642307065
+    },
+    "vs_baseline": {
+      "gain": 0.002184308899511045,
+      "ci_low": 0.001598013805699014,
+      "ci_high": 0.0028019248427588405,
+      "groups": 455
+    }
+  },
+  {
+    "task": "xrunvalue",
+    "n": 135604,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.21338385814675218,
+      "r2": 0.04032789200482667,
+      "mse_skill": 0.040433109580475635,
+      "baseline_rmse": 0.2178331321379138,
+      "count_baseline_rmse": 0.21645095655457422,
+      "mse_skill_vs_count": 0.02813910501107275
+    },
+    "vs_baseline": {
+      "gain": 0.028139105011072862,
+      "ci_low": 0.02658593500633885,
+      "ci_high": 0.029778551975318857,
+      "groups": 455
+    }
+  },
+  {
+    "task": "arsenal_run_value",
+    "n": 135604,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.21344874141203454,
+      "r2": 0.03974419155844355,
+      "mse_skill": 0.03984947313047782,
+      "baseline_rmse": 0.2178331321379138,
+      "count_baseline_rmse": 0.21645095655457422,
+      "mse_skill_vs_count": 0.02754799099045968
+    },
+    "vs_baseline": {
+      "gain": 0.027547990990459792,
+      "ci_low": 0.026073115857661953,
+      "ci_high": 0.02915665286445726,
+      "groups": 455
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "n": 135604,
+    "selected": "raw",
+    "metrics": {
+      "rmse": 0.21345663213153152,
+      "r2": 0.039673193254738726,
+      "mse_skill": 0.039778482610962285,
+      "baseline_rmse": 0.2178331321379138,
+      "count_baseline_rmse": 0.21645095655457422,
+      "mse_skill_vs_count": 0.02747609093792458
+    },
+    "vs_baseline": {
+      "gain": 0.02747609093792447,
+      "ci_low": 0.025899733024475534,
+      "ci_high": 0.02905218381056264,
+      "groups": 455
+    }
+  },
+  {
+    "task": "whiff",
+    "n": 135604,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.7452174786060607,
+      "average_precision": 0.25552046360858377,
+      "brier": 0.09183912194379923,
+      "brier_baseline": 0.09981879052737327,
+      "brier_skill": 0.07994154749236104,
+      "ece_10_bins": 0.005628325102502914,
+      "positive_rate_test": 0.11246718385888321,
+      "mean_probability": 0.11566956698130135,
+      "log_loss": 0.31224713763992185
+    },
+    "vs_baseline": {
+      "gain": 0.07994154749236104,
+      "ci_low": 0.07546647844446149,
+      "ci_high": 0.08414101062931137,
+      "groups": 455
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "n": 63044,
+    "selected": "raw",
+    "metrics": {
+      "roc_auc": 0.7534859843242716,
+      "average_precision": 0.5515852013748928,
+      "brier": 0.14951162110509353,
+      "brier_baseline": 0.18339072520161473,
+      "brier_skill": 0.18473728188421434,
+      "ece_10_bins": 0.009327446271128569,
+      "positive_rate_test": 0.24191041177590256,
+      "mean_probability": 0.24372119768868594,
+      "log_loss": 0.46706094434237666
+    },
+    "vs_baseline": {
+      "gain": 0.18473728188421468,
+      "ci_low": 0.1774683831440271,
+      "ci_high": 0.19179088255131505,
+      "groups": 455
+    }
+  },
+  {
+    "task": "ball_in_play",
+    "n": 135604,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.8090712557243814,
+      "average_precision": 0.4366346727106205,
+      "brier": 0.12112754694072617,
+      "brier_baseline": 0.14804041969096032,
+      "brier_skill": 0.18179408573966316,
+      "ece_10_bins": 0.0052813648853329885,
+      "positive_rate_test": 0.1806805108993835,
+      "mean_probability": 0.17826492387166065,
+      "log_loss": 0.374880563175611
+    },
+    "vs_baseline": {
+      "gain": 0.18179408573966338,
+      "ci_low": 0.17764883378181912,
+      "ci_high": 0.1857155830354988,
+      "groups": 455
+    }
+  },
+  {
+    "task": "groundball_given_in_play",
+    "n": 24033,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.6660969476619045,
+      "average_precision": 0.6334762670224833,
+      "brier": 0.22806220479017006,
+      "brier_baseline": 0.24993850223664207,
+      "brier_skill": 0.08752672057608601,
+      "ece_10_bins": 0.004611699185657001,
+      "positive_rate_test": 0.47093579661299045,
+      "mean_probability": 0.47184014489363835,
+      "log_loss": 0.6474592886593633
+    },
+    "vs_baseline": {
+      "gain": 0.08752672057608557,
+      "ci_low": 0.079691199168306,
+      "ci_high": 0.09564957022321827,
+      "groups": 453
+    }
+  },
+  {
+    "task": "weak_contact",
+    "n": 23814,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.6912245471317395,
+      "average_precision": 0.6665063737340442,
+      "brier": 0.21881690433669898,
+      "brier_baseline": 0.24805404003408893,
+      "brier_skill": 0.1178659928029071,
+      "ece_10_bins": 0.006600895447262521,
+      "positive_rate_test": 0.4557823129251701,
+      "mean_probability": 0.46116293591495366,
+      "log_loss": 0.6273086224862082
+    },
+    "vs_baseline": {
+      "gain": 0.11786599280290733,
+      "ci_low": 0.11103446061509113,
+      "ci_high": 0.12561819834792062,
+      "groups": 453
+    }
+  },
+  {
+    "task": "hard_contact",
+    "n": 23814,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.6732505076225175,
+      "average_precision": 0.39011095729232115,
+      "brier": 0.17821444292455746,
+      "brier_baseline": 0.19201125093022992,
+      "brier_skill": 0.07185416447646464,
+      "ece_10_bins": 0.009926640209912355,
+      "positive_rate_test": 0.2585453934660284,
+      "mean_probability": 0.24998309497321583,
+      "log_loss": 0.532608927395104
+    },
+    "vs_baseline": {
+      "gain": 0.07185416447646464,
+      "ci_low": 0.06591535773586578,
+      "ci_high": 0.07713536636398505,
+      "groups": 453
+    }
+  },
+  {
+    "task": "home_run_per_pitch",
+    "n": 135604,
+    "selected": "raw",
+    "metrics": {
+      "roc_auc": 0.8140992338633549,
+      "average_precision": 0.024386589573563242,
+      "brier": 0.006684761099509745,
+      "brier_baseline": 0.006753601677429343,
+      "brier_skill": 0.010193165248354008,
+      "ece_10_bins": 0.0006129611328864488,
+      "positive_rate_test": 0.006799209462847703,
+      "mean_probability": 0.007412170595734152,
+      "log_loss": 0.03628961612405975
+    },
+    "vs_baseline": {
+      "gain": 0.010193165248353786,
+      "ci_low": 0.009049782749438675,
+      "ci_high": 0.01125411542826204,
+      "groups": 455
+    }
+  },
+  {
+    "task": "called_strike",
+    "n": 135604,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.8743317017376815,
+      "average_precision": 0.5624084058055382,
+      "brier": 0.09817097786598726,
+      "brier_baseline": 0.1376267622280814,
+      "brier_skill": 0.2866868603412046,
+      "ece_10_bins": 0.017201891414011305,
+      "positive_rate_test": 0.16451579599421845,
+      "mean_probability": 0.14731390458020716,
+      "log_loss": 0.3072115764835335
+    },
+    "vs_baseline": {
+      "gain": 0.2866868603412045,
+      "ci_low": 0.2778597465076181,
+      "ci_high": 0.29438604113030553,
+      "groups": 455
+    }
+  },
+  {
+    "task": "chase",
+    "n": 135604,
+    "selected": "sigmoid",
+    "metrics": {
+      "roc_auc": 0.9118051285038572,
+      "average_precision": 0.7316825133113908,
+      "brier": 0.09844889915832138,
+      "brier_baseline": 0.17270334479417193,
+      "brier_skill": 0.42995372049306335,
+      "ece_10_bins": 0.004212936718186273,
+      "positive_rate_test": 0.22197722781038906,
+      "mean_probability": 0.22262812274422103,
+      "log_loss": 0.30137777942760535
+    },
+    "vs_baseline": {
+      "gain": 0.4299537204930636,
+      "ci_low": 0.4237946416425511,
+      "ci_high": 0.4357376267081068,
+      "groups": 455
+    }
+  }
+]

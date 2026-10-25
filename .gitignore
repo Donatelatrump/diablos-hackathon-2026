@@ -1,4 +1,8 @@
 .venv/
+# Datos privados del reto y artefactos reproducibles de la nueva ejecución.
+/Data/
+/stuff_plus_output_v9*/
+/reports/v9_smoke/
 .pip-tmp/
 pip-build-tracker-*/
 pip-ephem-wheel-cache-*/
