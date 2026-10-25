@@ -4,12 +4,33 @@ import runpy
 import streamlit as st
 from proyecto_io import bundle_ready
 from dashboard_guia import render_guide
+from dashboard_style import apply_dashboard_style
 
 ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title="Diablos · Calidad de pitcheo", page_icon="⚾", layout="wide")
-st.sidebar.title("Diablos · Stuff+")
-view = st.sidebar.radio("Ir a", ["Entender el proyecto", "Simular y comparar v9", "Entrega histórica v8"])
-st.sidebar.caption("ISAC 2026 · Calidad de pitcheo en el entorno LMB")
+apply_dashboard_style()
+
+# Sidebar
+with st.sidebar:
+    st.markdown("### Diablos · Stuff+")
+    st.caption("Guía: conoce las estadísticas. Simulador: prueba un lanzamiento; puedes dejar las opciones avanzadas sin tocar.")
+    view = st.radio(
+        "Ir a",
+        ["Entender el proyecto", "Simular y comparar v9", "Entrega histórica v8"],
+        label_visibility="collapsed",
+    )
+    
+    st.markdown('<div class="sidebar-section">Sobre el proyecto</div>', unsafe_allow_html=True)
+    st.caption(
+        "Este dashboard implementa el reto **2026 ISAC Hackathon – Diablos Rojos**. "
+        "Evalúa la calidad del pitcheo mediante tres índices: Stuff+, Location+ y Pitching+."
+    )
+    
+    st.markdown('<div class="sidebar-section">Enlaces</div>', unsafe_allow_html=True)
+    st.markdown("- [Guía del proyecto](GUIA_PROYECTO.md)")
+    st.markdown("- [Documento técnico v9](reports/v9/DOCUMENTO_TECNICO_V9.pdf)")
+    st.markdown("- [Enfoque y validación (EN)](PROJECT_APPROACH.md)")
+
 if view == "Entender el proyecto":
     render_guide(ROOT)
 elif view == "Simular y comparar v9":
@@ -22,6 +43,7 @@ elif view == "Simular y comparar v9":
         if bundle_ready(incremental) and (incremental / "metricas.json").exists():
             runs["v9 con validación incremental"] = incremental
         selected = st.sidebar.selectbox("Experimento", list(runs), index=len(runs)-1)
+        st.sidebar.caption("Puedes dejar seleccionada la opción actual para empezar.")
         render(runs[selected])
     else:
         st.title("Preparar el simulador")
