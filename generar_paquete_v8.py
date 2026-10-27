@@ -26,8 +26,10 @@ def main():
     protocol=read(OUT/"validacion_pitchers/protocolo.json")
     benchmark=read(ROOT/"stuff_plus_output_v8/metricas.json")
     scores=v8.v5.read_parquet(ROOT/'stuff_plus_output_v8/scores_pitch_v8.parquet')
-    prediction_columns=['PitchUID','pitcher_anon_id','score_reference_id','stuff_plus','location_plus','pitching_plus',
-                        'p_whiff','p_whiff_given_swing','p_ball_in_play','pred_exit_speed_given_in_play']
+    prediction_columns=['PitchUID','year','pitcher_anon_id','AutoPitchType','altitude_category','score_reference_id','stuff_plus','location_plus','pitching_plus',
+                        'p_whiff','p_whiff_given_swing','p_ball_in_play','p_weak_contact','p_barrel_or_hard_contact',
+                        'p_chase','p_called_strike','p_groundball_given_in_play','p_home_run_per_pitch',
+                        'pred_stuff_run_value','pred_xrunvalue','pred_environment_run_value','pred_exit_speed_given_in_play']
     scores[prediction_columns].to_csv(OUT/'scores_por_lanzamiento_v8.csv',index=False)
     v8.v6.json_write(OUT/'METRICAS_BENCHMARK_V8.json',benchmark)
     cases=read(OUT/"casos_scouting.json")
@@ -98,6 +100,7 @@ def main():
         "La convocatoria publicada solicita documento técnico de 6-10 páginas, scores, perfil, recomendaciones y simulador. La entrega anunciada es el 22 de octubre de 2026. El equipo debe completar integrantes y correos, verificar elegibilidad y preparar su envío. Este proceso no envía correos ni publica datos.",
         "Fuentes: convocatoria ISAC Diablos Rojos (https://www.isac-app.com/competition-details/hackathon-diablos-rojos.html), consultada el 17/10/2026; diccionario de datos; reportes y protocolos locales v5-v8. Las afirmaciones empíricas de este documento provienen de los artefactos identificados en el manifiesto."],[])
     ]
+    pages[6][1].append("Actualización de interfaz 20/10/2026: probabilidades y riesgos con denominadores explícitos, diferencias entre escenarios, explicación SHAP del lanzamiento simulado verificada contra su Stuff+, baseline por conteo y descarga de scores. El catálogo de estadios documenta altitudes publicadas sin adjudicar juegos anónimos.")
     styles=getSampleStyleSheet()
     styles['BodyText'].fontSize=9
     styles['BodyText'].leading=12
@@ -159,17 +162,20 @@ Las cinco mejoras están implementadas: auditoría de pitchers, análisis de ent
 
 Completar nombres, correos y elegibilidad del equipo; confirmar la modalidad de acceso a modelos y scores detallados con la organización. No se envía correo automáticamente. La fecha publicada consultada es 22/10/2026.
 ''',encoding='utf-8')
+    with (OUT/'README_ENTREGA.md').open('a',encoding='utf-8') as handle:
+        handle.write('\n## Actualización del dashboard (20/10/2026)\n\nEl simulador expone nueve probabilidades, riesgos y una explicación SHAP local comprobada. Incluye diferencias por categoría, baseline por conteo y scores descargables. La pestaña Estadios y altitudes compara referencias geográficas con fuentes; no infiere estadio desde una categoría. Consultar ESTADIOS_Y_ALTITUDES.md y AUDITORIA_ESTADIOS.json. Ejecutar `python estadios_v8.py` antes de regenerar el paquete para actualizar cobertura. El mapeo por juego necesita evidencia externa explícita.\n')
     source_dir=OUT/'codigo';source_dir.mkdir(exist_ok=True)
     names=['validar_pitchers_v8.py','analisis_operativo_v8.py','explicar_casos_v8.py','generar_paquete_v8.py','verificar_entrega_v8.py','dashboard_entrega_v8.py',
            'dashboard_stuff_plus.py','dashboard_stuff_plus_v5.py','dashboard_stuff_plus_v6.py','dashboard_stuff_plus_v7.py','dashboard_stuff_plus_v8.py',
            'requirements-entrega.txt','requirements-dashboard.txt','requirements-hackathon.txt','README.md','README_MODELO_V6.md','README_MODELO_V7.md','README_MODELO_V8.md']
     names += [f'{prefix}_v{version}.py' for version in [5,6,7,8] for prefix in ['entrenar_stuff_plus','verificar_modelo','reportar_mejora']]
-    names += ['test_entrega_v8.py','test_stuff_plus_v8.py']
+    names += ['test_entrega_v8.py','test_stuff_plus_v8.py','dashboard_revision_v8.py','estadios_v8.py','explicacion_simulador_v8.py','test_estadios_v8.py','test_dashboard_revision_v8.py']
     for name in names:
         if (ROOT/name).exists(): shutil.copy2(ROOT/name,source_dir/name)
     published=[p for p in OUT.iterdir() if p.is_file() and p.suffix in ['.csv','.md','.pdf']]
     published += [OUT/'casos_scouting.json',OUT/'analisis_manifest.json',OUT/'METRICAS_BENCHMARK_V8.json',OUT/'verificacion_shap.json',OUT/'validacion_pitchers/metricas.json',OUT/'validacion_pitchers/verificacion.json']
-    published += list(source_dir.iterdir())
+    if (OUT/'AUDITORIA_ESTADIOS.json').exists(): published.append(OUT/'AUDITORIA_ESTADIOS.json')
+    published += [source_dir/name for name in names if (source_dir/name).is_file()]
     manifest={'version':8,'pdf_pages':count,'files':{str(p.relative_to(OUT)).replace('\\','/'):v8.v6.file_hash(p) for p in published},
               'source_sha256':protocol['source_sha256'],'raw_data_included':False,'predictions_included':True,'models_included':False,'benchmark_reused':True}
     v8.v6.json_write(OUT/'MANIFIESTO.json',manifest)

@@ -1,0 +1,9 @@
+{
+  "accepted_games": 2009,
+  "unique_public_games": 2009,
+  "unique_catalog_stadiums": 23,
+  "venue_id_matches_feed": true,
+  "errors": [],
+  "counts_sum_to_source": true,
+  "pending_without_assigned_stadium": true
+}

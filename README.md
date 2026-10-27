@@ -67,7 +67,7 @@ Las columnas necesarias están en `PHYSICAL`, `LOCATION` y las transformaciones 
 Instalar `requirements-dashboard.txt` y ejecutar:
 
 ```powershell
-.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus_v5.py
+.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus.py
 ```
 
 Esta interfaz usa los modelos exportados y la misma función de inferencia. La entrada habitual `dashboard_stuff_plus.py` también abre v5. El simulador heurístico anterior se conserva en `dashboard_stuff_plus_legacy.py` como antecedente.

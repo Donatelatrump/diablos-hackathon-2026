@@ -125,6 +125,8 @@ El perfil físico descriptivo se extrae del 10% superior de Pitching+ dentro de 
 
 El mapa muestra medias por pitcher/tipo/entorno, con HB normalizado por mano. Las fichas incluyen atribuciones SHAP que reconstruyen exactamente el Stuff+ de los casos; explican el modelo, no efectos causales. El simulador compara tres escenarios con física fija y muestra soporte del tipo/mano; una advertencia señala escasez o velocidad fuera del rango de medias observado.
 
+Actualización de interfaz 20/10/2026: probabilidades y riesgos con denominadores explícitos, diferencias entre escenarios, explicación SHAP del lanzamiento simulado verificada contra su Stuff+, baseline por conteo y descarga de scores. El catálogo de estadios documenta altitudes publicadas sin adjudicar juegos anónimos.
+
 ## 8. Reproducción y plan de decisión
 
 Reproducción: instalar requirements-entrega.txt; ejecutar validar_pitchers_v8.py, analisis_operativo_v8.py, explicar_casos_v8.py y generar_paquete_v8.py. La auditoría no sobrescribe una ejecución iniciada. Abrir dashboard_stuff_plus.py con Streamlit. Los modelos desplegados v8 y sus hashes se mantienen intactos.

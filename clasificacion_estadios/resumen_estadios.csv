@@ -1,0 +1,108 @@
+﻿year,estado_clasificacion,estadio,mlb_venue_id,juegos,lanzamientos
+2024,pendiente,,,37,9689
+2024,verificado_huella_parcial_y_jugadas,Estadio Chevron,2957,2,603
+2024,verificado_huella_parcial_y_jugadas,Estadio Hermanos Serdan,2869,1,313
+2024,verificado_huella_parcial_y_jugadas,Parque Francisco I. Madero,2953,1,279
+2024,verificado_huella_parcial_y_jugadas,Parque Lic. Eduardo Vasconcelos,2951,2,631
+2024,verificado_huella_y_jugadas,Estadio Alberto Romo Chavez,2929,1,210
+2024,verificado_huella_y_jugadas,Estadio Chevron,2957,3,846
+2024,verificado_huella_y_jugadas,Estadio Chihuahua,3210,2,667
+2024,verificado_huella_y_jugadas,Estadio Francisco Villa,5321,22,7212
+2024,verificado_huella_y_jugadas,Estadio Hermanos Serdan,2869,3,742
+2024,verificado_huella_y_jugadas,Estadio Mobil Super,2701,1,326
+2024,verificado_huella_y_jugadas,Estadio Universitario Beto Avila,2958,19,5192
+2024,verificado_huella_y_jugadas,Estadio de la Revolucion,2956,1,356
+2024,verificado_huella_y_jugadas,Parque Francisco I. Madero,2953,20,5845
+2024,verificado_huella_y_jugadas,Parque Lic. Eduardo Vasconcelos,2951,3,936
+2024,verificado_jugadas,Estadio Alberto Romo Chavez,2929,40,11474
+2024,verificado_jugadas,Estadio Alfredo Harp Helu,5340,51,15604
+2024,verificado_jugadas,Estadio Chevron,2957,38,11061
+2024,verificado_jugadas,Estadio Chihuahua,3210,14,3824
+2024,verificado_jugadas,Estadio De Beisbol Beto Avila,3929,35,10196
+2024,verificado_jugadas,Estadio Francisco Villa,5321,4,1349
+2024,verificado_jugadas,Estadio Hermanos Serdan,2869,41,11564
+2024,verificado_jugadas,Estadio Kickapoo Lucky Eagle,2950,48,13736
+2024,verificado_jugadas,Estadio Mobil Super,2701,52,15128
+2024,verificado_jugadas,Estadio Panamericano de los Charros,4710,43,13321
+2024,verificado_jugadas,Estadio Universitario Beto Avila,2958,28,8201
+2024,verificado_jugadas,Estadio de Beisbol Víctor Cervera Pacheco,6081,38,10336
+2024,verificado_jugadas,Estadio de la Revolucion,2956,50,14880
+2024,verificado_jugadas,Parque Centenario 27 de Febrero,2955,43,12090
+2024,verificado_jugadas,Parque Domingo Santana,5320,41,12607
+2024,verificado_jugadas,Parque Francisco I. Madero,2953,12,3652
+2024,verificado_jugadas,Parque Lic. Eduardo Vasconcelos,2951,45,13716
+2024,verificado_jugadas,Parque Nelson Barrera Romellon,2949,41,11664
+2024,verificado_jugadas,Parque la Junta,3410,25,7509
+2024,verificado_jugadas,Uni-Trade Stadium,5330,26,7495
+2025,pendiente,,,37,11297
+2025,verificado_huella_parcial_y_jugadas,Estadio Alberto Romo Chavez,2929,1,387
+2025,verificado_huella_parcial_y_jugadas,Estadio Beto Avila,2958,1,280
+2025,verificado_huella_parcial_y_jugadas,Estadio Hermanos Serdan,2869,1,275
+2025,verificado_huella_parcial_y_jugadas,Parque Francisco I. Madero,2953,3,968
+2025,verificado_huella_parcial_y_jugadas,Toros Mobil Park,2957,5,1616
+2025,verificado_huella_parcial_y_jugadas,Walmart Park,2701,2,515
+2025,verificado_huella_y_jugadas,Estadio Alberto Romo Chavez,2929,1,282
+2025,verificado_huella_y_jugadas,Estadio Alfredo Harp Helu,5340,2,618
+2025,verificado_huella_y_jugadas,Estadio Beto Avila,2958,2,614
+2025,verificado_huella_y_jugadas,Estadio Chihuahua,3210,1,272
+2025,verificado_huella_y_jugadas,Estadio Cruz Azul Nelson Barrera Romellón,2949,1,334
+2025,verificado_huella_y_jugadas,Estadio Hermanos Serdan,2869,1,274
+2025,verificado_huella_y_jugadas,Estadio Panamericano de los Charros,4710,1,339
+2025,verificado_huella_y_jugadas,Estadio de la Revolucion,2956,3,848
+2025,verificado_huella_y_jugadas,Parque Francisco I. Madero,2953,22,7081
+2025,verificado_huella_y_jugadas,Parque Lic. Eduardo Vasconcelos,2951,2,638
+2025,verificado_huella_y_jugadas,Toros Mobil Park,2957,25,7707
+2025,verificado_huella_y_jugadas,Walmart Park,2701,2,558
+2025,verificado_jugadas,Beto Ávila Sherwin-Williams,3929,41,12034
+2025,verificado_jugadas,Estadio Alberto Romo Chavez,2929,34,9990
+2025,verificado_jugadas,Estadio Alfredo Harp Helu,5340,45,14172
+2025,verificado_jugadas,Estadio Beto Avila,2958,33,10418
+2025,verificado_jugadas,Estadio Chihuahua,3210,37,11641
+2025,verificado_jugadas,Estadio Conspiradores,6070,13,4176
+2025,verificado_jugadas,Estadio Cruz Azul Nelson Barrera Romellón,2949,47,14286
+2025,verificado_jugadas,Estadio Domingo Santana TV4,5320,44,13936
+2025,verificado_jugadas,Estadio Francisco Villa,5321,47,14761
+2025,verificado_jugadas,Estadio Hermanos Serdan,2869,35,10009
+2025,verificado_jugadas,Estadio Kickapoo Lucky Eagle,2950,42,12137
+2025,verificado_jugadas,Estadio Panamericano de los Charros,4710,39,11942
+2025,verificado_jugadas,Estadio de la Revolucion,2956,47,14079
+2025,verificado_jugadas,Parque Centenario 27 de Febrero,2955,37,10859
+2025,verificado_jugadas,Parque Francisco I. Madero,2953,3,820
+2025,verificado_jugadas,Parque Lic. Eduardo Vasconcelos,2951,45,14119
+2025,verificado_jugadas,Parque de Beisbol Kukulcán,2959,32,10148
+2025,verificado_jugadas,Parque la Junta,3410,22,6744
+2025,verificado_jugadas,Toros Mobil Park,2957,11,3270
+2025,verificado_jugadas,Uni-Trade Stadium,5330,25,7828
+2025,verificado_jugadas,Walmart Park,2701,47,13872
+2026,pendiente,,,44,12896
+2026,verificado_huella_parcial_y_jugadas,Estadio Alfredo Harp Helu,5340,1,405
+2026,verificado_huella_y_jugadas,Beto Ávila Sherwin-Williams,3929,1,295
+2026,verificado_huella_y_jugadas,Estadio Alfredo Harp Helu,5340,1,335
+2026,verificado_huella_y_jugadas,Estadio Chihuahua,3210,2,580
+2026,verificado_huella_y_jugadas,Estadio Panamericano de los Charros,4710,3,907
+2026,verificado_huella_y_jugadas,Estadio Yu'Va,2951,1,242
+2026,verificado_huella_y_jugadas,Estadio de la Revolucion,2956,2,731
+2026,verificado_huella_y_jugadas,Parque Francisco I. Madero,2953,2,602
+2026,verificado_huella_y_jugadas,Toros Mobil Park,2957,5,1334
+2026,verificado_huella_y_jugadas,Walmart Park,2701,2,616
+2026,verificado_jugadas,Beto Ávila Sherwin-Williams,3929,17,5023
+2026,verificado_jugadas,Estadio Alberto Romo Chavez,2929,21,6088
+2026,verificado_jugadas,Estadio Alfredo Harp Helu,5340,17,5265
+2026,verificado_jugadas,Estadio Beto Avila,2958,23,6559
+2026,verificado_jugadas,Estadio Chihuahua,3210,14,4065
+2026,verificado_jugadas,Estadio Conspiradores,6070,16,4820
+2026,verificado_jugadas,Estadio Cruz Azul Nelson Barrera Romellón,2949,18,5353
+2026,verificado_jugadas,Estadio Domingo Santana TV4,5320,22,7454
+2026,verificado_jugadas,Estadio Francisco Villa,5321,20,6091
+2026,verificado_jugadas,Estadio Hermanos Serdan,2869,28,8462
+2026,verificado_jugadas,Estadio Kickapoo Lucky Eagle,2950,19,5433
+2026,verificado_jugadas,Estadio Panamericano de los Charros,4710,17,4921
+2026,verificado_jugadas,Estadio Yu'Va,2951,6,1596
+2026,verificado_jugadas,Estadio de la Revolucion,2956,24,7564
+2026,verificado_jugadas,Parque Centenario 27 de Febrero,2955,30,9065
+2026,verificado_jugadas,Parque Francisco I. Madero,2953,15,4718
+2026,verificado_jugadas,Parque de Beisbol Kukulcán,2959,27,7613
+2026,verificado_jugadas,Parque la Junta,3410,10,3057
+2026,verificado_jugadas,Toros Mobil Park,2957,16,4507
+2026,verificado_jugadas,Uni-Trade Stadium,5330,10,2931
+2026,verificado_jugadas,Walmart Park,2701,21,6076

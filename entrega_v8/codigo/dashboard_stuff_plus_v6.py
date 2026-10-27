@@ -40,54 +40,56 @@ else:
     st.caption("Entrenamiento con datos anteriores a 2026. Las alternativas se eligieron con 2025; 2026 es un benchmark reutilizado tras v5.")
 tab_sim, tab_rank = st.tabs(["Simular lanzamiento", "Arsenal con incertidumbre"])
 with tab_sim:
-    c1, c2, c3 = st.columns(3)
-    with c1:
-        velo = st.number_input("Velocidad en release (mph)", 60., 110., 92.)
-        effective = st.number_input("Velocidad efectiva (mph)", 60., 115., 92.)
-        spin = st.number_input("Spin (rpm)", 0., 4000., 2200.)
-        axis = st.number_input("Eje de spin (grados)", 0., 360., 180.)
-        pitch_type = st.selectbox("Tipo", ["Four-Seam", "Sinker", "Slider", "Changeup", "Curveball", "Cutter", "Splitter", "Sweeper", "Other"])
-        throws = st.selectbox("Mano del pitcher", ["Right", "Left"])
-    with c2:
-        ivb = st.number_input("IVB (pulgadas)", -60., 60., 14.)
-        hb = st.number_input("Movimiento horizontal (pulgadas)", -60., 60., 10.)
-        vb = st.number_input("Break vertical total (pulgadas)", -100., 60., -15.)
-        extension = st.number_input("Extensión (pies)", 2., 9., 6.)
-        height = st.number_input("Altura de release (pies)", 2., 9., 5.8)
-        side = st.number_input("Lado de release (pies)", -5., 5., .5)
-    with c3:
-        plate_height = st.number_input("Altura en plato (pies)", 0., 7., 2.5)
-        plate_side = st.number_input("Lado en plato (pies)", -4., 4., 0.)
-        balls = st.number_input("Bolas", 0, 3, 0)
-        strikes = st.number_input("Strikes", 0, 2, 0)
-        batter = st.selectbox("Lado del bateador", ["Right", "Left"])
-        altitude = st.selectbox("Categoría de altitud", ["No Altitude", "Medium Altitude", "Extreme Altitude"])
-    known = sorted({r["pitcher_anon_id"] for r in profile["fastballs"]})
-    pitcher = st.selectbox("Perfil histórico de arsenal", ["Sin historial", *known])
-    row = dict(PitchUID="simulation", pitcher_anon_id=pitcher, AutoPitchType=pitch_type,
-               PitcherThrows=throws, BatterSide=batter, RelSpeed=velo, EffectiveVelo=effective,
-               SpinRate=spin, SpinAxis=axis, InducedVertBreak=ivb, HorzBreak=hb, VertBreak=vb,
-               Extension=extension, RelHeight=height, RelSide=side, PlateLocHeight=plate_height,
-               PlateLocSide=plate_side, Balls=balls, Strikes=strikes, altitude_category=altitude)
-    if st.checkbox("Dispongo de movimiento y aceleraciones adicionales"):
-        with st.expander("Mediciones adicionales", expanded=True):
-            st.caption("Usa mediciones del mismo pitch. Los valores iniciales son ilustrativos; no se estiman automáticamente desde IVB/HB.")
-            columns = st.columns(4)
-            inputs = [("pfxx", "pfxx (pulgadas)", -5.), ("pfxz", "pfxz (pulgadas)", 8.),
-                      ("vx0", "vx0 (pies/s)", 4.), ("vy0", "vy0 (pies/s)", -132.),
-                      ("vz0", "vz0 (pies/s)", -4.), ("ax0", "ax0 (pies/s²)", -5.),
-                      ("ay0", "ay0 (pies/s²)", 24.), ("az0", "az0 (pies/s²)", -23.)]
-            for i, (key, label, value) in enumerate(inputs):
-                row[key] = columns[i % 4].number_input(label, value=value)
-            if MODEL_VERSION == 8:
-                row["ZoneSpeed"] = columns[0].number_input("Velocidad en plato (mph)", value=85.)
-                row["SpeedDrop"] = columns[1].number_input("Pérdida de velocidad (mph)", value=7.)
-                row["ZoneTime"] = columns[2].number_input("Tiempo hasta el plato (s)", value=.40)
+    with st.expander("Ajustar mediciones del lanzamiento", expanded=False):
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            velo = st.number_input("Velocidad en release (mph)", 60., 110., 92.)
+            effective = st.number_input("Velocidad efectiva (mph)", 60., 115., 92.)
+            spin = st.number_input("Spin (rpm)", 0., 4000., 2200.)
+            axis = st.number_input("Eje de spin (grados)", 0., 360., 180.)
+            pitch_type = st.selectbox("Tipo", ["Four-Seam", "Sinker", "Slider", "Changeup", "Curveball", "Cutter", "Splitter", "Sweeper", "Other"])
+            throws = st.selectbox("Mano del pitcher", ["Right", "Left"])
+        with c2:
+            ivb = st.number_input("IVB (pulgadas)", -60., 60., 14.)
+            hb = st.number_input("Movimiento horizontal (pulgadas)", -60., 60., 10.)
+            vb = st.number_input("Break vertical total (pulgadas)", -100., 60., -15.)
+            extension = st.number_input("Extensión (pies)", 2., 9., 6.)
+            height = st.number_input("Altura de release (pies)", 2., 9., 5.8)
+            side = st.number_input("Lado de release (pies)", -5., 5., .5)
+        with c3:
+            plate_height = st.number_input("Altura en plato (pies)", 0., 7., 2.5)
+            plate_side = st.number_input("Lado en plato (pies)", -4., 4., 0.)
+            balls = st.number_input("Bolas", 0, 3, 0)
+            strikes = st.number_input("Strikes", 0, 2, 0)
+            batter = st.selectbox("Lado del bateador", ["Right", "Left"])
+            altitude = st.selectbox("Categoría de altitud", ["No Altitude", "Medium Altitude", "Extreme Altitude"])
+        known = sorted({r["pitcher_anon_id"] for r in profile["fastballs"]})
+        pitcher = st.selectbox("Perfil histórico de arsenal", ["Sin historial", *known])
+        row = dict(PitchUID="simulation", pitcher_anon_id=pitcher, AutoPitchType=pitch_type,
+                   PitcherThrows=throws, BatterSide=batter, RelSpeed=velo, EffectiveVelo=effective,
+                   SpinRate=spin, SpinAxis=axis, InducedVertBreak=ivb, HorzBreak=hb, VertBreak=vb,
+                   Extension=extension, RelHeight=height, RelSide=side, PlateLocHeight=plate_height,
+                   PlateLocSide=plate_side, Balls=balls, Strikes=strikes, altitude_category=altitude)
+        if st.checkbox("Dispongo de movimiento y aceleraciones adicionales"):
+            with st.expander("Mediciones adicionales", expanded=True):
+                st.caption("Usa mediciones del mismo pitch. Los valores iniciales son ilustrativos; no se estiman automáticamente desde IVB/HB.")
+                columns = st.columns(4)
+                inputs = [("pfxx", "pfxx (pulgadas)", -5.), ("pfxz", "pfxz (pulgadas)", 8.),
+                          ("vx0", "vx0 (pies/s)", 4.), ("vy0", "vy0 (pies/s)", -132.),
+                          ("vz0", "vz0 (pies/s)", -4.), ("ax0", "ax0 (pies/s²)", -5.),
+                          ("ay0", "ay0 (pies/s²)", 24.), ("az0", "az0 (pies/s²)", -23.)]
+                for i, (key, label, value) in enumerate(inputs):
+                    row[key] = columns[i % 4].number_input(label, value=value)
+                if MODEL_VERSION == 8:
+                    row["ZoneSpeed"] = columns[0].number_input("Velocidad en plato (mph)", value=85.)
+                    row["SpeedDrop"] = columns[1].number_input("Pérdida de velocidad (mph)", value=7.)
+                    row["ZoneTime"] = columns[2].number_input("Tiempo hasta el plato (s)", value=.40)
     result = infer(pd.DataFrame([row]), bundle).iloc[0]
     if MODEL_VERSION == 8 and not result["v8_available"] and result["score_reference_id"] != "v5_fallback":
         st.info("Faltan mediciones válidas de velocidad o trayectoria para v8: se utiliza el respaldo v7.")
     if result["score_reference_id"] == "v5_fallback":
         st.info("Faltan mediciones físicas adicionales válidas: los índices conservan el modelo y la referencia de v5. La predicción contextual se calcula por separado.")
+    st.subheader("Resultado del lanzamiento")
     for col, name in zip(st.columns(3), ["stuff_plus", "location_plus", "pitching_plus"]):
         col.metric(name.replace("_plus", "+").title(), f"{result[name]:.1f}")
     st.caption("Location+ mide la contribución predictiva de ubicación y contexto; Pitching+ incluye además el bucket de altitud. El valor de carreras sigue siendo un proxy de pesos fijos.")
@@ -95,9 +97,19 @@ with tab_sim:
     physical_col.metric("Velocidad de salida física, dado contacto", f"{result['pred_exit_speed_given_in_play']:.1f} mph")
     contextual_col.metric("Velocidad de salida con ubicación, dado contacto", f"{result['pred_exit_speed_contextual']:.1f} mph")
     st.caption("La segunda estimación conoce ubicación, conteo y lado del bateador. No participa en Stuff+ y no es directamente comparable con una predicción solo física.")
-    st.dataframe(pd.DataFrame({"Predicción": ["Whiff por pitch", "Whiff dado swing", "Bola en juego", "Jonrón por pitch"],
-                               "Probabilidad": [result[c] for c in ["p_whiff", "p_whiff_given_swing", "p_ball_in_play", "p_home_run_per_pitch"]]}), hide_index=True)
-    st.caption("Las categorías de altitud no identifican estadios. Cambiarlas no simula automáticamente el cambio físico ni estima un efecto causal.")
+    from dashboard_revision_v8 import render_probabilities
+    render_probabilities(result)
+    if MODEL_VERSION == 8:
+        with st.expander("Por qué este lanzamiento obtiene ese Stuff+"):
+            from explicacion_simulador_v8 import explain_stuff
+            try:
+                base_score, explanation = explain_stuff(row, bundle, result.stuff_plus, result.score_reference_id)
+                st.write(f"Referencia del modelo: {base_score:.2f} puntos; suma de aportes: {explanation.iloc[:,1].sum():+.2f}; Stuff+ reconstruido: {result.stuff_plus:.2f}.")
+                explanation = explanation.loc[explanation.iloc[:,1].abs().sort_values(ascending=False).index]
+                st.dataframe(explanation, hide_index=True, width="stretch")
+                st.caption("SHAP explica la predicción física para estas mediciones y el perfil histórico elegido. Un aporte positivo aumenta Stuff+ respecto al valor base. No estima el efecto causal de cambiar una variable.")
+            except ValueError as exc:
+                st.info(str(exc))
 with tab_rank:
     path = OUTPUT / "arsenal_con_incertidumbre.csv"
     if not path.exists():

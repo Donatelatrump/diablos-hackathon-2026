@@ -1,0 +1,958 @@
+{
+  "sha": "b01e227c6b76b7ab494a8b99d7898740e20e76f0",
+  "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/b01e227c6b76b7ab494a8b99d7898740e20e76f0",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b282315eb9ff741ca14c286b81d59d02b75852fa",
+      "size": 323,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/b282315eb9ff741ca14c286b81d59d02b75852fa"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a903740152e254357f535e07a3d757337bd450cc",
+      "size": 6048,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/a903740152e254357f535e07a3d757337bd450cc"
+    },
+    {
+      "path": "app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a300053166bef88e490f3d2d5aaff16030336808",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/a300053166bef88e490f3d2d5aaff16030336808"
+    },
+    {
+      "path": "app/candidatos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "903064597281ce35a8e288a53fcf58650a57e9a9",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/903064597281ce35a8e288a53fcf58650a57e9a9"
+    },
+    {
+      "path": "app/candidatos/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9004182b0a2c495049b664f722dac057af84143",
+      "size": 318,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/a9004182b0a2c495049b664f722dac057af84143"
+    },
+    {
+      "path": "app/fisica",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2eaf955a684f622355efdc03bf846d1785c66aa7",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/2eaf955a684f622355efdc03bf846d1785c66aa7"
+    },
+    {
+      "path": "app/fisica/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a722471ecc227f369465e62d60aa9f5faefb7a36",
+      "size": 214,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/a722471ecc227f369465e62d60aa9f5faefb7a36"
+    },
+    {
+      "path": "app/globals.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a58b78c8b4a4c52e3526f80adbd6e70e1a0e468e",
+      "size": 14001,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/a58b78c8b4a4c52e3526f80adbd6e70e1a0e468e"
+    },
+    {
+      "path": "app/icon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d371be7e567810b3b4917a7382d4e2a29727ff1d",
+      "size": 285,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/d371be7e567810b3b4917a7382d4e2a29727ff1d"
+    },
+    {
+      "path": "app/layout.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3bc3d0674307a80524ee2561323ef578bb9d219",
+      "size": 1198,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e3bc3d0674307a80524ee2561323ef578bb9d219"
+    },
+    {
+      "path": "app/modelo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c464c9762c63c0417baf192ef264368f60a6af69",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/c464c9762c63c0417baf192ef264368f60a6af69"
+    },
+    {
+      "path": "app/modelo/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db9ce56460d0233c595ec1cbcf6aee7caf93b9a9",
+      "size": 219,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/db9ce56460d0233c595ec1cbcf6aee7caf93b9a9"
+    },
+    {
+      "path": "app/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f9596068ba389770c8e0f909a8880d7de2534d4",
+      "size": 106,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/2f9596068ba389770c8e0f909a8880d7de2534d4"
+    },
+    {
+      "path": "app/pitchers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8afa8c61728bd5e27f7be57af4d235eded60ba44",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/8afa8c61728bd5e27f7be57af4d235eded60ba44"
+    },
+    {
+      "path": "app/pitchers/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcaa1c0420169becc6a879c2020b71e409bad5d5",
+      "size": 314,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/dcaa1c0420169becc6a879c2020b71e409bad5d5"
+    },
+    {
+      "path": "app/reporte",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40bf8d8302b8569ed11551df23bf8bca5c2442bf",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/40bf8d8302b8569ed11551df23bf8bca5c2442bf"
+    },
+    {
+      "path": "app/reporte/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa866d29a00a1797f9f6ff546a72391e0b8b74c6",
+      "size": 1047,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/aa866d29a00a1797f9f6ff546a72391e0b8b74c6"
+    },
+    {
+      "path": "app/simulador",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc23e74440b76fb2e4ae5b9fad1599fb2a9e828f",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/fc23e74440b76fb2e4ae5b9fad1599fb2a9e828f"
+    },
+    {
+      "path": "app/simulador/page.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4da64c8acee07d61540fd03271a4b31e8260757a",
+      "size": 305,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/4da64c8acee07d61540fd03271a4b31e8260757a"
+    },
+    {
+      "path": "components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "159715fc40291ab7ad370ca441fbf90a69848bf5",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/159715fc40291ab7ad370ca441fbf90a69848bf5"
+    },
+    {
+      "path": "components/DataProvider.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70f4d4cc17a3df197797197e631a934fb1606779",
+      "size": 1009,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/70f4d4cc17a3df197797197e631a934fb1606779"
+    },
+    {
+      "path": "components/calculo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f866d23ae6ff5ead4f673b63a0094d92c3099ef0",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/f866d23ae6ff5ead4f673b63a0094d92c3099ef0"
+    },
+    {
+      "path": "components/calculo/stuff.worker.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e170b6e3a66dad632e21c5f041dd1069e3f275c",
+      "size": 1357,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/1e170b6e3a66dad632e21c5f041dd1069e3f275c"
+    },
+    {
+      "path": "components/calculo/useCalculo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62c17cd173a421c35a220bb287412c8f88f0112a",
+      "size": 4549,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/62c17cd173a421c35a220bb287412c8f88f0112a"
+    },
+    {
+      "path": "components/candidatos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd213d12f7e48f3350f04d0581d3bf15a3bd8c98",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/cd213d12f7e48f3350f04d0581d3bf15a3bd8c98"
+    },
+    {
+      "path": "components/candidatos/ArsenalEditor.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a6294764e9e44454b99d6c156dc3c7d4afe9480",
+      "size": 7434,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/5a6294764e9e44454b99d6c156dc3c7d4afe9480"
+    },
+    {
+      "path": "components/candidatos/ArsenalResultView.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3da6920aaf15c874b5ce05dafe19ca02a643b43c",
+      "size": 5482,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/3da6920aaf15c874b5ce05dafe19ca02a643b43c"
+    },
+    {
+      "path": "components/candidatos/Candidatos.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d8e6e884bf02e087e35dee2cf4a2da759ca4777",
+      "size": 8393,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/7d8e6e884bf02e087e35dee2cf4a2da759ca4777"
+    },
+    {
+      "path": "components/candidatos/Comparison.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e7af83ffb8795855aaf608233e64316050860cf",
+      "size": 3483,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/7e7af83ffb8795855aaf608233e64316050860cf"
+    },
+    {
+      "path": "components/candidatos/draft.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e48dab4eca7b4c559e90595ba687f03798c661f6",
+      "size": 3840,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e48dab4eca7b4c559e90595ba687f03798c661f6"
+    },
+    {
+      "path": "components/candidatos/useCandidatosData.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42d0945e1d31ebdb2a094bdfa7d47c928bdeebf1",
+      "size": 714,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/42d0945e1d31ebdb2a094bdfa7d47c928bdeebf1"
+    },
+    {
+      "path": "components/consola",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13b6b88c9d4f820e47ac3f4a829ac190b83b8f72",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/13b6b88c9d4f820e47ac3f4a829ac190b83b8f72"
+    },
+    {
+      "path": "components/consola/BarraLateral.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d00c6f0aa2ffa4a9f13bbd814a07dab6c739aa7",
+      "size": 1960,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/3d00c6f0aa2ffa4a9f13bbd814a07dab6c739aa7"
+    },
+    {
+      "path": "components/consola/Campo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b18d96bffa9d2f9547af47b0181805609e8558a",
+      "size": 1074,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/1b18d96bffa9d2f9547af47b0181805609e8558a"
+    },
+    {
+      "path": "components/consola/Iconos.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3e84745b4db0f8b126ca577e34e9bd0f92dd3d0",
+      "size": 1891,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e3e84745b4db0f8b126ca577e34e9bd0f92dd3d0"
+    },
+    {
+      "path": "components/consola/LineScore.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58d492a562b00eac2d3417585f559b8a8a8feddd",
+      "size": 2020,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/58d492a562b00eac2d3417585f559b8a8a8feddd"
+    },
+    {
+      "path": "components/consola/Palancas.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a32748f3a9f5fb4e83568517ccc96219c9a06ea",
+      "size": 2480,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/7a32748f3a9f5fb4e83568517ccc96219c9a06ea"
+    },
+    {
+      "path": "components/consola/Panel.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddbd222961bad26a0fef96d1b56edbca55cf3e34",
+      "size": 2325,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/ddbd222961bad26a0fef96d1b56edbca55cf3e34"
+    },
+    {
+      "path": "components/consola/Vista.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f012c84a31f9c3c426d72c43a6984252a4bcc67",
+      "size": 1137,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/7f012c84a31f9c3c426d72c43a6984252a4bcc67"
+    },
+    {
+      "path": "components/consola/textos.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa416a6d15a4d9119f2f79135d523bf02f558ab4",
+      "size": 740,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/aa416a6d15a4d9119f2f79135d523bf02f558ab4"
+    },
+    {
+      "path": "components/fisica",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a4498766147780e1cd8a35a5d737a4b18097644",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/5a4498766147780e1cd8a35a5d737a4b18097644"
+    },
+    {
+      "path": "components/fisica/Contacto.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10dbfe3569f3d650f890a4a527cabedc9241a21d",
+      "size": 3937,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/10dbfe3569f3d650f890a4a527cabedc9241a21d"
+    },
+    {
+      "path": "components/fisica/Hipotesis.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93c331f21e25ce2d391c66a5648e6cc681e37b0d",
+      "size": 4099,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/93c331f21e25ce2d391c66a5648e6cc681e37b0d"
+    },
+    {
+      "path": "components/fisica/Physics.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "319c588d0a3276413c44b8696e012cd9d20135b4",
+      "size": 10780,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/319c588d0a3276413c44b8696e012cd9d20135b4"
+    },
+    {
+      "path": "components/fisica/Rodados.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "161c03977e015ca52cad385f0d063e3f74c82a6d",
+      "size": 1331,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/161c03977e015ca52cad385f0d063e3f74c82a6d"
+    },
+    {
+      "path": "components/home",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2159c0e071401d0b95a2d970dff33304cd463ce3",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/2159c0e071401d0b95a2d970dff33304cd463ce3"
+    },
+    {
+      "path": "components/home/Home.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d7381d18d3dbde90426535962f8ae886a0cd017",
+      "size": 5779,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8d7381d18d3dbde90426535962f8ae886a0cd017"
+    },
+    {
+      "path": "components/modelo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c63fe09a6588e50f30af60996ccf4e63c6b38d3",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/8c63fe09a6588e50f30af60996ccf4e63c6b38d3"
+    },
+    {
+      "path": "components/modelo/FieldMeaning.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c49bb52ca64b13924f01c185bcfbd9fd88a9391",
+      "size": 2500,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8c49bb52ca64b13924f01c185bcfbd9fd88a9391"
+    },
+    {
+      "path": "components/modelo/ModelView.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8629acf30b9d9e65c5bd384224e7f0a4330e1ce2",
+      "size": 11959,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8629acf30b9d9e65c5bd384224e7f0a4330e1ce2"
+    },
+    {
+      "path": "components/modelo/ProjectionCheck.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aad3d14723f2f1b337a2d1b9ba43d5606bc3e201",
+      "size": 7104,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/aad3d14723f2f1b337a2d1b9ba43d5606bc3e201"
+    },
+    {
+      "path": "components/modelo/Validaciones.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d06f9ecb5a9f4b707515d19c8ea472771d3f61f",
+      "size": 3918,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8d06f9ecb5a9f4b707515d19c8ea472771d3f61f"
+    },
+    {
+      "path": "components/pitchers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d69c353a29f09712cba360ee56da964a33efb241",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/d69c353a29f09712cba360ee56da964a33efb241"
+    },
+    {
+      "path": "components/pitchers/PitchersBoard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11176243f76115ccdf1853e7014ae5ead6a4a8c7",
+      "size": 14048,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/11176243f76115ccdf1853e7014ae5ead6a4a8c7"
+    },
+    {
+      "path": "components/reporte",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b082ed11249838cffbb2d540e3b0c2defa8bfb4",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/2b082ed11249838cffbb2d540e3b0c2defa8bfb4"
+    },
+    {
+      "path": "components/reporte/ReportFrame.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d07e108c1b4b01964a85a703c8a18124173682a",
+      "size": 1267,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/1d07e108c1b4b01964a85a703c8a18124173682a"
+    },
+    {
+      "path": "components/reporte/ruta.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f16a9bf3a85fae9d8b7f0e46e7d429025ce2a2dd",
+      "size": 260,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/f16a9bf3a85fae9d8b7f0e46e7d429025ce2a2dd"
+    },
+    {
+      "path": "components/simulador",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb152bf2ba89da3aeb84b74d2aa40219fcf90e5c",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/eb152bf2ba89da3aeb84b74d2aa40219fcf90e5c"
+    },
+    {
+      "path": "components/simulador/MovementMap.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab991fdea40fb9256de2d5f908733cfccded6f57",
+      "size": 7968,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/ab991fdea40fb9256de2d5f908733cfccded6f57"
+    },
+    {
+      "path": "components/simulador/Simulator.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66c8a6797676d070e95a557775b1454941d9f78a",
+      "size": 20073,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/66c8a6797676d070e95a557775b1454941d9f78a"
+    },
+    {
+      "path": "components/simulador/enlace.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09bf3964dd1f54264b5ffaa34e8f66ca322879da",
+      "size": 1839,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/09bf3964dd1f54264b5ffaa34e8f66ca322879da"
+    },
+    {
+      "path": "components/useJson.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83bad19283b43449b1043fdf889d401665badd6",
+      "size": 1083,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/d83bad19283b43449b1043fdf889d401665badd6"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d624b402860b347180b361cd2fae6b6d3d90d7e1",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/d624b402860b347180b361cd2fae6b6d3d90d7e1"
+    },
+    {
+      "path": "docs/dashboard.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77902effa391d9f03b68d3f7f31d5c9058df438d",
+      "size": 9915,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/77902effa391d9f03b68d3f7f31d5c9058df438d"
+    },
+    {
+      "path": "docs/diseno.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3545e709ad3f907550e321ecd7a890430f8d8da4",
+      "size": 4225,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/3545e709ad3f907550e321ecd7a890430f8d8da4"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05e726d1b4201bc8c7716d2b058279676582e8c0",
+      "size": 465,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/05e726d1b4201bc8c7716d2b058279676582e8c0"
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "257c421c4b7ee9c36f2270d49620fdb4389df4ca",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/257c421c4b7ee9c36f2270d49620fdb4389df4ca"
+    },
+    {
+      "path": "lib/arsenal.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5aa7d34b7315b3d2270da6b4d528435f989665a5",
+      "size": 9784,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/5aa7d34b7315b3d2270da6b4d528435f989665a5"
+    },
+    {
+      "path": "lib/data.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35d8cabb451986e0d7cf8bd1c61ee33fe2b77918",
+      "size": 4308,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/35d8cabb451986e0d7cf8bd1c61ee33fe2b77918"
+    },
+    {
+      "path": "lib/format.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbfe9475c5bf7174f43d7853af13ddb9a72f7c0e",
+      "size": 2529,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/bbfe9475c5bf7174f43d7853af13ddb9a72f7c0e"
+    },
+    {
+      "path": "lib/simulator.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebea4cfcac67e2892e156eff2e1400b981ff3b1a",
+      "size": 8840,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/ebea4cfcac67e2892e156eff2e1400b981ff3b1a"
+    },
+    {
+      "path": "lib/stuffModel.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cb723104086441335c33a7b87d8baeb4c7ca421",
+      "size": 751,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/0cb723104086441335c33a7b87d8baeb4c7ca421"
+    },
+    {
+      "path": "next.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58fc79989512ad70da2fa945659695f10d39bc71",
+      "size": 379,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/58fc79989512ad70da2fa945659695f10d39bc71"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c50878993470260d7628fc52bd1306f1a55e4fc",
+      "size": 264601,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8c50878993470260d7628fc52bd1306f1a55e4fc"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c355640d36c804bd4de42231278a0df4a74a0b74",
+      "size": 742,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/c355640d36c804bd4de42231278a0df4a74a0b74"
+    },
+    {
+      "path": "pipeline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe14bbb63d9a399afd6adf05024818002945b970",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/fe14bbb63d9a399afd6adf05024818002945b970"
+    },
+    {
+      "path": "pipeline/01_target.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5372fccdc8e409fb70e888ef9dcd70547c78669",
+      "size": 6111,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e5372fccdc8e409fb70e888ef9dcd70547c78669"
+    },
+    {
+      "path": "pipeline/02_features.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f1411d980058cc38df1164a5ae46b56ec798bde",
+      "size": 3768,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8f1411d980058cc38df1164a5ae46b56ec798bde"
+    },
+    {
+      "path": "pipeline/03_model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df1d60083fbc6d4227d01b36ad6195c4555a9e2d",
+      "size": 6336,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/df1d60083fbc6d4227d01b36ad6195c4555a9e2d"
+    },
+    {
+      "path": "pipeline/04_small_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2414e662f260a3c45115cd421a09a5e6f1cf28ad",
+      "size": 1451,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/2414e662f260a3c45115cd421a09a5e6f1cf28ad"
+    },
+    {
+      "path": "pipeline/05_results.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c9510da8a0b8fca4188bfa043610d36f1b8e3fe",
+      "size": 7025,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/0c9510da8a0b8fca4188bfa043610d36f1b8e3fe"
+    },
+    {
+      "path": "pipeline/06_export.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32af4492e6af88f85de4bcc9a9fbeaa48de6926b",
+      "size": 10491,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/32af4492e6af88f85de4bcc9a9fbeaa48de6926b"
+    },
+    {
+      "path": "pipeline/07_validate_projection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ff06317d897bdd7088cf131c780766eb03347e2",
+      "size": 5346,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/4ff06317d897bdd7088cf131c780766eb03347e2"
+    },
+    {
+      "path": "pipeline/08_calibration.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87417a746928e9057c0d00548467210d3f00f4a5",
+      "size": 3229,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/87417a746928e9057c0d00548467210d3f00f4a5"
+    },
+    {
+      "path": "pipeline/09_levers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e77236412455074242084546027505e82ceb353",
+      "size": 2736,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/1e77236412455074242084546027505e82ceb353"
+    },
+    {
+      "path": "pipeline/10_arsenal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe024d1be25aa22548f33ee813bd597b78ae9ab9",
+      "size": 8726,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/fe024d1be25aa22548f33ee813bd597b78ae9ab9"
+    },
+    {
+      "path": "pipeline/11_contacto.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32e8c146fa012108cfc534089932f17171673b58",
+      "size": 5362,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/32e8c146fa012108cfc534089932f17171673b58"
+    },
+    {
+      "path": "pipeline/12_movement_map.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4181797c2a63971b122a4312e67c1ea6bc681228",
+      "size": 2292,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/4181797c2a63971b122a4312e67c1ea6bc681228"
+    },
+    {
+      "path": "pipeline/13_robustez.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b963240f832cc15c7af2ddf95178af7c09e39b7",
+      "size": 5411,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/7b963240f832cc15c7af2ddf95178af7c09e39b7"
+    },
+    {
+      "path": "pipeline/13b_park_estricto.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bb28d6403feeed367a53598f370323937077f07",
+      "size": 2477,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/9bb28d6403feeed367a53598f370323937077f07"
+    },
+    {
+      "path": "pipeline/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1110f978c66c45c3135da71cb00b4ca2a2249dd6",
+      "size": 2257,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/1110f978c66c45c3135da71cb00b4ca2a2249dd6"
+    },
+    {
+      "path": "pipeline/densidad_altitud.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4cf104be5b35864ed975a1a8ef15eab8e07274a",
+      "size": 5121,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e4cf104be5b35864ed975a1a8ef15eab8e07274a"
+    },
+    {
+      "path": "pipeline/exponentes.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e41893e6034562698a8f428241a7722ee181f06",
+      "size": 1752,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/9e41893e6034562698a8f428241a7722ee181f06"
+    },
+    {
+      "path": "pipeline/gen_reporte.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36fbc629b764e6f37517a07a8e318d54e9bc5447",
+      "size": 26678,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/36fbc629b764e6f37517a07a8e318d54e9bc5447"
+    },
+    {
+      "path": "pipeline/reporte_css.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca400c54b8cbccf1de5c443a64781f33a8af1479",
+      "size": 3735,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/ca400c54b8cbccf1de5c443a64781f33a8af1479"
+    },
+    {
+      "path": "pipeline/simcore.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4114451036cc7ee3a63d955302d8674e4e4c8e9d",
+      "size": 4253,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/4114451036cc7ee3a63d955302d8674e4e4c8e9d"
+    },
+    {
+      "path": "pipeline/simulador_trayectoria.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1141b4267c3bbdf3a45000818886e1d73232cb0d",
+      "size": 8139,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/1141b4267c3bbdf3a45000818886e1d73232cb0d"
+    },
+    {
+      "path": "pipeline/verificacion_sin_etiquetas.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5044ffd8d22190e8669ab1c1cc91bdec47913648",
+      "size": 8158,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/5044ffd8d22190e8669ab1c1cc91bdec47913648"
+    },
+    {
+      "path": "public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1c415c9be1b6d80261e85115a11dc4b167d29aa",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/b1c415c9be1b6d80261e85115a11dc4b167d29aa"
+    },
+    {
+      "path": "public/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1e03857fd8989782f24bf6264667973a592a92a",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/b1e03857fd8989782f24bf6264667973a592a92a"
+    },
+    {
+      "path": "public/data/arsenal.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ff022a6e1ecd9ecbc14bd67a5fd3c3d335f00f0",
+      "size": 1050204,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/5ff022a6e1ecd9ecbc14bd67a5fd3c3d335f00f0"
+    },
+    {
+      "path": "public/data/arsenal_ref.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73849d57e2351f5f6213553e11824bc7e370c22f",
+      "size": 60131,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/73849d57e2351f5f6213553e11824bc7e370c22f"
+    },
+    {
+      "path": "public/data/arsenal_validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3545bf5c47f0a345369761e07c180332f128d4f",
+      "size": 455,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/b3545bf5c47f0a345369761e07c180332f128d4f"
+    },
+    {
+      "path": "public/data/meta.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "188b4d485464ba67952000196c314620115d52e3",
+      "size": 75371,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/188b4d485464ba67952000196c314620115d52e3"
+    },
+    {
+      "path": "public/data/model.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5802d0386a7345fb3e50f80f8ce4a1b0ed1770a",
+      "size": 580423,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e5802d0386a7345fb3e50f80f8ce4a1b0ed1770a"
+    },
+    {
+      "path": "public/data/movement_map.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5830df36946dd2fb4a90011025070951390c755f",
+      "size": 204608,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/5830df36946dd2fb4a90011025070951390c755f"
+    },
+    {
+      "path": "public/data/pitchers.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a8177e0aa94a89e759f99dfd1c583ed36744254",
+      "size": 154965,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/2a8177e0aa94a89e759f99dfd1c583ed36744254"
+    },
+    {
+      "path": "public/reporte.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d18a3eb84dbdb84170744a97bdc1b3dd60656b7",
+      "size": 26305,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8d18a3eb84dbdb84170744a97bdc1b3dd60656b7"
+    },
+    {
+      "path": "public/reporte.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2ec6af4d14123058ce8eb68ff223ef98fbece97",
+      "size": 270213,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/d2ec6af4d14123058ce8eb68ff223ef98fbece97"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9610d18cafaebdaaabd690ec3486818ee827aeb1",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/9610d18cafaebdaaabd690ec3486818ee827aeb1"
+    },
+    {
+      "path": "scripts/build-arsenal-ref.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3389fe0e54c420062681543b255a5f8bff129484",
+      "size": 1926,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/3389fe0e54c420062681543b255a5f8bff129484"
+    },
+    {
+      "path": "scripts/check-fixtures.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bdc30f113748166a44a203333684d5f82781b6e",
+      "size": 4530,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/2bdc30f113748166a44a203333684d5f82781b6e"
+    },
+    {
+      "path": "scripts/publicar-reporte.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15215d602f2f66d166ae89358b0d6568e5048720",
+      "size": 858,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/15215d602f2f66d166ae89358b0d6568e5048720"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1922cf7978cacf7a52ac251657c41a7a65b9d416",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/1922cf7978cacf7a52ac251657c41a7a65b9d416"
+    },
+    {
+      "path": "tests/arsenal_fixtures.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3f58b0dd00db19f95f6c82fb2f07927b2d3fde2",
+      "size": 4311,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/e3f58b0dd00db19f95f6c82fb2f07927b2d3fde2"
+    },
+    {
+      "path": "tests/fixtures.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bd8033e5cecd797d1a4495baaafe62352c6434c",
+      "size": 1499,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/0bd8033e5cecd797d1a4495baaafe62352c6434c"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "287e2ff2fe7fa8b9e58d387193d27e6cfaf225e1",
+      "size": 741,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/287e2ff2fe7fa8b9e58d387193d27e6cfaf225e1"
+    },
+    {
+      "path": "types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6af03cebecf1376feb461cd8027c77d525ba7eda",
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/trees/6af03cebecf1376feb461cd8027c77d525ba7eda"
+    },
+    {
+      "path": "types/candidatos.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c7e5fa31af5976cb0823cd6db66ced8903df8fb",
+      "size": 916,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/5c7e5fa31af5976cb0823cd6db66ced8903df8fb"
+    },
+    {
+      "path": "types/convocatoria.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ef8b56446d7e57d5ff11e3f3b96cdf0a96ffe16",
+      "size": 2665,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/8ef8b56446d7e57d5ff11e3f3b96cdf0a96ffe16"
+    },
+    {
+      "path": "types/resultados.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb796d264e335d891fb89986151665ffc92a98b4",
+      "size": 2307,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/eb796d264e335d891fb89986151665ffc92a98b4"
+    },
+    {
+      "path": "vercel.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cbe297b33587a57ac255325eb1507326e11dfcc",
+      "size": 141,
+      "url": "https://api.github.com/repos/MVelascoWS/stuffplus-lmb/git/blobs/0cbe297b33587a57ac255325eb1507326e11dfcc"
+    }
+  ],
+  "truncated": false
+}

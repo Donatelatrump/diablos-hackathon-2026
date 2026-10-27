@@ -1,0 +1,100 @@
+{
+  "sha": "ae2feb5f5259b993fbfb3a6a650074c6b612eff1",
+  "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/trees/ae2feb5f5259b993fbfb3a6a650074c6b612eff1",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c7d83a3838b3e47b1b474789bfb6009a1a959b",
+      "size": 12,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/c4c7d83a3838b3e47b1b474789bfb6009a1a959b"
+    },
+    {
+      "path": "Data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6abb2542ae3393866f8aafd69c2d95aecb6cd69",
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/trees/b6abb2542ae3393866f8aafd69c2d95aecb6cd69"
+    },
+    {
+      "path": "Data/baseline_xRunValue.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7ed53bc9879c0fbf50d9d54cebbb9aadf112b71",
+      "size": 290,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/a7ed53bc9879c0fbf50d9d54cebbb9aadf112b71"
+    },
+    {
+      "path": "Data/stuff_plus_data_dictionary.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c891a256c75013079d9607f4952661f75c542e14",
+      "size": 12438,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/c891a256c75013079d9607f4952661f75c542e14"
+    },
+    {
+      "path": "Documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f93e3a1a1525fb5b91020da86e44810c87a2d7bc",
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/trees/f93e3a1a1525fb5b91020da86e44810c87a2d7bc"
+    },
+    {
+      "path": "Documents/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "Models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "705cf93093bb7636698c1170bb8c4cc236dba694",
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/trees/705cf93093bb7636698c1170bb8c4cc236dba694"
+    },
+    {
+      "path": "Models/Baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe4139ca7d7091fb874e9b857c0278ecfa81a740",
+      "size": 1032,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/fe4139ca7d7091fb874e9b857c0278ecfa81a740"
+    },
+    {
+      "path": "Models/Extraction.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef7eaa923b6c60ad316ff2cbcb19d207e3e1328d",
+      "size": 2051,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/ef7eaa923b6c60ad316ff2cbcb19d207e3e1328d"
+    },
+    {
+      "path": "Models/Filter.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a0cac5be238c4b85a19b8785bea34d98e16c28",
+      "size": 340,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/c5a0cac5be238c4b85a19b8785bea34d98e16c28"
+    },
+    {
+      "path": "Models/RunValue.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be1adabc51d22afe636516981cfa0b1f8cd69fbd",
+      "size": 247,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/be1adabc51d22afe636516981cfa0b1f8cd69fbd"
+    },
+    {
+      "path": "Models/StandarD.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7555dc0b5fec157a05121ab12584cbe20c3fbdd",
+      "size": 2030,
+      "url": "https://api.github.com/repos/noelBanda/Hackathon-Diablos/git/blobs/d7555dc0b5fec157a05121ab12584cbe20c3fbdd"
+    }
+  ],
+  "truncated": false
+}

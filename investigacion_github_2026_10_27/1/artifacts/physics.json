@@ -1,0 +1,36 @@
+{
+  "n_pitches": 635002,
+  "rho_por_cubeta": {
+    "Extreme Altitude": 0.8534,
+    "Medium Altitude": 0.8981,
+    "No Altitude": 1.0003
+  },
+  "rho_nivel_mar": 1.0003,
+  "rho_altitud_extrema": 0.8534,
+  "altitud_harp_helu_m": 2240,
+  "magnus_gamma_vertical": 1.7,
+  "magnus_gamma_horizontal": 2.2,
+  "celdas_validacion": 911,
+  "celdas_holdout": 436,
+  "pitchers_cruce": 444,
+  "mae_holdout": {
+    "calibrado": {
+      "ivb": 0.8024,
+      "hb": 0.8751,
+      "zone_speed": 0.5737,
+      "vaa": 0.2558
+    },
+    "solo_densidad": {
+      "ivb": 1.1185,
+      "hb": 1.6123,
+      "zone_speed": 0.5781,
+      "vaa": 0.2202
+    },
+    "sin_transferir": {
+      "ivb": 2.5734,
+      "hb": 2.9324,
+      "zone_speed": 1.3226,
+      "vaa": 0.3114
+    }
+  }
+}
