@@ -1,0 +1,92 @@
+{
+  "Fastball-Ride": {
+    "ivb_ratio": 0.7679803817313594,
+    "hb_ratio": 0.7530381639029513,
+    "total_ratio": 0.7653118224375391,
+    "speeddrop_delta": -1.3658242291102425,
+    "medium": {
+      "ivb_ratio": 0.821407456779466,
+      "hb_ratio": 0.8018152797620909
+    }
+  },
+  "Fastball-Run": {
+    "ivb_ratio": 0.7628100059153062,
+    "hb_ratio": 0.7519622267350362,
+    "total_ratio": 0.7592749882611058,
+    "speeddrop_delta": -1.4082087006814947,
+    "medium": {
+      "ivb_ratio": 0.8236737641732231,
+      "hb_ratio": 0.814606029704281
+    }
+  },
+  "Fastball-Cut": {
+    "ivb_ratio": 0.7743690136189008,
+    "hb_ratio": 0.7179805741122887,
+    "total_ratio": 0.7720612360643839,
+    "speeddrop_delta": -1.2199506171428482,
+    "medium": {
+      "ivb_ratio": 0.8377117696479439,
+      "hb_ratio": 0.7887286276958877
+    }
+  },
+  "Sinker": {
+    "ivb_ratio": 0.7579245539639353,
+    "hb_ratio": 0.7311578309587738,
+    "total_ratio": 0.7422208035157976,
+    "speeddrop_delta": -1.3210551756123627,
+    "medium": {
+      "ivb_ratio": 0.8274981788706739,
+      "hb_ratio": 0.8107601507336736
+    }
+  },
+  "Changeup": {
+    "ivb_ratio": 0.7488800484796492,
+    "hb_ratio": 0.6792467081134882,
+    "total_ratio": 0.6956622462381199,
+    "speeddrop_delta": -1.1263329368512316,
+    "medium": {
+      "ivb_ratio": 0.7883250603507388,
+      "hb_ratio": 0.7811974369131927
+    }
+  },
+  "Slider-Gyro": {
+    "ivb_ratio": 0.8182448682714704,
+    "hb_ratio": 0.7540476073277241,
+    "total_ratio": 0.7540476073277241,
+    "speeddrop_delta": -0.8270044555133835,
+    "medium": {
+      "ivb_ratio": 0.83914061248649,
+      "hb_ratio": 0.7991130162562403
+    }
+  },
+  "Sweeper": {
+    "ivb_ratio": 0.7252498952654646,
+    "hb_ratio": 0.7226953250139759,
+    "total_ratio": 0.7252498952654646,
+    "speeddrop_delta": -0.7687548048658491,
+    "medium": {
+      "ivb_ratio": 0.79198295921339,
+      "hb_ratio": 0.7897593506284393
+    }
+  },
+  "Slurve": {
+    "ivb_ratio": 0.7451497480686606,
+    "hb_ratio": 0.7106829644555166,
+    "total_ratio": 0.7183393598826303,
+    "speeddrop_delta": -0.8162837465316316,
+    "medium": {
+      "ivb_ratio": 0.8524153418278274,
+      "hb_ratio": 0.8196678741766023
+    }
+  },
+  "Curveball": {
+    "ivb_ratio": 0.7132435305557555,
+    "hb_ratio": 0.6758527416008429,
+    "total_ratio": 0.7008806915997361,
+    "speeddrop_delta": -0.9871202979049502,
+    "medium": {
+      "ivb_ratio": 0.8222007078593405,
+      "hb_ratio": 0.7674464686666317
+    }
+  }
+}

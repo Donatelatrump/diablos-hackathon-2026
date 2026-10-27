@@ -1,0 +1,1206 @@
+{
+  "sha": "5b066b59770ac002d187792f99222570f40a8170",
+  "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/5b066b59770ac002d187792f99222570f40a8170",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92da7d726b1b96e30416a1cf175aab1f84f20c27",
+      "size": 630,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/92da7d726b1b96e30416a1cf175aab1f84f20c27"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d34a9437b5e06bd93abdf878988e05574116e73",
+      "size": 4968,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4d34a9437b5e06bd93abdf878988e05574116e73"
+    },
+    {
+      "path": "apis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab8784ffd57f65f4e3258d66ee612752bb3aa538",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/ab8784ffd57f65f4e3258d66ee612752bb3aa538"
+    },
+    {
+      "path": "apis/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8033ddb9f358725e39719f4eda6fdd070901055",
+      "size": 3428,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/c8033ddb9f358725e39719f4eda6fdd070901055"
+    },
+    {
+      "path": "apis/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "513b34db8c06c1c5249be35304b37ff83b1e9d14",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/513b34db8c06c1c5249be35304b37ff83b1e9d14"
+    },
+    {
+      "path": "apis/api/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75c2359674f9d40b546467f3fefc8e8905a3df32",
+      "size": 385,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/75c2359674f9d40b546467f3fefc8e8905a3df32"
+    },
+    {
+      "path": "apis/api/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97209d0a6bcad4b56b1c6fa6283c60743c9245a6",
+      "size": 3682,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/97209d0a6bcad4b56b1c6fa6283c60743c9245a6"
+    },
+    {
+      "path": "apis/api/cliente.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb78ad3df60a24fe105cc31302551cded762319e",
+      "size": 6635,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/fb78ad3df60a24fe105cc31302551cded762319e"
+    },
+    {
+      "path": "apis/api/convertir_pickle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b614450c6b4e7ece59172b4a4f8c606eafb9ef",
+      "size": 2711,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/33b614450c6b4e7ece59172b4a4f8c606eafb9ef"
+    },
+    {
+      "path": "apis/api/iniciar.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8911ba4d6808f8da96115629f0a77456dbccb08b",
+      "size": 1042,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8911ba4d6808f8da96115629f0a77456dbccb08b"
+    },
+    {
+      "path": "apis/api/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e69b8d6085d42e8c03fbb2ccf2c0728c821a2e5",
+      "size": 17165,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8e69b8d6085d42e8c03fbb2ccf2c0728c821a2e5"
+    },
+    {
+      "path": "apis/api/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "568eff645293f6d1b3a48353c34a23749460c5a5",
+      "size": 449,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/568eff645293f6d1b3a48353c34a23749460c5a5"
+    },
+    {
+      "path": "apis/api/test_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dff4e664f9e273c093a983aa2f43f000ddd5aa04",
+      "size": 3199,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/dff4e664f9e273c093a983aa2f43f000ddd5aa04"
+    },
+    {
+      "path": "apis/api2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "258d65f48a29d3444c0206be2fdbd48972d67591",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/258d65f48a29d3444c0206be2fdbd48972d67591"
+    },
+    {
+      "path": "apis/api2/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "450cb9897d75459c45cd570af19002f2dd976602",
+      "size": 604,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/450cb9897d75459c45cd570af19002f2dd976602"
+    },
+    {
+      "path": "apis/api2/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0432e9fb1061fdcc07bbdb4128a52c98bea5bea4",
+      "size": 3728,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0432e9fb1061fdcc07bbdb4128a52c98bea5bea4"
+    },
+    {
+      "path": "apis/api2/iniciar.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "8cc271be3bd7a27dc44df2c2622a341c93987784",
+      "size": 1064,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8cc271be3bd7a27dc44df2c2622a341c93987784"
+    },
+    {
+      "path": "apis/api2/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35720d64d3106550b99f9d5141a76e620b22cfb7",
+      "size": 15551,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/35720d64d3106550b99f9d5141a76e620b22cfb7"
+    },
+    {
+      "path": "apis/api2/migrar_resultados.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0d7abeec939deb9df778816f7f56457df6bf3a0",
+      "size": 2045,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/d0d7abeec939deb9df778816f7f56457df6bf3a0"
+    },
+    {
+      "path": "apis/api2/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d53070d936933f4fac824ebe0f771d402c56f30",
+      "size": 440,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/5d53070d936933f4fac824ebe0f771d402c56f30"
+    },
+    {
+      "path": "apis/api2/test_api.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fdb46ea8a6dfa3cf01d89d0d41fd6a6f498961f",
+      "size": 5040,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4fdb46ea8a6dfa3cf01d89d0d41fd6a6f498961f"
+    },
+    {
+      "path": "apis/correr_modelos.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "aea867bcfa057487e6f01c99f7a737debf2598cb",
+      "size": 3131,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/aea867bcfa057487e6f01c99f7a737debf2598cb"
+    },
+    {
+      "path": "apis/correr_notebook.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b980b45a4498c4c591d9f2a2247dd8e544d82b00",
+      "size": 1803,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/b980b45a4498c4c591d9f2a2247dd8e544d82b00"
+    },
+    {
+      "path": "apis/iniciar_todo.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "1be373297db6a2a9efbbbce12e63c89fa8196279",
+      "size": 2307,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/1be373297db6a2a9efbbbce12e63c89fa8196279"
+    },
+    {
+      "path": "apis/instalar.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "34ca49b7fcfcdec2e4b6c93ccf377f4b8a9cc8fb",
+      "size": 4200,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/34ca49b7fcfcdec2e4b6c93ccf377f4b8a9cc8fb"
+    },
+    {
+      "path": "documento_tecnico",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25665bad809d15dd5fbfe51bcca27579cea3f34c",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/25665bad809d15dd5fbfe51bcca27579cea3f34c"
+    },
+    {
+      "path": "documento_tecnico/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72a288fc6933cf13733fea092a8aafc15b36e25f",
+      "size": 304,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/72a288fc6933cf13733fea092a8aafc15b36e25f"
+    },
+    {
+      "path": "flujo_datos.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af7ed2e72bdeeb9cef5b08c6884d499d72d74500",
+      "size": 80282,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/af7ed2e72bdeeb9cef5b08c6884d499d72d74500"
+    },
+    {
+      "path": "modelos",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfd00396d33f4df0335c17c57aa4505be58f2133",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/bfd00396d33f4df0335c17c57aa4505be58f2133"
+    },
+    {
+      "path": "modelos/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bad767d664f166d328610f592b735ce3b737cb06",
+      "size": 5300,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/bad767d664f166d328610f592b735ce3b737cb06"
+    },
+    {
+      "path": "modelos/bayesball",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8aef0d5e9c7261c6c8abf02524c43ccc0b8896c",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/c8aef0d5e9c7261c6c8abf02524c43ccc0b8896c"
+    },
+    {
+      "path": "modelos/bayesball/BayesBall.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c35a6af6359e6244e5178a33558486aa5bc5c8",
+      "size": 23963,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/28c35a6af6359e6244e5178a33558486aa5bc5c8"
+    },
+    {
+      "path": "modelos/bayesball/bayesian_resolvability.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfa6f004ce77aa661d933ea8a019cd1f5ddb14dc",
+      "size": 15804,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/dfa6f004ce77aa661d933ea8a019cd1f5ddb14dc"
+    },
+    {
+      "path": "modelos/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3f05b4c92e67a9127efc7d35818082d1512049b",
+      "size": 623,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/c3f05b4c92e67a9127efc7d35818082d1512049b"
+    },
+    {
+      "path": "modelos/stuff_plus",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a6993c414baa6fe9ba1a1ab8b13b32a041441cb",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/4a6993c414baa6fe9ba1a1ab8b13b32a041441cb"
+    },
+    {
+      "path": "modelos/stuff_plus/StuffPlus.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b0d2e03dd428858a5037fdd18a97df7300aabc1",
+      "size": 89880,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/3b0d2e03dd428858a5037fdd18a97df7300aabc1"
+    },
+    {
+      "path": "webapp",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "833ceaae7422537ff17c6722d042ab119e161f0a",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/833ceaae7422537ff17c6722d042ab119e161f0a"
+    },
+    {
+      "path": "webapp/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea7259889f6fc44a0cf06f75e4d6b12b8afc014",
+      "size": 308,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/cea7259889f6fc44a0cf06f75e4d6b12b8afc014"
+    },
+    {
+      "path": "webapp/CONTRATO_API2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48803c2a700ab73f43e12ef53a1e1034ee101259",
+      "size": 5088,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/48803c2a700ab73f43e12ef53a1e1034ee101259"
+    },
+    {
+      "path": "webapp/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9db6e727be9ff4fa8d1674cb3caced68ac994d2",
+      "size": 7009,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/d9db6e727be9ff4fa8d1674cb3caced68ac994d2"
+    },
+    {
+      "path": "webapp/backend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e0e3f2917cc0987519db49a8e8751cbbc889de0",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/2e0e3f2917cc0987519db49a8e8751cbbc889de0"
+    },
+    {
+      "path": "webapp/backend/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0799326e3432c95ee2f41d4242490f3b4161753e",
+      "size": 491,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0799326e3432c95ee2f41d4242490f3b4161753e"
+    },
+    {
+      "path": "webapp/backend/app",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d541100704e49717041b70c9f3df30148b7038c2",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/d541100704e49717041b70c9f3df30148b7038c2"
+    },
+    {
+      "path": "webapp/backend/app/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "webapp/backend/app/bullpen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6586df2647a65568873bd798ebb6fcc4db9cf78c",
+      "size": 7978,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/6586df2647a65568873bd798ebb6fcc4db9cf78c"
+    },
+    {
+      "path": "webapp/backend/app/fuentes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f3b31c5d03a5fa90360ea58294c799718f27f10",
+      "size": 5152,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0f3b31c5d03a5fa90360ea58294c799718f27f10"
+    },
+    {
+      "path": "webapp/backend/app/main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b047aa05bc688ac96e5a8afa718890036f3a62a",
+      "size": 5764,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/5b047aa05bc688ac96e5a8afa718890036f3a62a"
+    },
+    {
+      "path": "webapp/backend/app/model.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9d48f56e27d07f09e7844d91d3b509305cd8c68",
+      "size": 3331,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/d9d48f56e27d07f09e7844d91d3b509305cd8c68"
+    },
+    {
+      "path": "webapp/backend/app/physics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be29b2fced9ed2056120e3bbc8c9a95adbb81360",
+      "size": 4413,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/be29b2fced9ed2056120e3bbc8c9a95adbb81360"
+    },
+    {
+      "path": "webapp/backend/app/preparar.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fd913b17994ead120c34c6e9da0ad45c4bb7bb4",
+      "size": 19521,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/3fd913b17994ead120c34c6e9da0ad45c4bb7bb4"
+    },
+    {
+      "path": "webapp/backend/app/services.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ca85207c63ba6b7c926af83bd81be359530a204",
+      "size": 16864,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/6ca85207c63ba6b7c926af83bd81be359530a204"
+    },
+    {
+      "path": "webapp/backend/app/store.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f42f10fd36cbd6df3843721986bae42b19e0c6fd",
+      "size": 18669,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/f42f10fd36cbd6df3843721986bae42b19e0c6fd"
+    },
+    {
+      "path": "webapp/backend/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b78f7319b5ae9bc606af35b87583c1728f03027",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/1b78f7319b5ae9bc606af35b87583c1728f03027"
+    },
+    {
+      "path": "webapp/backend/data/reference",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56b773a50d4579759ac38c8e0669ccfc8fec31c0",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/56b773a50d4579759ac38c8e0669ccfc8fec31c0"
+    },
+    {
+      "path": "webapp/backend/data/reference/app_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8652a32235a0b7f03999ecf25c5918f28eac88f",
+      "size": 2055,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/f8652a32235a0b7f03999ecf25c5918f28eac88f"
+    },
+    {
+      "path": "webapp/backend/data/reference/column_map.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ed7e7660a38427df39730c78459540dd248a1b5",
+      "size": 1983,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4ed7e7660a38427df39730c78459540dd248a1b5"
+    },
+    {
+      "path": "webapp/backend/data/reference/stadiums.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13373548a2ca6e2847c7be0b6a00c60b43e75223",
+      "size": 8159,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/13373548a2ca6e2847c7be0b6a00c60b43e75223"
+    },
+    {
+      "path": "webapp/backend/data/schedule",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ee9032fb991b069ed36c9b34e10c62f0b179c82",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/4ee9032fb991b069ed36c9b34e10c62f0b179c82"
+    },
+    {
+      "path": "webapp/backend/data/schedule/2026.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2330b154341d5d2680dabd5e315bdbaa704caead",
+      "size": 3501,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/2330b154341d5d2680dabd5e315bdbaa704caead"
+    },
+    {
+      "path": "webapp/backend/pytest.ini",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7b23ecb1408be49fb2fa8ef77ffa48640681e34",
+      "size": 42,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/c7b23ecb1408be49fb2fa8ef77ffa48640681e34"
+    },
+    {
+      "path": "webapp/backend/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f1fe0af3171763ce8eef46ac48fc5fad6c49ed",
+      "size": 141,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/81f1fe0af3171763ce8eef46ac48fc5fad6c49ed"
+    },
+    {
+      "path": "webapp/backend/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d58c099d1b44ebe991446d91a0d3a01ebbc01094",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/d58c099d1b44ebe991446d91a0d3a01ebbc01094"
+    },
+    {
+      "path": "webapp/backend/scripts/fetch_schedule.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9029ed32a60e26f6859d54c3d29a4baedb5c3cb5",
+      "size": 3037,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/9029ed32a60e26f6859d54c3d29a4baedb5c3cb5"
+    },
+    {
+      "path": "webapp/backend/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b870cc49e48eda1d3c99efc6d15c4f6a2891d51b",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/b870cc49e48eda1d3c99efc6d15c4f6a2891d51b"
+    },
+    {
+      "path": "webapp/backend/tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26b40e28d5c3927f20322bc2ad5222d11ad331b3",
+      "size": 3011,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/26b40e28d5c3927f20322bc2ad5222d11ad331b3"
+    },
+    {
+      "path": "webapp/backend/tests/sintetico.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3413e1a05cd1b4ca03bd98c0fe4da0d30e46984e",
+      "size": 15222,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/3413e1a05cd1b4ca03bd98c0fe4da0d30e46984e"
+    },
+    {
+      "path": "webapp/backend/tests/test_app.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "771df71784572e1741c95858c018ed5a0122acdb",
+      "size": 8482,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/771df71784572e1741c95858c018ed5a0122acdb"
+    },
+    {
+      "path": "webapp/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85e0d75000801519cf3af267e69337959e979ca0",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/85e0d75000801519cf3af267e69337959e979ca0"
+    },
+    {
+      "path": "webapp/docs/BRIEF_REDISENO.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c12f7d433dcf0386819232d07a3573c56bb2dcc4",
+      "size": 17101,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/c12f7d433dcf0386819232d07a3573c56bb2dcc4"
+    },
+    {
+      "path": "webapp/frontend",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45e287ed06dd220df593aa0c93d92508c81cc864",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/45e287ed06dd220df593aa0c93d92508c81cc864"
+    },
+    {
+      "path": "webapp/frontend/dist",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "704ffb3c291c0fbbc7976d27e9c78addb3be19b3",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/704ffb3c291c0fbbc7976d27e9c78addb3be19b3"
+    },
+    {
+      "path": "webapp/frontend/dist/apple-touch-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce83a6a965480f4cdb4b52050e53fa1c9d511050",
+      "size": 35887,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/ce83a6a965480f4cdb4b52050e53fa1c9d511050"
+    },
+    {
+      "path": "webapp/frontend/dist/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2472f1eed9bbdd52bc14ffd05fc9eddc52384f7c",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/2472f1eed9bbdd52bc14ffd05fc9eddc52384f7c"
+    },
+    {
+      "path": "webapp/frontend/dist/assets/index-DBNIs8tp.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "037c2418d688ea4fc8f432bdf183a90ca1848b66",
+      "size": 41007,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/037c2418d688ea4fc8f432bdf183a90ca1848b66"
+    },
+    {
+      "path": "webapp/frontend/dist/assets/index-ey5HSPjJ.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dda341f7001343e6211c9dd2abc9b05f67cb8e2",
+      "size": 356768,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8dda341f7001343e6211c9dd2abc9b05f67cb8e2"
+    },
+    {
+      "path": "webapp/frontend/dist/favicon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "add788c11031fd371cf5b39b22ffb41ba95e3715",
+      "size": 20375,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/add788c11031fd371cf5b39b22ffb41ba95e3715"
+    },
+    {
+      "path": "webapp/frontend/dist/icon-192.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40d2ae5debc98f927e934189a253960cf936b248",
+      "size": 40921,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/40d2ae5debc98f927e934189a253960cf936b248"
+    },
+    {
+      "path": "webapp/frontend/dist/icon-512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93dd65ba2daf6acc0770e9b3e9fe94f78111c3aa",
+      "size": 207181,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/93dd65ba2daf6acc0770e9b3e9fe94f78111c3aa"
+    },
+    {
+      "path": "webapp/frontend/dist/icon-maskable-512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af79edac36352775bef7bbaea737795fb410cbb4",
+      "size": 166801,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/af79edac36352775bef7bbaea737795fb410cbb4"
+    },
+    {
+      "path": "webapp/frontend/dist/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df78fb2417ee72a2647dafae163b1d9c3b76eec",
+      "size": 1442,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4df78fb2417ee72a2647dafae163b1d9c3b76eec"
+    },
+    {
+      "path": "webapp/frontend/dist/manifest.webmanifest",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0da32c31802628d58dfdba1d24cca759f1e80d65",
+      "size": 514,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0da32c31802628d58dfdba1d24cca759f1e80d65"
+    },
+    {
+      "path": "webapp/frontend/dist/mascota-cabeza.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "292cc1700dd6ad36a3ffc11e735fbd5c6acfab33",
+      "size": 85835,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/292cc1700dd6ad36a3ffc11e735fbd5c6acfab33"
+    },
+    {
+      "path": "webapp/frontend/dist/mascota-cuerpo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d1a295e9d5c953c24470cb4f138b4e1d88fa258",
+      "size": 107219,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0d1a295e9d5c953c24470cb4f138b4e1d88fa258"
+    },
+    {
+      "path": "webapp/frontend/dist/sw.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef8bfd783e0b0d4da0bdf0f0dc34887ca4d63797",
+      "size": 2671,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/ef8bfd783e0b0d4da0bdf0f0dc34887ca4d63797"
+    },
+    {
+      "path": "webapp/frontend/dist/video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6863d5325970fc3ff85c7a3319b43b8f39b46dcf",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/6863d5325970fc3ff85c7a3319b43b8f39b46dcf"
+    },
+    {
+      "path": "webapp/frontend/dist/video/giro-lento-poster.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd0710ebf1c52db9ce93804cd0f560fc63fa333",
+      "size": 58104,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8cd0710ebf1c52db9ce93804cd0f560fc63fa333"
+    },
+    {
+      "path": "webapp/frontend/dist/video/giro-lento.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6cdac19b18e5ea459ae638098e1213e2b43568d",
+      "size": 925964,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/d6cdac19b18e5ea459ae638098e1213e2b43568d"
+    },
+    {
+      "path": "webapp/frontend/dist/video/lanzamiento-loop-poster.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22f54916c7e824fd89eb0ddea7e246fc3d3e702e",
+      "size": 84380,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/22f54916c7e824fd89eb0ddea7e246fc3d3e702e"
+    },
+    {
+      "path": "webapp/frontend/dist/video/lanzamiento-loop.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b4d4612abc0435360f14782a6c79263155758d",
+      "size": 673284,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/39b4d4612abc0435360f14782a6c79263155758d"
+    },
+    {
+      "path": "webapp/frontend/dist/video/pitcher-vertical-poster.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdbb2fb249d769a57fef1935b4cc906bc3da1993",
+      "size": 45070,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/bdbb2fb249d769a57fef1935b4cc906bc3da1993"
+    },
+    {
+      "path": "webapp/frontend/dist/video/pitcher-vertical.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71fafb06583393de62eef6fdb8282c1e3277a38e",
+      "size": 321333,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/71fafb06583393de62eef6fdb8282c1e3277a38e"
+    },
+    {
+      "path": "webapp/frontend/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27c885495138f36dff1fa17bbaae2d106b34cfe6",
+      "size": 1294,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/27c885495138f36dff1fa17bbaae2d106b34cfe6"
+    },
+    {
+      "path": "webapp/frontend/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f42405544e7a10ee00b88343585453c5b672938",
+      "size": 223102,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/3f42405544e7a10ee00b88343585453c5b672938"
+    },
+    {
+      "path": "webapp/frontend/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94c4bf70976545643f3c201ad225630653641403",
+      "size": 620,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/94c4bf70976545643f3c201ad225630653641403"
+    },
+    {
+      "path": "webapp/frontend/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3b0ebcd470518231026a65b8c84731ca5c5491b3",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/3b0ebcd470518231026a65b8c84731ca5c5491b3"
+    },
+    {
+      "path": "webapp/frontend/public/apple-touch-icon.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce83a6a965480f4cdb4b52050e53fa1c9d511050",
+      "size": 35887,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/ce83a6a965480f4cdb4b52050e53fa1c9d511050"
+    },
+    {
+      "path": "webapp/frontend/public/favicon.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "add788c11031fd371cf5b39b22ffb41ba95e3715",
+      "size": 20375,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/add788c11031fd371cf5b39b22ffb41ba95e3715"
+    },
+    {
+      "path": "webapp/frontend/public/icon-192.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40d2ae5debc98f927e934189a253960cf936b248",
+      "size": 40921,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/40d2ae5debc98f927e934189a253960cf936b248"
+    },
+    {
+      "path": "webapp/frontend/public/icon-512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93dd65ba2daf6acc0770e9b3e9fe94f78111c3aa",
+      "size": 207181,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/93dd65ba2daf6acc0770e9b3e9fe94f78111c3aa"
+    },
+    {
+      "path": "webapp/frontend/public/icon-maskable-512.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af79edac36352775bef7bbaea737795fb410cbb4",
+      "size": 166801,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/af79edac36352775bef7bbaea737795fb410cbb4"
+    },
+    {
+      "path": "webapp/frontend/public/mascota-cabeza.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "292cc1700dd6ad36a3ffc11e735fbd5c6acfab33",
+      "size": 85835,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/292cc1700dd6ad36a3ffc11e735fbd5c6acfab33"
+    },
+    {
+      "path": "webapp/frontend/public/mascota-cuerpo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d1a295e9d5c953c24470cb4f138b4e1d88fa258",
+      "size": 107219,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0d1a295e9d5c953c24470cb4f138b4e1d88fa258"
+    },
+    {
+      "path": "webapp/frontend/public/video",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6863d5325970fc3ff85c7a3319b43b8f39b46dcf",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/6863d5325970fc3ff85c7a3319b43b8f39b46dcf"
+    },
+    {
+      "path": "webapp/frontend/public/video/giro-lento-poster.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cd0710ebf1c52db9ce93804cd0f560fc63fa333",
+      "size": 58104,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8cd0710ebf1c52db9ce93804cd0f560fc63fa333"
+    },
+    {
+      "path": "webapp/frontend/public/video/giro-lento.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6cdac19b18e5ea459ae638098e1213e2b43568d",
+      "size": 925964,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/d6cdac19b18e5ea459ae638098e1213e2b43568d"
+    },
+    {
+      "path": "webapp/frontend/public/video/lanzamiento-loop-poster.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22f54916c7e824fd89eb0ddea7e246fc3d3e702e",
+      "size": 84380,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/22f54916c7e824fd89eb0ddea7e246fc3d3e702e"
+    },
+    {
+      "path": "webapp/frontend/public/video/lanzamiento-loop.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39b4d4612abc0435360f14782a6c79263155758d",
+      "size": 673284,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/39b4d4612abc0435360f14782a6c79263155758d"
+    },
+    {
+      "path": "webapp/frontend/public/video/pitcher-vertical-poster.jpg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdbb2fb249d769a57fef1935b4cc906bc3da1993",
+      "size": 45070,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/bdbb2fb249d769a57fef1935b4cc906bc3da1993"
+    },
+    {
+      "path": "webapp/frontend/public/video/pitcher-vertical.mp4",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71fafb06583393de62eef6fdb8282c1e3277a38e",
+      "size": 321333,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/71fafb06583393de62eef6fdb8282c1e3277a38e"
+    },
+    {
+      "path": "webapp/frontend/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7256e0c731d17cecd1e047078f477bc951661a5b",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/7256e0c731d17cecd1e047078f477bc951661a5b"
+    },
+    {
+      "path": "webapp/frontend/src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "078ff4cdbf0c171ae89e217611d98af528f7a7e7",
+      "size": 4079,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/078ff4cdbf0c171ae89e217611d98af528f7a7e7"
+    },
+    {
+      "path": "webapp/frontend/src/api.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "179fd8b3e5d1d136db9d5d641b572eb22fe24bc3",
+      "size": 6128,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/179fd8b3e5d1d136db9d5d641b572eb22fe24bc3"
+    },
+    {
+      "path": "webapp/frontend/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8390b8bd53082fb18a01de61c045e38da43a0975",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/8390b8bd53082fb18a01de61c045e38da43a0975"
+    },
+    {
+      "path": "webapp/frontend/src/components/AppNotices.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa938199276021289be51d9d33c4896e121c227d",
+      "size": 2578,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/aa938199276021289be51d9d33c4896e121c227d"
+    },
+    {
+      "path": "webapp/frontend/src/components/BottomNav.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c68cb6deddb8e33e85d2bc348f7dcc6564ca18f8",
+      "size": 550,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/c68cb6deddb8e33e85d2bc348f7dcc6564ca18f8"
+    },
+    {
+      "path": "webapp/frontend/src/components/BullpenButton.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23d46d1ee2c02be6910f5d7af573ff886ff93316",
+      "size": 683,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/23d46d1ee2c02be6910f5d7af573ff886ff93316"
+    },
+    {
+      "path": "webapp/frontend/src/components/BullpenList.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed0a2639d840134ce32cc0cde4ce99891d8a5c9a",
+      "size": 2693,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/ed0a2639d840134ce32cc0cde4ce99891d8a5c9a"
+    },
+    {
+      "path": "webapp/frontend/src/components/CountUp.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c310b1897f4ee3beed7aec6d858b8470b85dd96",
+      "size": 1260,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4c310b1897f4ee3beed7aec6d858b8470b85dd96"
+    },
+    {
+      "path": "webapp/frontend/src/components/Diablo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67c13cee723cd138e47fbe8be3f087a551a86cf0",
+      "size": 551,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/67c13cee723cd138e47fbe8be3f087a551a86cf0"
+    },
+    {
+      "path": "webapp/frontend/src/components/FreeAgentTable.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e97af1bafa41421a5031b001107dc4753e8180a6",
+      "size": 11658,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/e97af1bafa41421a5031b001107dc4753e8180a6"
+    },
+    {
+      "path": "webapp/frontend/src/components/IntroVideo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d46b22bba0208e6bc38959a57675655bca1a639",
+      "size": 3451,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8d46b22bba0208e6bc38959a57675655bca1a639"
+    },
+    {
+      "path": "webapp/frontend/src/components/Leaderboard.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d0a550ea05cd0266133aa094f2911b67220a2fa",
+      "size": 4991,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/8d0a550ea05cd0266133aa094f2911b67220a2fa"
+    },
+    {
+      "path": "webapp/frontend/src/components/LoopVideo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4a94b93bc1b1940971c5dd3dfe0b73bffae10e4",
+      "size": 3881,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/e4a94b93bc1b1940971c5dd3dfe0b73bffae10e4"
+    },
+    {
+      "path": "webapp/frontend/src/components/MexicoMap.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e53451c36c0be81bb51a9cf5a7de9d7ddaa12170",
+      "size": 4795,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/e53451c36c0be81bb51a9cf5a7de9d7ddaa12170"
+    },
+    {
+      "path": "webapp/frontend/src/components/MovementPlot.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "495d04583abf96547fad22fe90a2bc1e7e3f16f6",
+      "size": 2435,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/495d04583abf96547fad22fe90a2bc1e7e3f16f6"
+    },
+    {
+      "path": "webapp/frontend/src/components/Pitch3D.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57b065b0dff4760562743ee9f6a7d2ff2b1f1da3",
+      "size": 8414,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/57b065b0dff4760562743ee9f6a7d2ff2b1f1da3"
+    },
+    {
+      "path": "webapp/frontend/src/components/PitcherName.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f14a4a6fd5f37c033f96204f3fd5bf19b8ef8d0",
+      "size": 619,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/2f14a4a6fd5f37c033f96204f3fd5bf19b8ef8d0"
+    },
+    {
+      "path": "webapp/frontend/src/components/ScheduleCalendar.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a833fc8d92248a2ae12acf983026dcb0666117a7",
+      "size": 5204,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/a833fc8d92248a2ae12acf983026dcb0666117a7"
+    },
+    {
+      "path": "webapp/frontend/src/components/SearchBox.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87f3abe4d477541aa162edf4aa025cc1572ddd01",
+      "size": 4828,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/87f3abe4d477541aa162edf4aa025cc1572ddd01"
+    },
+    {
+      "path": "webapp/frontend/src/components/StrikeZone.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aa9c7051ad5df5c9014bc2802c9a507c423b6e6",
+      "size": 5553,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4aa9c7051ad5df5c9014bc2802c9a507c423b6e6"
+    },
+    {
+      "path": "webapp/frontend/src/components/Term.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a7ff47769e368f18d81f86a928e664514b95ab2",
+      "size": 1820,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/1a7ff47769e368f18d81f86a928e664514b95ab2"
+    },
+    {
+      "path": "webapp/frontend/src/components/Verdict.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d082a3d7b8952e2df6edf3184b04e1ad4f8c64",
+      "size": 934,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/b8d082a3d7b8952e2df6edf3184b04e1ad4f8c64"
+    },
+    {
+      "path": "webapp/frontend/src/globals.d.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63f0958776a0c0a105c3b868fbeebe9ff622eb0f",
+      "size": 122,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/63f0958776a0c0a105c3b868fbeebe9ff622eb0f"
+    },
+    {
+      "path": "webapp/frontend/src/i18n.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "525ac2cd38e2e13fc3b6e839994545795249e2e6",
+      "size": 28807,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/525ac2cd38e2e13fc3b6e839994545795249e2e6"
+    },
+    {
+      "path": "webapp/frontend/src/main.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dfe2791903a92ee64fd9730578de9980984b65c",
+      "size": 874,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/7dfe2791903a92ee64fd9730578de9980984b65c"
+    },
+    {
+      "path": "webapp/frontend/src/media.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a51eb50f74a303ba9ece42ce769fa8db4b32379",
+      "size": 1582,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/3a51eb50f74a303ba9ece42ce769fa8db4b32379"
+    },
+    {
+      "path": "webapp/frontend/src/mexico-states.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13719fb53e425eb02652112060ce794f2739e8cb",
+      "size": 53126,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/13719fb53e425eb02652112060ce794f2739e8cb"
+    },
+    {
+      "path": "webapp/frontend/src/offline.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1147165b13452734ffd405458040d91ab47a0ae4",
+      "size": 1109,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/1147165b13452734ffd405458040d91ab47a0ae4"
+    },
+    {
+      "path": "webapp/frontend/src/pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37f5c8e87e28f58f350e2824280215c337498b17",
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/trees/37f5c8e87e28f58f350e2824280215c337498b17"
+    },
+    {
+      "path": "webapp/frontend/src/pages/ExplorePage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff04479f06c7afbb0e7e1e18f9d818f84158f9fd",
+      "size": 3082,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/ff04479f06c7afbb0e7e1e18f9d818f84158f9fd"
+    },
+    {
+      "path": "webapp/frontend/src/pages/FreeAgentsPage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52efc6dec38ed1a978b19a4d45453c5353dfb580",
+      "size": 340,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/52efc6dec38ed1a978b19a4d45453c5353dfb580"
+    },
+    {
+      "path": "webapp/frontend/src/pages/MethodologyPage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04914d9587c5ef885041d3dc299b199f4eb7f9fc",
+      "size": 8620,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/04914d9587c5ef885041d3dc299b199f4eb7f9fc"
+    },
+    {
+      "path": "webapp/frontend/src/pages/PitcherPage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "628172da6c86f2f7796ae6fcb032510631d9b1bc",
+      "size": 12252,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/628172da6c86f2f7796ae6fcb032510631d9b1bc"
+    },
+    {
+      "path": "webapp/frontend/src/pages/StadiumPage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe66f9c20a0e687ccd1491221f40dcb688468228",
+      "size": 11872,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/fe66f9c20a0e687ccd1491221f40dcb688468228"
+    },
+    {
+      "path": "webapp/frontend/src/pages/TodayPage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84b66d4980fff51ff9b8af55f4ee968bcedbc503",
+      "size": 9836,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/84b66d4980fff51ff9b8af55f4ee968bcedbc503"
+    },
+    {
+      "path": "webapp/frontend/src/pages/WhatIfPage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e0f25ccba27dc18ef7badaa603977f673d3de1",
+      "size": 8878,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/22e0f25ccba27dc18ef7badaa603977f673d3de1"
+    },
+    {
+      "path": "webapp/frontend/src/phrases.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929b957c31a19bd7a3c6e132f8c6786fd153a769",
+      "size": 5741,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/929b957c31a19bd7a3c6e132f8c6786fd153a769"
+    },
+    {
+      "path": "webapp/frontend/src/state.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aa305c744e889bbe7bab5598b93ee6282d544cf",
+      "size": 4162,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/4aa305c744e889bbe7bab5598b93ee6282d544cf"
+    },
+    {
+      "path": "webapp/frontend/src/styles.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7734f427a20eed6c4e0709be40eb54ae8c194971",
+      "size": 51310,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/7734f427a20eed6c4e0709be40eb54ae8c194971"
+    },
+    {
+      "path": "webapp/frontend/src/sw.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5758f614b9f671a4ac14d735530085db39e51472",
+      "size": 3323,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/5758f614b9f671a4ac14d735530085db39e51472"
+    },
+    {
+      "path": "webapp/frontend/src/verdicts.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0258a43f64e59b2ca203eb4bb091da7aa8d4a70b",
+      "size": 3666,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/0258a43f64e59b2ca203eb4bb091da7aa8d4a70b"
+    },
+    {
+      "path": "webapp/frontend/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eb2b93454672ab1ee9c234b6916791d00f49882",
+      "size": 458,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/2eb2b93454672ab1ee9c234b6916791d00f49882"
+    },
+    {
+      "path": "webapp/frontend/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "039fbae9a02aeeba7b606612708d194bf74e5c53",
+      "size": 1935,
+      "url": "https://api.github.com/repos/FerArGo56/diablos-rojos-WARROOM-stuffplus/git/blobs/039fbae9a02aeeba7b606612708d194bf74e5c53"
+    }
+  ],
+  "truncated": false
+}

@@ -2,3 +2,7 @@
 *.parquet filter=lfs diff=lfs merge=lfs -text
 *.rds filter=lfs diff=lfs merge=lfs -text
 *.cbm filter=lfs diff=lfs merge=lfs -text
+*.pdf binary
+*.zip binary
+*.jpg binary
+clasificacion_estadios/Lanzamientos_clasificados_por_estadio.xlsx filter=lfs diff=lfs merge=lfs -text
