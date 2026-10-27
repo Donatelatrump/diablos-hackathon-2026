@@ -14,6 +14,10 @@ Los pasos siguientes reproducen **v5**, base del entrenamiento y la comparación
 
 Modelo CatBoost para lanzamientos de LMB. La versión v5 corrige la independencia temporal, los scores incompletos y la mezcla de experimentos detectados en v4. Los archivos anteriores se conservan como antecedentes.
 
+## Actualizar un CSV o Excel antiguo con estadios
+
+Consulta [las instrucciones para otra PC](ACTUALIZAR_ESTADIOS.md). El script `actualizar_estadios.py` aplica el mapeo auditado a CSV, XLSX o Parquet y genera un archivo nuevo.
+
 ## Ejecutar
 
 Desde la carpeta del proyecto, con Python 3.11 o posterior y las dependencias de `requirements-hackathon.txt`:
