@@ -1,0 +1,794 @@
+[
+  {
+    "year": 2026,
+    "stadium_id": "aguascalientes_romo",
+    "score": "stuff_plus",
+    "mean": 98.51946428597854,
+    "std": 9.613798404481061,
+    "n": 6088,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "aguascalientes_romo",
+    "score": "location_plus",
+    "mean": 100.03112645759317,
+    "std": 9.645680458572881,
+    "n": 6088,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "aguascalientes_romo",
+    "score": "pitching_plus",
+    "mean": 99.64808071064718,
+    "std": 9.590946653099266,
+    "n": 6088,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "aguascalientes_romo",
+    "score": "indice_integral",
+    "mean": 99.64044731034163,
+    "std": 10.140302697214652,
+    "n": 6088,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "campeche_barrera",
+    "score": "stuff_plus",
+    "mean": 103.1530844997124,
+    "std": 8.558030830486471,
+    "n": 5353,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "campeche_barrera",
+    "score": "location_plus",
+    "mean": 100.21233522191686,
+    "std": 10.037807178066823,
+    "n": 5353,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "campeche_barrera",
+    "score": "pitching_plus",
+    "mean": 101.01943835403362,
+    "std": 9.938661599146256,
+    "n": 5353,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "campeche_barrera",
+    "score": "indice_integral",
+    "mean": 101.40769667226498,
+    "std": 9.601095591102586,
+    "n": 5353,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "cancun_avila",
+    "score": "stuff_plus",
+    "mean": 102.49961743244762,
+    "std": 8.526015281688888,
+    "n": 5318,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "cancun_avila",
+    "score": "location_plus",
+    "mean": 100.66430200716805,
+    "std": 9.253399520051394,
+    "n": 5318,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "cancun_avila",
+    "score": "pitching_plus",
+    "mean": 101.28870906217726,
+    "std": 9.189008121989792,
+    "n": 5318,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "cancun_avila",
+    "score": "indice_integral",
+    "mean": 102.42244095560875,
+    "std": 9.653500155564968,
+    "n": 5318,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "chihuahua_monumental",
+    "score": "stuff_plus",
+    "mean": 99.21781723260975,
+    "std": 9.523657441293853,
+    "n": 4645,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "chihuahua_monumental",
+    "score": "location_plus",
+    "mean": 100.25245079686769,
+    "std": 9.334709793535152,
+    "n": 4645,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "chihuahua_monumental",
+    "score": "pitching_plus",
+    "mean": 100.04274305367035,
+    "std": 9.33852966707721,
+    "n": 4645,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "chihuahua_monumental",
+    "score": "indice_integral",
+    "mean": 100.3018610057433,
+    "std": 10.23900300719355,
+    "n": 4645,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "durango_villa",
+    "score": "stuff_plus",
+    "mean": 98.03243366208467,
+    "std": 10.05034490812699,
+    "n": 6091,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "durango_villa",
+    "score": "location_plus",
+    "mean": 99.89064186271736,
+    "std": 9.920609989922726,
+    "n": 6091,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "durango_villa",
+    "score": "pitching_plus",
+    "mean": 99.38627906720981,
+    "std": 9.888454332969141,
+    "n": 6091,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "durango_villa",
+    "score": "indice_integral",
+    "mean": 100.29538958163842,
+    "std": 9.843448575551657,
+    "n": 6091,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "jalisco_panamericano",
+    "score": "stuff_plus",
+    "mean": 98.29465591021612,
+    "std": 9.938641785597394,
+    "n": 5828,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "jalisco_panamericano",
+    "score": "location_plus",
+    "mean": 100.2375966429331,
+    "std": 9.803063024715158,
+    "n": 5828,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "jalisco_panamericano",
+    "score": "pitching_plus",
+    "mean": 99.79011331789503,
+    "std": 9.77186267591182,
+    "n": 5828,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "jalisco_panamericano",
+    "score": "indice_integral",
+    "mean": 100.3120095699597,
+    "std": 10.131951149368676,
+    "n": 5828,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "laredo_unitrade",
+    "score": "stuff_plus",
+    "mean": 103.26072398380747,
+    "std": 9.450222369413805,
+    "n": 2931,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "laredo_unitrade",
+    "score": "location_plus",
+    "mean": 100.32770732838843,
+    "std": 9.19404835054193,
+    "n": 2931,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "laredo_unitrade",
+    "score": "pitching_plus",
+    "mean": 101.15900020880277,
+    "std": 9.27433110150338,
+    "n": 2931,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "laredo_unitrade",
+    "score": "indice_integral",
+    "mean": 101.83120723987456,
+    "std": 9.928641076920925,
+    "n": 2931,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "leon_santana",
+    "score": "stuff_plus",
+    "mean": 98.74970384056353,
+    "std": 10.064668149013839,
+    "n": 7454,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "leon_santana",
+    "score": "location_plus",
+    "mean": 99.30174506015562,
+    "std": 10.530140883447745,
+    "n": 7454,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "leon_santana",
+    "score": "pitching_plus",
+    "mean": 99.00080281698546,
+    "std": 10.508570292188955,
+    "n": 7454,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "leon_santana",
+    "score": "indice_integral",
+    "mean": 99.68083573301841,
+    "std": 10.078548738504907,
+    "n": 7454,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "merida_kukulcan",
+    "score": "stuff_plus",
+    "mean": 104.21925575596478,
+    "std": 9.119584008051023,
+    "n": 7613,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "merida_kukulcan",
+    "score": "location_plus",
+    "mean": 100.5379957827955,
+    "std": 9.428404528783606,
+    "n": 7613,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "merida_kukulcan",
+    "score": "pitching_plus",
+    "mean": 101.61011352429631,
+    "std": 9.398658111519799,
+    "n": 7613,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "merida_kukulcan",
+    "score": "indice_integral",
+    "mean": 102.02625510045654,
+    "std": 9.738447947384556,
+    "n": 7613,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "stuff_plus",
+    "mean": 97.99058203123069,
+    "std": 9.901778516831191,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "location_plus",
+    "mean": 99.8724813327327,
+    "std": 9.70838596607046,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "pitching_plus",
+    "mean": 99.35788286104419,
+    "std": 9.730885098586539,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "indice_integral",
+    "mean": 99.82357623310536,
+    "std": 9.767786056529957,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monclova_beisbol",
+    "score": "stuff_plus",
+    "mean": 101.4349899877285,
+    "std": 9.964128964905385,
+    "n": 5433,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monclova_beisbol",
+    "score": "location_plus",
+    "mean": 99.80124347859149,
+    "std": 9.99074577814779,
+    "n": 5433,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monclova_beisbol",
+    "score": "pitching_plus",
+    "mean": 100.17774923552939,
+    "std": 9.927647959763158,
+    "n": 5433,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monclova_beisbol",
+    "score": "indice_integral",
+    "mean": 101.34281817906556,
+    "std": 9.932299963502249,
+    "n": 5433,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monterrey_beisbol",
+    "score": "stuff_plus",
+    "mean": 103.34252411583921,
+    "std": 9.546709393509015,
+    "n": 6692,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monterrey_beisbol",
+    "score": "location_plus",
+    "mean": 100.1537505409613,
+    "std": 9.75040406192073,
+    "n": 6692,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monterrey_beisbol",
+    "score": "pitching_plus",
+    "mean": 101.01156399465104,
+    "std": 9.715837002803696,
+    "n": 6692,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "monterrey_beisbol",
+    "score": "indice_integral",
+    "mean": 100.82160308329871,
+    "std": 10.123480426566912,
+    "n": 6692,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "nuevo_laredo_junta",
+    "score": "stuff_plus",
+    "mean": 105.34340968348572,
+    "std": 9.181312318548315,
+    "n": 3057,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "nuevo_laredo_junta",
+    "score": "location_plus",
+    "mean": 100.03455071136445,
+    "std": 10.166216828998158,
+    "n": 3057,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "nuevo_laredo_junta",
+    "score": "pitching_plus",
+    "mean": 101.41243448869469,
+    "std": 10.096901560180658,
+    "n": 3057,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "nuevo_laredo_junta",
+    "score": "indice_integral",
+    "mean": 102.3277795037253,
+    "std": 9.915698329153113,
+    "n": 3057,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "oaxaca_yuva",
+    "score": "stuff_plus",
+    "mean": 98.5971260440447,
+    "std": 9.960479428331801,
+    "n": 1838,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "oaxaca_yuva",
+    "score": "location_plus",
+    "mean": 100.26923810669307,
+    "std": 9.659290271207796,
+    "n": 1838,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "oaxaca_yuva",
+    "score": "pitching_plus",
+    "mean": 99.89882822503994,
+    "std": 9.633114807642887,
+    "n": 1838,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "oaxaca_yuva",
+    "score": "indice_integral",
+    "mean": 100.12316375475008,
+    "std": 10.075329902577876,
+    "n": 1838,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "puebla_serdan",
+    "score": "stuff_plus",
+    "mean": 97.44841603845003,
+    "std": 10.103105314026406,
+    "n": 8462,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "puebla_serdan",
+    "score": "location_plus",
+    "mean": 99.94324153442948,
+    "std": 9.65359301917889,
+    "n": 8462,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "puebla_serdan",
+    "score": "pitching_plus",
+    "mean": 99.2865269560156,
+    "std": 9.661857765454219,
+    "n": 8462,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "puebla_serdan",
+    "score": "indice_integral",
+    "mean": 99.70804188635825,
+    "std": 10.024122637866098,
+    "n": 8462,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "queretaro_conspiradores",
+    "score": "stuff_plus",
+    "mean": 96.70488801709611,
+    "std": 10.025122658988357,
+    "n": 4820,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "queretaro_conspiradores",
+    "score": "location_plus",
+    "mean": 100.03273968885209,
+    "std": 9.595696396263484,
+    "n": 4820,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "queretaro_conspiradores",
+    "score": "pitching_plus",
+    "mean": 99.18136126808392,
+    "std": 9.627677049763887,
+    "n": 4820,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "queretaro_conspiradores",
+    "score": "indice_integral",
+    "mean": 98.74308049571532,
+    "std": 10.121151805650845,
+    "n": 4820,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "saltillo_madero",
+    "score": "stuff_plus",
+    "mean": 99.95122131740482,
+    "std": 9.851566020557991,
+    "n": 5320,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "saltillo_madero",
+    "score": "location_plus",
+    "mean": 99.8142725825041,
+    "std": 9.847155584068828,
+    "n": 5320,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "saltillo_madero",
+    "score": "pitching_plus",
+    "mean": 99.80746116197145,
+    "std": 9.823147084187074,
+    "n": 5320,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "saltillo_madero",
+    "score": "indice_integral",
+    "mean": 100.64313422154302,
+    "std": 10.247259863033621,
+    "n": 5320,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tabasco_centenario",
+    "score": "stuff_plus",
+    "mean": 102.13806350235154,
+    "std": 9.478201481550967,
+    "n": 9065,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tabasco_centenario",
+    "score": "location_plus",
+    "mean": 100.02297511055721,
+    "std": 9.83083294301027,
+    "n": 9065,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tabasco_centenario",
+    "score": "pitching_plus",
+    "mean": 100.57402442650779,
+    "std": 9.800887417199343,
+    "n": 9065,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tabasco_centenario",
+    "score": "indice_integral",
+    "mean": 100.87009163120491,
+    "std": 9.785416768832485,
+    "n": 9065,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tijuana_mobil",
+    "score": "stuff_plus",
+    "mean": 106.38741242614594,
+    "std": 9.44052929877831,
+    "n": 5841,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tijuana_mobil",
+    "score": "location_plus",
+    "mean": 100.60756602894396,
+    "std": 9.530905196995663,
+    "n": 5841,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tijuana_mobil",
+    "score": "pitching_plus",
+    "mean": 102.23704987679487,
+    "std": 9.526249543455231,
+    "n": 5841,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "tijuana_mobil",
+    "score": "indice_integral",
+    "mean": 103.48191232226436,
+    "std": 10.118814051516907,
+    "n": 5841,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "torreon_revolucion",
+    "score": "stuff_plus",
+    "mean": 99.49955261043436,
+    "std": 9.989952651285689,
+    "n": 8295,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "torreon_revolucion",
+    "score": "location_plus",
+    "mean": 99.69166290298524,
+    "std": 10.254202875008703,
+    "n": 8295,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "torreon_revolucion",
+    "score": "pitching_plus",
+    "mean": 99.57210421178468,
+    "std": 10.209503203547907,
+    "n": 8295,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "torreon_revolucion",
+    "score": "indice_integral",
+    "mean": 98.64945822320554,
+    "std": 10.234111678645728,
+    "n": 8295,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "veracruz_avila",
+    "score": "stuff_plus",
+    "mean": 103.18661625749606,
+    "std": 8.704195401899458,
+    "n": 6559,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "veracruz_avila",
+    "score": "location_plus",
+    "mean": 100.5328086463334,
+    "std": 9.53300429321262,
+    "n": 6559,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "veracruz_avila",
+    "score": "pitching_plus",
+    "mean": 101.3385974097583,
+    "std": 9.513816332140168,
+    "n": 6559,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "veracruz_avila",
+    "score": "indice_integral",
+    "mean": 101.95702503852681,
+    "std": 9.724548525503659,
+    "n": 6559,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": null,
+    "score": "stuff_plus",
+    "mean": 100.73777154043051,
+    "std": 10.064064765509414,
+    "n": 12896,
+    "reference": "season_fallback"
+  },
+  {
+    "year": 2026,
+    "stadium_id": null,
+    "score": "location_plus",
+    "mean": 100.021902756662,
+    "std": 9.847054810921806,
+    "n": 12896,
+    "reference": "season_fallback"
+  },
+  {
+    "year": 2026,
+    "stadium_id": null,
+    "score": "pitching_plus",
+    "mean": 100.2116160933137,
+    "std": 9.848973913599684,
+    "n": 12896,
+    "reference": "season_fallback"
+  },
+  {
+    "year": 2026,
+    "stadium_id": null,
+    "score": "indice_integral",
+    "mean": 100.72816115737392,
+    "std": 10.03107912992016,
+    "n": 12896,
+    "reference": "season_fallback"
+  }
+]

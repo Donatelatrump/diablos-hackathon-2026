@@ -94,8 +94,8 @@ def apply_dashboard_style():
           --font-sans: "Inter", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
           --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", monospace;
           
-          --text-xs: 0.7rem;
-          --text-sm: 0.8125rem;
+          --text-xs: 0.8125rem;
+          --text-sm: 0.9375rem;
           --text-base: 0.9375rem;
           --text-lg: 1.0625rem;
           --text-xl: 1.25rem;

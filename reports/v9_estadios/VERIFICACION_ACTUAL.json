@@ -1,0 +1,48 @@
+{
+  "season": {
+    "models": 13,
+    "development_rows": 499398,
+    "test_rows": 135604,
+    "model_hashes": true,
+    "source_hash": true,
+    "code_hashes": true,
+    "whole_games": true,
+    "held_groups_excluded": true,
+    "finite_scores": true,
+    "probability_bounds": true,
+    "pa_and_integral_verified": true
+  },
+  "pitcher": {
+    "models": 13,
+    "development_rows": 412217,
+    "test_rows": 25426,
+    "model_hashes": true,
+    "source_hash": true,
+    "code_hashes": true,
+    "whole_games": true,
+    "held_groups_excluded": true,
+    "finite_scores": true,
+    "probability_bounds": true,
+    "pa_and_integral_verified": true
+  },
+  "park": {
+    "models": 13,
+    "development_rows": 448018,
+    "test_rows": 6005,
+    "model_hashes": true,
+    "source_hash": true,
+    "code_hashes": true,
+    "whole_games": true,
+    "held_groups_excluded": true,
+    "finite_scores": true,
+    "probability_bounds": true,
+    "pa_and_integral_verified": true
+  },
+  "package": {
+    "manifest_hashes": true,
+    "zip_integrity": true,
+    "no_raw_pitch_columns": true,
+    "files": 128,
+    "bytes": 59095876
+  }
+}

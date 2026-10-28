@@ -1,0 +1,63 @@
+{
+  "components": {
+    "p_whiff": {
+      "mean": 0.11128938416163243,
+      "std": 0.09595627795703357,
+      "direction": 1,
+      "weight": 0.125
+    },
+    "p_chase": {
+      "mean": 0.22236985276723326,
+      "std": 0.2773956128001846,
+      "direction": 1,
+      "weight": 0.125
+    },
+    "p_called_strike": {
+      "mean": 0.15177363437037825,
+      "std": 0.19829522486960102,
+      "direction": 1,
+      "weight": 0.125
+    },
+    "p_weak_contact": {
+      "mean": 0.5615185607822123,
+      "std": 0.2172379679754807,
+      "direction": 1,
+      "weight": 0.125
+    },
+    "p_groundball_given_in_play": {
+      "mean": 0.485511477924242,
+      "std": 0.16880716533041365,
+      "direction": 1,
+      "weight": 0.125
+    },
+    "p_hard_contact": {
+      "mean": 0.19515394902897926,
+      "std": 0.12472784808236514,
+      "direction": -1,
+      "weight": 0.125
+    },
+    "pred_environment_run_value": {
+      "mean": 0.00689469581364595,
+      "std": 0.04053377688318208,
+      "direction": -1,
+      "weight": 0.125
+    },
+    "p_out_within_pa": {
+      "mean": 0.6160385223387898,
+      "std": 0.12522760984482417,
+      "direction": 1,
+      "weight": 0.125
+    }
+  },
+  "mean": 9.538409696221293e-17,
+  "std": 0.4565063048111793,
+  "interpretation": "Standardized equal-weight utility, not probability or causal effect",
+  "selection": "Weights fixed without benchmark labels; correlated targets may double-count signals",
+  "n_calibration": 61978,
+  "years": [
+    2024,
+    2025
+  ],
+  "base_bundle_sha256": "9ca7d55b875606aad5274dc4fbeec7bf8e02840908b95e5b684b16dc5f3884da",
+  "pa_metadata_sha256": "22b129b47c8cf084b9e94bce2c2675b1a480663b892c510a49d338f2b9347e68"
+}

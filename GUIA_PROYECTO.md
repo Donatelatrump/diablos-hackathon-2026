@@ -1,5 +1,13 @@
 # Stuff+ Diablos: guía del reto, del modelo y de su uso
 
+**Entrega actual completada:** [documento de nueve páginas](reports/v9_estadios/DOCUMENTO_TECNICO_ESTADIOS.pdf) y [metodología del complemento](reports/v9_estadios/complemento/METODOLOGIA.md). Incluye probabilidad de out al cerrar el turno, índice integral de ocho objetivos y comparación histórica normalizada por temporada/estadio. Las tres validaciones del objetivo PA terminaron; 32 pruebas pasaron desde el paquete en un entorno Python limpio. Las descripciones de carencias de v9 original que siguen abajo son históricas.
+
+**Actualización del 27 de octubre:** ya existe un mapeo auditado juego–estadio.
+El [reentrenamiento por estadios](REENTRENAMIENTO_ESTADIOS.md) incorpora `stadium_id`
+en el contexto y permite comparar Harp Helú en el simulador. Las limitaciones de
+identificación descritas en las secciones históricas de esta guía corresponden al
+dataset anterior; consulta `clasificacion_estadios/README.md` para cobertura y criterios.
+
 **Actualización del 22 de octubre:** [PROJECT_APPROACH.md](PROJECT_APPROACH.md) documenta una mejora opcional `--incremental-gate`: arsenal compite contra ubicación y entorno contra la capa anterior, con herencia de predicciones si no se confirma una ganancia. La ejecución original y sus resultados descritos abajo se conservan. El [PDF técnico](reports/v9/DOCUMENTO_TECNICO_V9.pdf) ya está generado con ocho páginas.
 
 Esta guía conecta la convocatoria **2026 ISAC Hackathon – Diablos Rojos** guardada en el HTML del repositorio con el código, los datos, la validación y la decisión deportiva. La entrega v8 conserva sus resultados históricos. **v9 es un experimento independiente**, con modelos entrenados desde el parquet y una separación más estricta de las capas del reto. Sus resultados reales se generan en `stuff_plus_output_v9/RESULTADOS.md`; los informes compartibles se guardan en `reports/v9/`.
@@ -59,7 +67,7 @@ La lectura local confirmó 243,254 pitches y 833 juegos en 2024; 256,144 pitches
 | `ExitSpeed`, `hit_type`, outcomes | Construir etiquetas | Usarlos al inferir calidad física |
 | Ubicación y conteo | Modelos contextuales | Introducirlos en Stuff+ físico |
 
-Faltan un mapeo oficial juego–estadio, fechas/orden y estados completos de bases/PA para algunas preguntas. Por ello no reconstruimos RE24, secuencias, tunneling real ni P(out dentro de PA). No se etiqueta un modelo de contacto duro como “barrel” sin ángulo y definición específica.
+El mapeo juego–estadio es inferido, no oficial. El complemento actual recupera orden de UUID y PA completas para estimar out al cerrar el turno; excluye secuencias ambiguas. Siguen faltando estados completos de bases para RE24 y mediciones de tunneling real. No se etiqueta un modelo de contacto duro como “barrel” sin ángulo y definición específica.
 
 La convocatoria describe whiff de forma ambigua al mencionar foul o miss. El diccionario define `is_whiff` como **swing y fallo**; esa es la definición usada. Chase es `P(swing fuera de zona)` por pitch, no `P(swing | fuera de zona)`.
 

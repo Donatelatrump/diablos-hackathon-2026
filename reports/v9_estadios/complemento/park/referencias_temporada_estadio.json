@@ -1,0 +1,38 @@
+[
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "stuff_plus",
+    "mean": 96.42398740746663,
+    "std": 10.265300467575091,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "location_plus",
+    "mean": 99.89671110472328,
+    "std": 9.727526250715089,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "pitching_plus",
+    "mean": 98.95823612068014,
+    "std": 9.709233350776264,
+    "n": 6005,
+    "reference": "season_park"
+  },
+  {
+    "year": 2026,
+    "stadium_id": "mexico_ahh",
+    "score": "indice_integral",
+    "mean": 98.85745909353001,
+    "std": 9.541232199693594,
+    "n": 6005,
+    "reference": "season_park"
+  }
+]

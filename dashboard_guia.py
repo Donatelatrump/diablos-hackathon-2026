@@ -49,6 +49,8 @@ def render_guide(root: Path):
             "110 equivale a una desviación estándar por encima, no a 10% más outs ni a 10% menos carreras. "
             "Cada índice usa una referencia propia."
         )
+        if (root / 'reports/v9_estadios/complemento/season/indice_integral.json').exists():
+            st.write("El simulador también muestra la posibilidad de out al cerrar el turno y un índice integral que reúne ocho señales. En la tabla de lanzadores puedes comparar con el promedio de cada temporada y estadio. La ayuda junto a cada resultado explica qué significa.")
         
         # Interactive scale explorer
         st.markdown("### Explora la escala")
@@ -105,7 +107,7 @@ def render_guide(root: Path):
             st.dataframe(
                 pd.DataFrame([
                     ["Calidad · 25%", "RMSE, Brier, calibración y baseline por conteo", "Evaluación v9 y métricas históricas v8"],
-                    ["Robustez · 25%", "Temporada, pitchers nuevos y parque", "Modos por temporada, pitcher y entorno; parque necesita stadium"],
+                    ["Robustez · 25%", "Temporada, pitchers nuevos y parque", "Auditorías por temporada, pitcher y Harp excluido; consultar su estado en el simulador"],
                     ["Arsenal + altitud · 25%", "Diferenciales y comparación entre entornos", "Historia previa, cuatro capas y ablaciones pareadas"],
                     ["Uso real · 25%", "Scores, perfil, recomendaciones, simulador, documento de 6–10 páginas", "Guía, simulador y entrega histórica disponibles"],
                 ], columns=["Criterio", "Qué pide", "Implementación"]),
@@ -114,8 +116,8 @@ def render_guide(root: Path):
             )
             
             st.warning(
-                "El dataset identifica categorías de altitud, pero no identifica Harp Helú. "
-                "Una comparación entre categorías no demuestra un efecto causal ni equivale a una validación por estadio."
+                "El mapeo auditado identifica Harp Helú y otros estadios, con algunas filas pendientes. "
+                "Comparar estadios no demuestra por sí solo un efecto causal de la altitud."
             )
             st.write(
                 "El reto permite presentar resultados, pero no publicar los datos originales. "
@@ -153,7 +155,9 @@ def render_guide(root: Path):
                 "El benchmark 2026 ya se había inspeccionado: esta comparación no sustituye una temporada nueva."
             )
         
-        path = root / "stuff_plus_output_v9" / "metricas.json"
+        path = root / "stuff_plus_output_v9_estadios" / "metricas.json"
+        if not path.exists():
+            path = root / "stuff_plus_output_v9" / "metricas.json"
         if path.exists():
             records = json.loads(path.read_text())
             st.subheader("Experimento v9 · benchmark 2026 reutilizado")
@@ -204,7 +208,8 @@ def render_guide(root: Path):
             "Para consultar la guía y usar los modelos disponibles, inicia el dashboard. "
             "El entrenamiento es un paso técnico opcional que requiere el parquet local autorizado."
         )
-        st.code(".venv/bin/python -m streamlit run dashboard_stuff_plus.py", language="bash")
+        st.info("En el paquete de entrega, abre ABRIR_DASHBOARD.bat. La primera instalación requiere preparar Python siguiendo README_PRIMERO.md.")
+        st.code("python -m streamlit run dashboard_stuff_plus.py", language="bash")
         
         with st.expander("Instrucciones para crear modelos desde los datos locales"):
             st.code(
@@ -247,11 +252,11 @@ def render_guide(root: Path):
                     use_container_width=True,
                 )
         
-        document = root / "reports/v9/DOCUMENTO_TECNICO_V9.pdf"
+        document = root / "reports/v9_estadios/DOCUMENTO_TECNICO_ESTADIOS.pdf"
         if document.exists():
             with col3:
                 st.download_button(
-                    "📄 Documento técnico v9",
+                    "📄 Documento técnico actualizado",
                     document.read_bytes(),
                     document.name,
                     "application/pdf",

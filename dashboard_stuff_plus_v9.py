@@ -6,11 +6,23 @@ import pandas as pd
 import streamlit as st
 import entrenar_stuff_plus_v9 as v9
 from dashboard_style import apply_dashboard_style, highlight_tutorial_target
+from dashboard_perfiles_estadios import render_profiles, render_validation_summary, PITCH_NAMES, HANDS, TASK_NAMES
 
 
 @st.cache_resource
 def get_bundle(path, modified):
     return v9.load_bundle(path)
+
+
+def stadium_scenarios(row, catalog, selected):
+    """Each stadium carries its development altitude category, with fixed pitch physics."""
+    indexed = catalog.set_index("stadium_id")
+    return pd.DataFrame([
+        {**row, "PitchUID": f"scenario-{i}", "stadium_id": identifier,
+         "stadium": indexed.loc[identifier, "estadio"],
+         "altitude_category": indexed.loc[identifier, "altitude_category"]}
+        for i, identifier in enumerate(selected)
+    ])
 
 
 TUTORIAL_STEPS = {
@@ -41,28 +53,34 @@ def render(output):
     output = Path(output)
     bundle = get_bundle(str(output), (output / "bundle.json").stat().st_mtime_ns)
     meta = bundle[0]
-    
+
     st.title("Simular un lanzamiento")
-    st.caption("Experimento v9 · física, ubicación, arsenal y entorno. Referencia histórica fija; benchmark 2026 reutilizado.")
-    
+    st.caption("Elige un lanzamiento, ajusta sus mediciones y compara qué resultados esperamos en cada estadio.")
+    with st.expander("Cómo leer los resultados", expanded=True):
+        st.write("**100 es la referencia.** Una puntuación mayor indica una evaluación más favorable. 110 representa una desviación estándar sobre la referencia; no significa 10% más outs.")
+        st.write("**Stuff+** describe la calidad física del lanzamiento. **Location+** describe su ubicación. **Pitching+** resume su evaluación combinada.")
+        st.caption("Las probabilidades indican resultados esperados en muchos lanzamientos similares. Úsalas junto con video, consistencia y criterio del cuerpo técnico.")
+
     inherited = [task for task, item in meta["tasks"].items() if item["postprocessor"]["method"] == "parent"]
     if inherited:
         st.info(
-            "La validación conservó la capa más simple en: " + ", ".join(inherited) +
-            ". Un delta de entorno igual a cero significa que no se confirmó una mejora predictiva adicional; "
-            "no demuestra ausencia de un efecto físico de la altitud."
+            "Si la puntuación es igual en dos estadios, los datos disponibles no respaldan cambiarla. "
+            "Revisa también las probabilidades de swing fallido, contacto y jonrón: pueden ser diferentes. "
+            "Esto no demuestra ausencia de un efecto físico de la altitud."
         )
-    
+
     if not (output / "metricas.json").exists():
         st.warning("Estos modelos terminaron entrenamiento, pero su evaluación todavía no está disponible.")
-    
+
     render_tutorial()
-    
-    sim, rankings, evidence = st.tabs(["Lanzamiento y entorno", "Pitchers y movimiento", "Cómo se validó"])
-    
+
+    profiles_tab, sim, rankings, evidence = st.tabs(["Qué revisar para Harp Helú", "Lanzamiento y entorno", "Pitchers y movimiento", "Cómo se validó"])
+    with profiles_tab:
+        render_profiles(output.parent / 'reports/v9_estadios')
+
     with sim:
         profiles = meta["input_profiles"]
-        
+
         # Profile selection
         with st.container(key="tour-profile"):
             st.subheader("1. Perfil del lanzamiento")
@@ -70,14 +88,16 @@ def render(output):
             pitch_type = left.selectbox(
                 "Tipo de lanzamiento",
                 sorted({p["type"] for p in profiles}),
-                key="sim_pitch_type"
+                key="sim_pitch_type",
+                format_func=lambda value: PITCH_NAMES.get(value, value)
             )
             hand = right.selectbox(
                 "Mano del pitcher",
                 sorted({p["hand"] for p in profiles if p["type"] == pitch_type}),
-                key="sim_hand"
+                key="sim_hand",
+                format_func=lambda value: HANDS.get(value, value)
             )
-        
+
         profile = next(p for p in profiles if p["type"] == pitch_type and p["hand"] == hand)
         row = {
             **profile["median"],
@@ -92,9 +112,9 @@ def render(output):
             "Strikes": 0,
             "altitude_category": "No Altitude",
         }
-        
+
         st.write("Parte del perfil típico y cambia solo las mediciones que conozcas.")
-        
+
         # Physical measurements
         with st.container(key="tour-measurements"):
             st.subheader("2. Mediciones físicas")
@@ -110,7 +130,7 @@ def render(output):
                 "HorzBreak": ("↔", "Movimiento lateral", "Cuánto se desvía a los lados, en pulgadas. La orientación depende de la mano del pitcher."),
                 "SpinRate": ("⟳", "Giro de la pelota", "Velocidad de rotación de la pelota, en revoluciones por minuto (rpm)."),
             }
-            
+
             cols = st.columns(4)
             for col, (key, label) in zip(cols, controls):
                 value = row[key]
@@ -122,13 +142,13 @@ def render(output):
                     help=explanation,
                     key=f"{pitch_type}-{hand}-{key}",
                 )
-        
+
         # Advanced context
         with st.container(key="tour-advanced"):
             st.subheader("3. Contexto avanzado (opcional)")
             with st.expander("Release, ubicación y arsenal", expanded=False):
                 st.caption("Punto de salida del pitcher · posición de la pelota al llegar al plato · contexto del bateador y el repertorio previo.")
-                
+
                 advanced = [
                     ("EffectiveVelo", "Velocidad efectiva (mph)"),
                     ("SpinAxis", "Eje de spin (grados)"),
@@ -147,18 +167,18 @@ def render(output):
                         value=float(value) if value is not None else None,
                         key=f"{pitch_type}-{hand}-{key}",
                     )
-                
+
                 row["Balls"] = cols[0].number_input("Bolas", 0, 3, 0, key=f"{pitch_type}-{hand}-Balls")
                 row["Strikes"] = cols[1].number_input("Strikes", 0, 2, 0, key=f"{pitch_type}-{hand}-Strikes")
                 row["BatterSide"] = cols[2].selectbox("Lado del bateador", ["Right", "Left"], key=f"{pitch_type}-{hand}-BatterSide")
-                
+
                 known = sorted({r["pitcher_anon_id"] for r in meta["profile"]["fastballs"]})
                 row["pitcher_anon_id"] = st.selectbox(
                     "Arsenal histórico",
                     ["Sin historial", *known],
                     key=f"{pitch_type}-{hand}-arsenal",
                 )
-        
+
         # Validation warnings
         missing = [key for key in profile["median"] if row.get(key) is None]
         if missing:
@@ -170,44 +190,73 @@ def render(output):
             ]
             if outside:
                 st.warning("Fuera del rango central 98% de entrenamiento para este tipo y mano: " + ", ".join(outside))
-            
+
             st.caption(
                 f"Perfil basado en {profile['n']:,} pitches de entrenamiento. "
                 "Estar dentro de rangos individuales no garantiza que la combinación esté bien representada."
             )
-            
+
             # Run simulation
             scenarios = pd.DataFrame([
                 {**row, "PitchUID": f"scenario-{i}", "altitude_category": category}
                 for i, category in enumerate(["No Altitude", "Medium Altitude", "Extreme Altitude"])
             ])
+            stadium_context = "stadium_id" in meta["tasks"]["environment_run_value"]["features"]
+            if stadium_context:
+                catalog = pd.read_csv(output / "estadios.csv")
+                identifiers = catalog.stadium_id.tolist()
+                defaults = [identifier for identifier in ["mexico_ahh", "veracruz_avila", "campeche_barrera"] if identifier in identifiers]
+                selected_stadiums = st.multiselect(
+                    "Estadios para comparar", identifiers, default=defaults, max_selections=3,
+                    format_func=lambda identifier: catalog.set_index("stadium_id").loc[identifier, "estadio"],
+                )
+                if not selected_stadiums:
+                    st.info("Selecciona al menos un estadio para simular.")
+                    return
+                scenarios = stadium_scenarios(row, catalog, selected_stadiums)
             predicted = v9.infer(scenarios, bundle)
+            complement = Path(__file__).resolve().parent / 'reports/v9_estadios/complemento/season'
+            has_complement = output.name == 'stuff_plus_output_v9_estadios' and (complement / 'indice_integral.json').exists()
+            if has_complement:
+                from indice_integral import enrich_scenarios
+                predicted = enrich_scenarios(scenarios, predicted, bundle, complement)
             labels = ["Sin altitud", "Altitud media", "Altitud extrema"]
-            
+            if stadium_context:
+                labels = scenarios.stadium.tolist()
+
             # Results
             with st.container(key="tour-results"):
                 st.subheader("4. Resultados por entorno")
-                result_cols = st.columns(3)
+                result_cols = st.columns(len(labels))
                 for col, label, (_, result) in zip(result_cols, labels, predicted.iterrows()):
                     with col:
                         st.markdown(f"#### {label}")
                         st.metric("Stuff+ · física", f"{result.stuff_plus:.1f}")
                         st.metric("Location+ · ubicación", f"{result.location_plus:.1f}")
                         st.metric("Pitching+ · combinado", f"{result.pitching_plus:.1f}")
-                        st.caption(f"Carreras proxy esperadas: {result.pred_environment_run_value:.4f}")
-            
+                        if has_complement:
+                            st.metric("Índice integral", f"{result.indice_integral:.1f}")
+                            st.metric("Out al terminar el turno", f"{100 * result.p_out_within_pa:.1f}%")
+                        st.caption("Puntuaciones comparadas con una referencia histórica fija. Más alto indica una evaluación más favorable.")
+
             if not predicted.arsenal_history_available.iloc[0]:
                 st.info("Sin historial de recta primaria: el modelo recibe una bandera de arsenal ausente.")
-            
+            if has_complement:
+                st.caption("Out al terminar el turno: posibilidad de registrar al menos un out en la jugada que cierra el turno al bate, desde este lanzamiento. Incluye jugadas de selección y doble play; no necesariamente sale el bateador.")
+                with st.expander("Cómo leer el índice integral"):
+                    st.write("Reúne ocho señales: fallos de swing, swings fuera de zona, strikes cantados, contacto débil, rodados, contacto duro, carreras esperadas y out al cerrar el turno. Más de 100 indica un perfil más favorable que la referencia histórica.")
+                    st.write("Cada señal tiene el mismo peso después de llevarla a una escala comparable. Es un índice de comparación, no un porcentaje ni una promesa de rendimiento. Algunas señales están relacionadas entre sí.")
+
             for name, ref in meta["reference"].items():
                 if not ref["informative"]:
                     st.info(f"{name}: referencia constante; se muestra 100 y no permite ordenar lanzamientos.")
-            
+
             st.caption(
                 "La comparación mantiene fija la física medida. No transporta movimiento al cambiar el aire. "
-                "Altitud extrema no identifica Harp Helú; el delta es predictivo."
+                + ("El estadio procede del mapeo auditado; el delta es predictivo." if stadium_context
+                 else "Altitud extrema no identifica Harp Helú; el delta es predictivo.")
             )
-            
+
             # Probabilities table
             probabilities = {
                 "p_whiff": "Whiff por pitch",
@@ -219,15 +268,16 @@ def render(output):
                 "p_home_run_per_pitch": "Jonrón por pitch",
                 "p_called_strike": "Strike cantado",
                 "p_chase": "Swing fuera de zona por pitch",
+                "p_out_within_pa": "Al menos un out al cerrar el turno al bate",
             }
             table = pd.DataFrame({"Resultado": [label for key, label in probabilities.items() if key in predicted]})
             for i, label in enumerate(labels):
                 table[label] = [f"{100 * predicted.iloc[i][key]:.1f}%" for key in probabilities if key in predicted]
-            
-            st.subheader("Probabilidades condicionales")
+
+            st.subheader("Qué esperar en lanzamientos similares")
             st.dataframe(table, hide_index=True, width="stretch")
             st.caption("Estas probabilidades incorporan ubicación y contexto. Las filas condicionales tienen denominadores distintos y no deben sumarse.")
-            
+
             st.download_button(
                 "Descargar escenarios",
                 predicted.to_csv(index=False),
@@ -235,7 +285,7 @@ def render(output):
                 "text/csv",
                 use_container_width=True,
             )
-            
+
             # SHAP explanation
             with st.expander("Qué impulsa el Stuff+ físico", expanded=False):
                 if st.button("Explicar este pitch", type="primary", key="explain_pitch"):
@@ -265,21 +315,38 @@ def render(output):
                         )
                     else:
                         st.info("El modelo físico conserva un baseline constante; no hay diferencias de features que explicar.")
-    
+
     with rankings:
         st.subheader("Pitchers y movimiento")
+        complement = Path(__file__).resolve().parent / 'reports/v9_estadios/complemento/season'
+        integral_path = complement / 'pitchers_integrales.csv'
+        if output.name == 'stuff_plus_output_v9_estadios' and integral_path.exists():
+            with st.expander("Comparar con el promedio de cada temporada y estadio"):
+                st.write("Esta tabla ajusta las puntuaciones al grupo de lanzamientos evaluados de cada temporada y estadio: 100 es su promedio y 10 puntos equivalen a una desviación estándar. Sirve para revisar esa muestra histórica; el simulador conserva una referencia fija para lanzamientos nuevos.")
+                st.caption("Con menos de 300 lanzamientos o estadio desconocido se usa el promedio de la temporada. Los promedios de lanzadores combinan sus distintos estadios; no garantizan que cada lanzador tenga media 100. El ajuste usa predicciones, nunca resultados reales del año evaluado.")
+                integral = pd.read_csv(integral_path)
+                integral = integral.loc[integral.n_pitches.ge(100) & integral.n_games.ge(5)]
+                st.dataframe(integral.sort_values('indice_integral_temporada_estadio', ascending=False).rename(columns={
+                    'year':'Temporada', 'pitcher_anon_id':'Lanzador', 'n_pitches':'Lanzamientos',
+                    'n_games':'Juegos', 'p_out_within_pa':'Probabilidad de out al cerrar el turno',
+                    'indice_integral':'Índice integral · referencia fija',
+                    'indice_integral_temporada_estadio':'Índice integral · ajustado al grupo'}), hide_index=True, width='stretch')
+                st.download_button('Descargar comparación ajustada', integral_path.read_bytes(), file_name=integral_path.name, mime='text/csv')
         if (output / "pitchers.csv").exists():
             pitchers = pd.read_csv(output / "pitchers.csv")
-            
+
             filter_col, _ = st.columns([1, 3])
             with filter_col:
                 min_pitches = st.checkbox("Al menos 100 pitches y cinco juegos", value=True, key="filter_pitchers")
-            
+
             if min_pitches:
                 pitchers = pitchers.loc[pitchers.n_pitches.ge(100) & pitchers.n_games.ge(5)]
-            
+
             st.dataframe(
-                pitchers.sort_values("pitching_plus", ascending=False),
+                pitchers.sort_values("pitching_plus", ascending=False).rename(columns={
+                    "pitcher_anon_id": "Lanzador anónimo", "year": "Temporada", "n_pitches": "Lanzamientos",
+                    "n_games": "Juegos", "stuff_plus": "Stuff+ · física", "location_plus": "Location+ · ubicación",
+                    "pitching_plus": "Pitching+ · combinado"}),
                 hide_index=True,
                 width="stretch",
             )
@@ -287,7 +354,7 @@ def render(output):
                 "Promedios descriptivos de los pitches evaluados. "
                 "La muestra y el contexto afectan el ranking; no son estimaciones de talento ni intervalos de confianza."
             )
-            
+
             # Movement map
             st.markdown("### Mapa de movimiento")
             movement = pd.read_csv(output / "mapa_movimiento.csv")
@@ -297,11 +364,10 @@ def render(output):
                 key="movement_pitcher"
             )
             local = movement.loc[movement.pitcher_anon_id.eq(chosen)]
-            
+
             color_options = {
                 "stuff_plus": "Stuff+",
                 "pitching_plus": "Pitching+",
-                "p_whiff_given_swing": "Whiff / Swing",
             }
             color_key = st.selectbox(
                 "Color del mapa",
@@ -309,7 +375,7 @@ def render(output):
                 format_func=lambda x: color_options[x],
                 key="movement_color"
             )
-            
+
             chart = alt.Chart(local).mark_circle(opacity=0.85).encode(
                 x=alt.X("HB:Q", title="HB normalizado por mano (pulgadas)"),
                 y=alt.Y("IVB:Q", title="IVB (pulgadas)"),
@@ -318,57 +384,73 @@ def render(output):
                 shape="AutoPitchType:N",
                 tooltip=["AutoPitchType", "altitude_category", "n", "velocity", "stuff_plus", "pitching_plus"],
             ).interactive().properties(height=450)
-            
+
             st.altair_chart(chart, width="stretch")
             st.caption(
                 "Cada punto es una media por tipo y categoría de altitud; no muestra trayectorias ni pitches individuales. "
                 "HB de zurdos se refleja para comparar por mano."
             )
-            
+
             # Arsenal
             st.markdown("### Arsenal del pitcher")
             arsenal_path = output / "arsenal.csv"
             if arsenal_path.exists():
                 arsenal = pd.read_csv(arsenal_path)
                 st.dataframe(
-                    arsenal.loc[arsenal.pitcher_anon_id.eq(chosen)],
+                    arsenal.loc[arsenal.pitcher_anon_id.eq(chosen)].rename(columns={
+                        "pitcher_anon_id": "Lanzador anónimo", "AutoPitchType": "Tipo de lanzamiento",
+                        "altitude_category": "Categoría de altitud", "year": "Temporada", "n_pitches": "Lanzamientos",
+                        "n_games": "Juegos", "stuff_plus": "Stuff+", "location_plus": "Location+", "pitching_plus": "Pitching+"}),
                     hide_index=True,
                     width="stretch",
                 )
         else:
             st.info("La evaluación genera los agregados de pitchers y el mapa.")
-    
+
     with evidence:
         st.subheader("Cómo se validó")
+        supplement = Path(__file__).resolve().parent / 'reports/v9_estadios/complemento'
+        if output.name == 'stuff_plus_output_v9_estadios' and (supplement / 'park/metricas.json').exists():
+            with st.expander("Pruebas de la probabilidad de out al terminar el turno"):
+                records = []
+                for mode, label in [('season', 'Temporada 2026'), ('pitcher', 'Lanzadores reservados'), ('park', 'Harp fuera del entrenamiento')]:
+                    item = json.loads((supplement / mode / 'metricas.json').read_text())
+                    records.append({'Prueba':label, 'Lanzamientos evaluados':item['pitches'], 'Turnos':item['pa'],
+                        'Error de probabilidad (menor es mejor)':round(item['brier'], 4),
+                        'Reducción frente al promedio por conteo':f"{item['gain']['gain']:.2%}"})
+                st.dataframe(pd.DataFrame(records), hide_index=True, width='stretch')
+                st.caption("Solo se evalúan turnos reconstruidos completos. Un mismo turno aporta varios lanzamientos; los intervalos remuestrean juegos completos. No es una prueba futura intacta.")
+        render_validation_summary(output)
         st.write(
             "Los juegos se separan en ajuste, parada temprana, calibración, búsqueda y confirmación. "
             "La temporada de evaluación no decide modelos ni escalas."
         )
-        
-        st.markdown("### Selección de modelos")
-        st.dataframe(
-            pd.DataFrame([{
-                "Tarea": task,
-                "Predicción elegida": item["selection"].get("selected", "baseline"),
-                "Comparada contra": item["selection"].get("control_task", "baseline"),
-                "Confirmada": item["selection"]["promoted"],
-                "Filas de ajuste": item["n_fit"],
-            } for task, item in meta["tasks"].items()]),
-            hide_index=True,
-            width="stretch",
-        )
-        
-        if (output / "ablaciones.json").exists():
-            st.markdown("### Ablaciones: cambio de error al añadir ubicación, arsenal y entorno")
+
+        with st.expander("Detalle para el equipo de análisis", expanded=False):
+            st.markdown("### Selección de modelos")
             st.dataframe(
-                pd.DataFrame(json.loads((output / "ablaciones.json").read_text())),
+                pd.DataFrame([{
+                    "Resultado": TASK_NAMES.get(task, task),
+                    "Predicción elegida": {"raw": "Modelo", "sigmoid": "Modelo calibrado", "shrink": "Modelo ajustado", "parent": "Capa anterior", "baseline": "Promedio de referencia"}.get(item["selection"].get("selected", "baseline"), "Promedio de referencia"),
+                    "Comparada contra": TASK_NAMES.get(item["selection"].get("control_task"), "Promedio de referencia"),
+                    "Confirmada": item["selection"]["promoted"],
+                    "Filas de ajuste": item["n_fit"],
+                } for task, item in meta["tasks"].items()]),
                 hide_index=True,
                 width="stretch",
             )
-            st.caption(
-                "Ganancia = 1 − MSE nuevo / MSE anterior. Intervalos mediante remuestreo de juegos. "
-                "No representan efectos causales."
-            )
+
+            if (output / "ablaciones.json").exists():
+                st.markdown("### Ablaciones: cambio de error al añadir ubicación, arsenal y entorno")
+                st.dataframe(
+                    pd.DataFrame(json.loads((output / "ablaciones.json").read_text())),
+                    hide_index=True,
+                    width="stretch",
+                )
+                st.caption(
+                    "Ganancia = 1 − MSE nuevo / MSE anterior. Intervalos mediante remuestreo de juegos. "
+                    "No representan efectos causales."
+                )
 
 
 if __name__ == "__main__":
