@@ -1,0 +1,23 @@
+{
+  "xlsx_valid_crc": true,
+  "xlsx_sheets": [
+    "LEEME",
+    "Resumen_estadios",
+    "Juegos",
+    "Pendientes",
+    "Lanzamientos",
+    "Calendario_publico"
+  ],
+  "xlsx_pitch_sheet_dimension": "A1:CW635003",
+  "xlsx_pitch_rows": 635002,
+  "xlsx_xml_well_formed": true,
+  "xlsx_bytes": 568803777,
+  "xlsx_sha256": "9e97a2cc6daf040e9bc6a01c0b39762c7f4457ae2624c5e031ecb7b88770a082",
+  "parquet_rows": 635002,
+  "parquet_columns": 101,
+  "original_source_hash_unchanged": true,
+  "original_values_checked_during_export": true,
+  "assigned_games": 2009,
+  "assigned_pitches": 601120,
+  "pending_games": 118
+}

@@ -13,3 +13,7 @@ Las cinco mejoras están implementadas: auditoría de pitchers, análisis de ent
 ## Antes de enviar
 
 Completar nombres, correos y elegibilidad del equipo; confirmar la modalidad de acceso a modelos y scores detallados con la organización. No se envía correo automáticamente. La fecha publicada consultada es 22/10/2026.
+
+## Actualización del dashboard (20/10/2026)
+
+El simulador expone nueve probabilidades, riesgos y una explicación SHAP local comprobada. Incluye diferencias por categoría, baseline por conteo y scores descargables. La pestaña Estadios y altitudes compara referencias geográficas con fuentes; no infiere estadio desde una categoría. Consultar ESTADIOS_Y_ALTITUDES.md y AUDITORIA_ESTADIOS.json. Ejecutar `python estadios_v8.py` antes de regenerar el paquete para actualizar cobertura. El mapeo por juego necesita evidencia externa explícita.
