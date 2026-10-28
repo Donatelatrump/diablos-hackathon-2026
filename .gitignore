@@ -16,6 +16,7 @@ pip-install-*/
 pip-target-*/
 pip-unpack-*/
 __pycache__/
+stuff_plus_output_v8/estadios_por_juego.csv
 *.py[cod]
 # Prerequisites
 *.d
