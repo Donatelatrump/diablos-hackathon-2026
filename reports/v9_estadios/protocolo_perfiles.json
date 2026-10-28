@@ -1,0 +1,17 @@
+{
+  "source_sha256": "7bb6ff34ae66c1dcb802f644f0ba94ca27cb656092e4275a033e1b8d4098f3d2",
+  "bundle_sha256": "547c85000db87445106c11d58eb413a5af5ba4004e58f5f571df0b34755f5b5a",
+  "reference_stadiums": [
+    "veracruz_avila",
+    "campeche_barrera",
+    "cancun_avila"
+  ],
+  "model_fixed": true,
+  "causal": false,
+  "bootstrap_repetitions": 1000,
+  "marginal_support_only": true,
+  "supported_pitches": 88852,
+  "test_pitches": 135604,
+  "profile_selection": "calibration physical score top 10%, no 2026 outcomes",
+  "uncertainty": "sampling of test games conditional on fitted model; exploratory, no multiplicity correction"
+}

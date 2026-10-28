@@ -1,0 +1,26 @@
+[
+  {
+    "from": "stuff_run_value",
+    "to": "xrunvalue",
+    "gain": 0.04155245757034054,
+    "ci_low": 0.03619104113697654,
+    "ci_high": 0.048218688848053866,
+    "groups": 115
+  },
+  {
+    "from": "xrunvalue",
+    "to": "arsenal_run_value",
+    "gain": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "groups": 115
+  },
+  {
+    "from": "arsenal_run_value",
+    "to": "environment_run_value",
+    "gain": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "groups": 115
+  }
+]

@@ -2,6 +2,12 @@
 # Datos privados del reto y artefactos reproducibles de la nueva ejecución.
 /Data/
 /stuff_plus_output_v9*/
+/entrega_estadios/
+/ENTREGA_ESTADIOS_ACTUALIZADA.zip
+/tmp/
+/stuff_model_df_con_estadios.parquet
+/clasificacion_estadios/*.xlsx
+/clasificacion_estadios/*.parquet
 /reports/v9_smoke/
 .pip-tmp/
 pip-build-tracker-*/

@@ -1,0 +1,8 @@
+{
+  "pitches": 635002,
+  "candidate_pa": 168458,
+  "valid_pa": 159921,
+  "labeled_pitches": 611413,
+  "excluded_pa": 8537,
+  "definition": "At least one out on terminal PA event; FC and double plays included; not necessarily batter retired"
+}

@@ -265,9 +265,25 @@ def choose_candidate(y, options, tune, years, groups, classification):
             "tune_mse": {key: mse(p, tune) for key, p in options.items()}}
 
 
-def predict_raw(model, frame, task, baseline):
+def model_features(frame, columns):
+    result = v6.features(frame, [c for c in columns if c != "stadium_id"])
+    if "stadium_id" in columns:
+        if "stadium_id" not in frame:
+            raise ValueError("Falta caracteristica requerida: stadium_id")
+        result["stadium_id"] = frame.stadium_id.fillna("__MISSING__").astype(str)
+    return result[columns]
+
+
+def task_spec(task, stadium_context=False):
+    target, columns, condition, kind = TASKS[task]
+    if stadium_context and "altitude_category" in columns:
+        columns = columns + ["stadium_id"]
+    return target, columns, condition, kind
+
+
+def predict_raw(model, frame, task, baseline, columns=None):
     spec = TASKS[task]
-    x = v6.features(frame, spec[1])
+    x = model_features(frame, columns if columns is not None else spec[1])
     if spec[3] == "classification":
         return model.predict_proba(x)[:, list(model.classes_).index(1)]
     # Residual regression around a fitted constant or smoothed count baseline.
@@ -275,7 +291,7 @@ def predict_raw(model, frame, task, baseline):
 
 
 def predict_prepared(frame, metadata, models):
-    result = frame[[c for c in IDENTITY if c in frame]].copy().reset_index(drop=True)
+    result = frame[[c for c in IDENTITY + ["stadium", "stadium_id"] if c in frame]].copy().reset_index(drop=True)
     # JSON writers may sort keys; dependencies must not rely on serialization order.
     ordered = [task for task in TASKS if task in metadata["tasks"]]
     for task in ordered:
@@ -287,7 +303,7 @@ def predict_prepared(frame, metadata, models):
             result[v5.prediction_column(task, TASKS[task])] = result[v5.prediction_column(parent, TASKS[parent])]
             continue
         baseline = baseline_predict(frame, meta["baseline"])
-        raw = predict_raw(models[task], frame, task, meta["baseline"]) if task in models else baseline
+        raw = predict_raw(models[task], frame, task, meta["baseline"], meta["features"]) if task in models else baseline
         result[v5.prediction_column(task, TASKS[task])] = postprocess(raw, baseline, meta["postprocessor"])
     return result
 
@@ -348,9 +364,12 @@ def read_rows(path, year, development):
     operator = "<" if development else "="
     with duckdb.connect() as con:
         available = {r[0] for r in con.execute("DESCRIBE SELECT * FROM read_parquet(?)", [str(path)]).fetchall()}
-        needed = [c for c in dict.fromkeys(RAW_REQUIRED + LABEL_REQUIRED + ["stadium"]) if c in available]
+        needed = [c for c in dict.fromkeys(RAW_REQUIRED + LABEL_REQUIRED + ["stadium", "stadium_id", "estadio"]) if c in available]
         columns = ", ".join('"' + c + '"' for c in needed)
-        return con.execute(f"SELECT {columns} FROM read_parquet(?) WHERE year {operator} ?", [str(path), year]).fetchdf()
+        frame = con.execute(f"SELECT {columns} FROM read_parquet(?) WHERE year {operator} ?", [str(path), year]).fetchdf()
+        if "estadio" in frame:
+            frame["stadium"] = frame.pop("estadio")
+        return frame
 
 
 def train(args):
@@ -359,6 +378,9 @@ def train(args):
         raise FileExistsError("La salida ya existe; usa una carpeta nueva para conservar el experimento")
     raw = read_rows(source, args.test_year, True)
     validate_frame(raw, training=True)
+    stadium_context = getattr(args, "stadium_context", False)
+    if stadium_context and ("stadium_id" not in raw or raw.stadium_id.notna().sum() == 0):
+        raise ValueError("--stadium-context requiere stadium_id con estadios clasificados")
     source_rows = len(raw)
     if args.holdout != "season":
         grouping = {"pitcher": "pitcher_anon_id", "environment": "altitude_category", "park": "stadium"}[args.holdout]
@@ -375,6 +397,8 @@ def train(args):
                 "test_year": args.test_year, "holdout": args.holdout, "held_group": args.grupo_excluido,
                 "benchmark_reused": args.test_year <= 2026, "iterations": args.iteraciones, "threads": args.hilos,
                 "tasks": list(args.tasks), "incremental_gate": getattr(args, "incremental_gate", False),
+                "stadium_context": stadium_context,
+                "stadiums_development": sorted(raw.stadium_id.dropna().unique().tolist()) if stadium_context else [],
                 "depth": 6, "learning_rate": .045, "l2_leaf_reg": 20.,
                 "partitions": dict(zip(ROLES, [.5, .15, .15, .1, .1])),
                 "gate": {"min_gain": .001, "min_ci_low": 0., "max_year_degradation": .001,
@@ -388,7 +412,7 @@ def train(args):
     models, tasks = {}, {}
     (args.salida / "modelos").mkdir()
     for task in [name for name in TASKS if name in args.tasks]:
-        spec = TASKS[task]
+        spec = task_spec(task, stadium_context)
         tr, va, ca, se = [rows.loc[v5.eligible(rows, spec)].reset_index(drop=True) for rows in [fit, stop, cal, selection]]
         if tr.empty:
             raise ValueError(f"Sin etiquetas de ajuste para {task}")
@@ -410,9 +434,9 @@ def train(args):
                         random_seed=SEED, thread_count=args.hilos, loss_function="Logloss" if classification else "RMSE",
                         allow_writing_files=False, verbose=False)
             target = lambda rows: rows[spec[0]].to_numpy() if classification else rows[spec[0]].to_numpy()-baseline_predict(rows, baseline)
-            model.fit(v6.features(tr, spec[1]), target(tr), cat_features=[c for c in spec[1] if c in v5.CATEGORICAL],
-                      eval_set=(v6.features(va, spec[1]), target(va)), early_stopping_rounds=35, use_best_model=True)
-            pcal, psel = [predict_raw(model, rows, task, baseline) for rows in [ca, se]]
+            model.fit(model_features(tr, spec[1]), target(tr), cat_features=[c for c in spec[1] if c in v5.CATEGORICAL or c == "stadium_id"],
+                      eval_set=(model_features(va, spec[1]), target(va)), early_stopping_rounds=35, use_best_model=True)
+            pcal, psel = [predict_raw(model, rows, task, baseline, spec[1]) for rows in [ca, se]]
             processors = fit_postprocessors(ca[spec[0]], pcal, baseline_predict(ca, baseline), classification)
             base = baseline_predict(se, baseline)
             options = {"baseline": base, **{name: postprocess(psel, base, post) for name, post in processors.items()}}
@@ -530,6 +554,7 @@ def evaluate(args):
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--parquet", type=Path)
+    p.add_argument("--stadium-context", action="store_true", help="Incorpora stadium_id en modelos de entorno y probabilidades contextuales")
     p.add_argument("--salida", type=Path, default=Path("stuff_plus_output_v9"))
     p.add_argument("--test-year", type=int, default=2026)
     p.add_argument("--holdout", choices=["season", "pitcher", "environment", "park"], default="season")

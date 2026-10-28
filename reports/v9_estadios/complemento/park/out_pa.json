@@ -1,0 +1,95 @@
+{
+  "features": [
+    "RelSpeed",
+    "EffectiveVelo",
+    "SpinRate",
+    "SpinAxis_sin",
+    "SpinAxis_cos",
+    "RelHeight",
+    "RelSide",
+    "Extension",
+    "VertBreak",
+    "InducedVertBreak",
+    "HorzBreak",
+    "AutoPitchType",
+    "PitcherThrows",
+    "hb_arm_side",
+    "release_side_arm_side",
+    "movement_magnitude",
+    "movement_angle_sin",
+    "movement_angle_cos",
+    "spin_per_mph",
+    "effective_speed_delta",
+    "extension_per_height",
+    "spin_axis_sin2",
+    "spin_axis_cos2",
+    "PlateLocHeight",
+    "PlateLocSide",
+    "Balls",
+    "Strikes",
+    "BatterSide",
+    "velo_diff_vs_fb",
+    "ivb_diff_vs_fb",
+    "hb_diff_vs_fb",
+    "release_distance_vs_fb",
+    "pitch_usage_pct",
+    "arsenal_history_available",
+    "arsenal_reliability",
+    "altitude_category",
+    "stadium_id"
+  ],
+  "baseline": {
+    "prior": 0.6254280682678859,
+    "counts": {
+      "0-0": 0.6345730722021347,
+      "0-1": 0.6962731969033128,
+      "0-2": 0.7677057808829383,
+      "1-0": 0.5702076369287744,
+      "1-1": 0.6459837841893578,
+      "1-2": 0.7338166230921661,
+      "2-0": 0.455743018869944,
+      "2-1": 0.559079779604898,
+      "2-2": 0.6685086610540714,
+      "3-0": 0.23274815444024657,
+      "3-1": 0.36844203390266067,
+      "3-2": 0.4958544759034018
+    }
+  },
+  "postprocessor": {
+    "method": "sigmoid",
+    "slope": 1.0669827408891803,
+    "intercept": -0.03985334502112101
+  },
+  "selection": {
+    "candidate": "sigmoid",
+    "selected": "sigmoid",
+    "promoted": true,
+    "reason": "confirmed",
+    "tune_gain": 0.029760856695675852,
+    "confirmation": {
+      "gain": 0.027277324273266346,
+      "ci_low": 0.02342619285496878,
+      "ci_high": 0.030750038711433628,
+      "groups": 151
+    },
+    "year_gains": {
+      "2024": 0.027861938967662536,
+      "2025": 0.026766428146106747
+    },
+    "logloss_noninferior": true,
+    "tune_mse": {
+      "baseline": 0.22613541840551754,
+      "raw": 0.21951827797868964,
+      "shrink": 0.21951827797868964,
+      "sigmoid": 0.21940543462453424
+    }
+  },
+  "source_sha256": "7bb6ff34ae66c1dcb802f644f0ba94ca27cb656092e4275a033e1b8d4098f3d2",
+  "model_sha256": "c3479f0952d7a5c5603a02ecb7e3cd041da126b0136a357f32999216c85a7f90",
+  "code_sha256": "8b30d62752e5438a423363417bbc8e815822dfa4f7368bf28f0f0b8eb6739268",
+  "base_bundle_sha256": "6241d7a416521e779aba03b841176f82bb4bab97ee50d55eaf8cc87311888537",
+  "n_fit": 215211,
+  "n_calibration": 65390,
+  "trees": 362,
+  "benchmark_reused": true
+}

@@ -1,0 +1,21 @@
+{
+  "pdf_sha256": "6ab3c5092da67ab6abf037b94ee90262e9cac22208db78887ff9cb3e508a6247",
+  "pages": 9,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "text_within_page_bounds": true,
+  "app_visual_review": false,
+  "app_visual_limitation": "No browsers connected; cua.listBrowsers returned empty",
+  "functional_tests": 32,
+  "clean_python_environment": true,
+  "pip_check": "No broken requirements found"
+}
