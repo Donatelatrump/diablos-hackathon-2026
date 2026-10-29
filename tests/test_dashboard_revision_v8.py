@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 class DashboardRevisionTests(unittest.TestCase):
     def test_views_probabilities_sources_and_score_filter(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(ROOT / "dashboard_stuff_plus_v8.py")).run(timeout=60)
+        app = AppTest.from_file(str(ROOT / "src/dashboard_stuff_plus_v8.py")).run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         self.assertTrue({"Scores y descargas", "Estadios y altitudes"}.issubset({tab.label for tab in app.tabs}))
         probabilities = next(table.value for table in app.dataframe if "Probabilidad (%)" in table.value.columns)

@@ -5,6 +5,8 @@
 /github_tree_*.json
 /ENTREGA_*.zip
 /organizar_repo_local.py
+/organizar_codigo_local.py
+/tmp*
 /tmp*/
 /estadios_*/
 # Datos privados del reto y artefactos reproducibles de la nueva ejecución.

@@ -129,7 +129,7 @@ Verificar que el pitcher tenga al menos uno de estos:
 
 | Archivo | Uso |
 |---------|-----|
-| `dashboard_stuff_plus.py` | Ejecutar con `streamlit run dashboard_stuff_plus.py` para simular pitches |
+| `dashboard_stuff_plus.py` | Ejecutar con `streamlit run app.py` para simular pitches |
 | `stuff_plus_por_pitcher.csv` | Ranking y comparación de pitchers por altitud |
 | `perfil_ideal_diablos.json` | Perfil físico objetivo para fichajes |
 | `stuff_plus_output_v3/modelos/*.cbm` | Modelos CatBoost para integración en sistemas internos |

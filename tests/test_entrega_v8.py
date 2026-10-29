@@ -38,7 +38,7 @@ class AnalysisTests(unittest.TestCase):
 class DeliveryDashboardTests(unittest.TestCase):
     def test_operational_views(self):
         from streamlit.testing.v1 import AppTest
-        app=AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'dashboard_stuff_plus_v8.py')).run(timeout=60)
+        app=AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'src/dashboard_stuff_plus_v8.py')).run(timeout=60)
         self.assertEqual(len(app.exception),0)
         self.assertTrue(any(t.label=='Mapa y ficha' for t in app.tabs))
         app.checkbox[0].check().run(timeout=60)

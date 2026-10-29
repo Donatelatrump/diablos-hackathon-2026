@@ -45,7 +45,7 @@ class DecisionWorkflowTests(unittest.TestCase):
     def test_reference_lab_dossier_and_confidence(self):
         from streamlit.testing.v1 import AppTest
         from tests.test_dashboard_navigation_helpers import navigate
-        app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'dashboard_stuff_plus.py')).run(timeout=60)
+        app = AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run(timeout=60)
         next(w for w in app.button if w.label == 'Ver evaluación del lanzamiento').click().run(timeout=60)
         before = app.session_state['start_result']
         comparison = app.session_state['start_comparison']

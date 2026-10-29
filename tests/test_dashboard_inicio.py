@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 @unittest.skipUnless(bundle_ready(ROOT / "stuff_plus_output_v9_estadios"), "Requiere modelos locales")
 class GuidedStartTests(unittest.TestCase):
     def test_example_submit_change_and_advanced_navigation(self):
-        app = AppTest.from_file(str(ROOT / "dashboard_stuff_plus.py")).run(timeout=60)
+        app = AppTest.from_file(str(ROOT / "app.py")).run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(app.session_state["main_navigation"], "Inicio")
         self.assertEqual(len(app.tabs), 0)

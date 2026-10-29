@@ -49,7 +49,7 @@ node tmp/responsive-qa/node_modules/playwright/cli.js install chromium
 node verificar_responsive.cjs
 ```
 
-Para iniciar la aplicación: `.venv/Scripts/python.exe -m streamlit run dashboard_stuff_plus.py --server.port 8501`.
+Para iniciar la aplicación: `.venv/Scripts/python.exe -m streamlit run app.py --server.port 8501`.
 
 Capturas y mediciones: `reports/responsive_2026_10_29/final/`, incluidos `audit.json`, `phone-interactions.json`, `phone-viewer-top.png` y `phone-result.png`. La carpeta `baseline/` conserva la primera revisión.
 

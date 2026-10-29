@@ -65,4 +65,4 @@ Ejecutar `verificar_modelo_v5.py` para comprobar independencia de filas y juegos
 
 `importancia_variables.csv` exporta PredictionValuesChange por modelo y tarea, sin sobrescribir resultados entre tareas. No son valores SHAP ni efectos causales; `model_alpha` indica la proporción de modelo frente al baseline en la predicción final.
 
-El dashboard usa la misma inferencia. Se requiere instalar `requirements-dashboard.txt` para abrir Streamlit. La revisión automática de artefactos no sustituye una revisión visual de esa interfaz.
+El dashboard usa la misma inferencia. Se requiere instalar `requirements/requirements-dashboard.txt` para abrir Streamlit. La revisión automática de artefactos no sustituye una revisión visual de esa interfaz.

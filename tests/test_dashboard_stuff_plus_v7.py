@@ -12,7 +12,7 @@ AVAILABLE = importlib.util.find_spec("streamlit") is not None and bundle_ready(R
 class DashboardV7Tests(unittest.TestCase):
     def test_simulation_and_calibration_report(self):
         from streamlit.testing.v1 import AppTest
-        app = AppTest.from_file(str(ROOT / "dashboard_stuff_plus_v7.py")).run(timeout=60)
+        app = AppTest.from_file(str(ROOT / "src/dashboard_stuff_plus_v7.py")).run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(len(app.metric), 5)
         self.assertTrue(any("Faltan mediciones" in item.value for item in app.info))

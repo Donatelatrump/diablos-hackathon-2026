@@ -146,7 +146,7 @@ Las métricas incluyen tamaño de muestra, RMSE/R², Brier/AUC, log loss y ECE s
 
 ## 6. Cómo usarlo con el coach
 
-Ejecuta `python -m streamlit run dashboard_stuff_plus.py`. La primera pantalla explica las tres preguntas y permite explorar la escala. “Simular y comparar v9” carga la misma función `infer` usada durante evaluación.
+Ejecuta `python -m streamlit run app.py`. La primera pantalla explica las tres preguntas y permite explorar la escala. “Simular y comparar v9” carga la misma función `infer` usada durante evaluación.
 
 1. Elige tipo y mano. Se cargan medianas de la población de ajuste de ese perfil.
 2. Introduce velocidad, IVB, HB y spin medidos. Abre el panel de release/ubicación para completar las demás mediciones del mismo pitch.
@@ -163,15 +163,15 @@ Para scouting, el perfil ideal debe ser **condicional al tipo, mano y entorno** 
 
 Python 3.11+ y entorno virtual. Esta ejecución local usa Python 3.14. DuckDB se limita a 1.4.x porque 2.0 produjo una instrucción ilegal en el CPU local; no es un fallo del parquet.
 
-Pandas se limita a 2.3.x para la compatibilidad del exportador DuckDB histórico. `requirements-v9-lock.txt` registra las versiones exactas verificadas con Python 3.14; los archivos de requisitos generales permiten resolver versiones compatibles en otras instalaciones. El dashboard usa la API de Streamlit 1.66 o posterior.
+Pandas se limita a 2.3.x para la compatibilidad del exportador DuckDB histórico. `requirements/requirements-v9-lock.txt` registra las versiones exactas verificadas con Python 3.14; los archivos de requisitos generales permiten resolver versiones compatibles en otras instalaciones. El dashboard usa la API de Streamlit 1.66 o posterior.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements-entrega.txt
+python -m pip install -r requirements/requirements-entrega.txt
 python -m unittest test_stuff_plus_v9 -v
-python entrenar_stuff_plus_v9.py --parquet Data/stuff_model_df.parquet --hilos 3
-python -m streamlit run dashboard_stuff_plus.py
+python src/entrenar_stuff_plus_v9.py --parquet Data/stuff_model_df.parquet --hilos 3
+python -m streamlit run app.py
 ```
 
 Windows PowerShell: usa `.venv\Scripts\Activate.ps1` para activar el entorno. También puedes ejecutar directamente `.venv\Scripts\python.exe`.
@@ -179,8 +179,8 @@ Windows PowerShell: usa `.venv\Scripts\Activate.ps1` para activar el entorno. Ta
 Para separar ajuste y evaluación:
 
 ```bash
-python entrenar_stuff_plus_v9.py --fase entrenar --salida stuff_plus_output_v9_nueva
-python entrenar_stuff_plus_v9.py --fase evaluar --salida stuff_plus_output_v9_nueva
+python src/entrenar_stuff_plus_v9.py --fase entrenar --salida stuff_plus_output_v9_nueva
+python src/entrenar_stuff_plus_v9.py --fase evaluar --salida stuff_plus_output_v9_nueva
 ```
 
 El presupuesto por defecto es 400 iteraciones como máximo, con parada temprana. Para repetir una ejecución concreta usa el presupuesto guardado en su protocolo, en lugar de asumir el valor por defecto. Una salida existente no se sobrescribe.
@@ -190,8 +190,8 @@ La ejecución incluida en este trabajo usa **300 iteraciones máximas y tres hil
 Para las auditorías, las cuatro tareas de carreras son obligatorias y permiten estudiar los índices con menor coste:
 
 ```bash
-python entrenar_stuff_plus_v9.py --holdout pitcher --salida stuff_plus_output_v9_pitcher --hilos 3 --tasks stuff_run_value xrunvalue arsenal_run_value environment_run_value
-python entrenar_stuff_plus_v9.py --holdout environment --grupo-excluido 'Extreme Altitude' --salida stuff_plus_output_v9_environment --hilos 3 --tasks stuff_run_value xrunvalue arsenal_run_value environment_run_value
+python src/entrenar_stuff_plus_v9.py --holdout pitcher --salida stuff_plus_output_v9_pitcher --hilos 3 --tasks stuff_run_value xrunvalue arsenal_run_value environment_run_value
+python src/entrenar_stuff_plus_v9.py --holdout environment --grupo-excluido 'Extreme Altitude' --salida stuff_plus_output_v9_environment --hilos 3 --tasks stuff_run_value xrunvalue arsenal_run_value environment_run_value
 ```
 
 `--holdout park --grupo-excluido NOMBRE` falla con un mensaje claro si no existe `stadium`. No genera una auditoría ficticia. Recuperar modelos históricos requiere Git LFS autenticado; **entrenar v9 no requiere esos modelos**.

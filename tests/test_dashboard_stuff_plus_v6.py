@@ -13,7 +13,7 @@ class DashboardTests(unittest.TestCase):
     def test_real_inference_fallback_physics_and_ranking(self):
         from streamlit.testing.v1 import AppTest
 
-        app = AppTest.from_file(str(ROOT / "dashboard_stuff_plus_v6.py")).run(timeout=45)
+        app = AppTest.from_file(str(ROOT / "src/dashboard_stuff_plus_v6.py")).run(timeout=45)
         self.assertEqual(len(app.exception), 0)
         self.assertEqual(len(app.metric), 5)
         self.assertTrue(any("Faltan mediciones" in element.value for element in app.info))

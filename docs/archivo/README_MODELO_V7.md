@@ -18,15 +18,15 @@ El conjunto de entrenamiento difiere de v6. El reporte separa el efecto de calib
 
 ## Reproducir
 
-Desde la raíz, con el entorno de `requirements-hackathon.txt`:
+Desde la raíz, con el entorno de `requirements/requirements-hackathon.txt`:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-dashboard.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements/requirements-dashboard.txt
 .\.venv\Scripts\python.exe entrenar_stuff_plus_v7.py --fase todo --hilos 6
 .\.venv\Scripts\python.exe verificar_modelo_v7.py
 .\.venv\Scripts\python.exe reportar_mejora_v7.py
 .\.venv\Scripts\python.exe -m unittest discover
-.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus.py
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 También pueden ejecutarse por separado las fases `preparar`, `seleccionar` y `evaluar`. El protocolo guarda hashes del código y datos antes del ajuste; la selección se guarda antes de leer el benchmark 2026. No cambies el script entre fases. Conserva los artefactos originales para auditar una ejecución.

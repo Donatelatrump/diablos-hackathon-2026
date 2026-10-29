@@ -30,7 +30,7 @@ En el entorno Python del proyecto, con las dependencias de entrenamiento y PyArr
 .\.venv\Scripts\python.exe actualizar_estadios.py stuff_model_df.parquet --salida stuff_model_df_con_estadios.parquet
 .\.venv\Scripts\python.exe entrenar_stuff_plus_v9.py --parquet stuff_model_df_con_estadios.parquet --salida stuff_plus_output_v9_estadios --stadium-context --incremental-gate --iteraciones 400 --hilos 6
 .\.venv\Scripts\python.exe reportar_estadios_v9.py
-.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus.py
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 Las salidas deben ser nuevas. Para repetir un experimento usa otra carpeta y pasa

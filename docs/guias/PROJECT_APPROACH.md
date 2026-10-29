@@ -1,6 +1,6 @@
 # Understanding the Diablos Stuff+ project
 
-Start the app with `.venv/bin/python -m streamlit run dashboard_stuff_plus.py` and open **Entender el proyecto**. For the full Spanish explanation, read [GUIA_PROYECTO.md](GUIA_PROYECTO.md). The [eight-page technical document](../../reports/v9/DOCUMENTO_TECNICO_V9.pdf) describes the original v9 experiment; this file documents the subsequent incremental validation improvement.
+Start the app with `.venv/bin/python -m streamlit run app.py` and open **Entender el proyecto**. For the full Spanish explanation, read [GUIA_PROYECTO.md](GUIA_PROYECTO.md). The [eight-page technical document](../../reports/v9/DOCUMENTO_TECNICO_V9.pdf) describes the original v9 experiment; this file documents the subsequent incremental validation improvement.
 
 ## What problem are we solving?
 
@@ -84,17 +84,17 @@ The completed 300-iteration experiment rejected both additional run-value layers
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements-entrega.txt
+python -m pip install -r requirements/requirements-entrega.txt
 python -m unittest test_stuff_plus_v9 test_dashboard_stuff_plus_v9 -v
-python entrenar_stuff_plus_v9.py --incremental-gate --iteraciones 300 --hilos 3 --salida stuff_plus_output_v9_incremental
-python -m streamlit run dashboard_stuff_plus.py
+python src/entrenar_stuff_plus_v9.py --incremental-gate --iteraciones 300 --hilos 3 --salida stuff_plus_output_v9_incremental
+python -m streamlit run app.py
 ```
 
 On Windows activate `.venv\Scripts\Activate.ps1`. Training refuses to overwrite an existing experiment; use a fresh `--salida` directory for a new run. The app offers the original and incremental runs when their artifacts are present. In the evidence tab, inspect which model was selected and what it competed against. A zero gain in an inherited layer is an intentional fallback.
 
-Original v9 reports can be regenerated with `python reportar_v9.py` followed by `python generar_documento_v9.py`. The PDF contains original v9 results, not results from the incremental run. Tests cover grouped splits, leakage boundaries, calibration, persistence, outcome-free inference, batch invariance, parent fallbacks, SHAP reconstruction and dashboard interaction.
+Original v9 reports can be regenerated with `python src/reportar_v9.py` followed by `python src/generar_documento_v9.py`. The PDF contains original v9 results, not results from the incremental run. Tests cover grouped splits, leakage boundaries, calibration, persistence, outcome-free inference, batch invariance, parent fallbacks, SHAP reconstruction and dashboard interaction.
 
-After both evaluations complete, run `python comparar_incremental_v9.py` for the [measured original-versus-incremental comparison](../../reports/v9_incremental/README.md). It verifies matching dataset hashes, years, training budgets and pitch IDs before comparing run-value predictions. The comparison exports aggregate metrics rather than individual pitches.
+After both evaluations complete, run `python src/comparar_incremental_v9.py` for the [measured original-versus-incremental comparison](../../reports/v9_incremental/README.md). It verifies matching dataset hashes, years, training budgets and pitch IDs before comparing run-value predictions. The comparison exports aggregate metrics rather than individual pitches.
 
 ## How to use this with a coach
 

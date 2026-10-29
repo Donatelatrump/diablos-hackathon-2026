@@ -24,9 +24,9 @@ Esta vista corresponde a la muestra evaluada, no a un censo garantizado de toda 
 
 ## Reproducción
 
-1. `python completar_targets_pa.py`: reconstrucción, tres modelos de outs y normalización de los índices originales. Requiere los datos autorizados y las tres ejecuciones v9; conserva evaluaciones terminadas.
-2. `python indice_integral.py`: referencia de calibración, predicciones, puntuaciones y agregados por pitcher/arsenal para cada auditoría.
+1. `python src/completar_targets_pa.py`: reconstrucción, tres modelos de outs y normalización de los índices originales. Requiere los datos autorizados y las tres ejecuciones v9; conserva evaluaciones terminadas.
+2. `python src/indice_integral.py`: referencia de calibración, predicciones, puntuaciones y agregados por pitcher/arsenal para cada auditoría.
 3. `python -m unittest test_complemento_pa test_dashboard_estadios_v9 -q`: casos límite e integración.
-4. `python verificar_entrega_estadios.py --paquete`: integridad, referencias y exclusiones.
+4. `python src/verificar_entrega_estadios.py --paquete`: integridad, referencias y exclusiones.
 
 La evaluación 2026 es reutilizada. Estas mejoras no crean una prueba prospectiva nueva ni eliminan los límites causales, climáticos o de calidad de datos.

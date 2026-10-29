@@ -132,7 +132,7 @@ La velocidad de salida obtiene RMSE 14.389 mph y R² 0.126. xRunValue obtiene R�
 - El selector de entorno calcula `altitud_m`, pero las métricas principales muestran siempre `resultado_cdmx`.
 - `SALIDA` apunta a v3, aunque primero busca nombres de scores v4 dentro de esa carpeta. Puede mostrar rankings y perfiles antiguos.
 - El dashboard permite que ubicación y conteo modifiquen Stuff+ y que la altitud altere Location+, pese a las definiciones que muestra.
-- `requirements-hackathon.txt` omite Streamlit, Plotly, un motor Parquet para pandas y SHAP. En la `.venv` revisada faltan Streamlit, PyArrow y SHAP. Pandas necesita PyArrow o fastparquet para estas lecturas; DuckDB ya disponible podría unificar ese acceso.
+- `requirements/requirements-hackathon.txt` omite Streamlit, Plotly, un motor Parquet para pandas y SHAP. En la `.venv` revisada faltan Streamlit, PyArrow y SHAP. Pandas necesita PyArrow o fastparquet para estas lecturas; DuckDB ya disponible podría unificar ese acceso.
 - SHAP se escribe con el mismo nombre de archivo para cada tarea, sobrescribiendo resultados anteriores, tanto en importancia general como por altitud.
 - Los once modelos v4 cargan correctamente, pero tres tienen 80 árboles y ocho tienen 40. Reutilizar archivos existentes sin comprobar configuración permite mezclar ejecuciones; no demuestra por sí solo que los modelos estén corruptos.
 - No hay README de ejecución, pruebas automatizadas del pipeline ni configuración central de versión. Las dependencias tienen mínimos abiertos, sin un entorno fijado.

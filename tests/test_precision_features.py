@@ -138,7 +138,7 @@ class PrecisionDashboardTests(unittest.TestCase):
     def test_advanced_measurements_do_not_change_physical_score(self):
         from streamlit.testing.v1 import AppTest
         from tests.test_dashboard_navigation_helpers import navigate
-        app=AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'dashboard_stuff_plus.py')).run(timeout=60)
+        app=AppTest.from_file(str(Path(__file__).resolve().parents[1] / 'app.py')).run(timeout=60)
         navigate(app,'Simular y comparar v9').run(timeout=60)
         next(w for w in app.selectbox if w.key=='sim_pitch_type').select('Four-Seam').run(timeout=60)
         before=[w.value for w in app.metric if w.label=='Stuff+ · física']

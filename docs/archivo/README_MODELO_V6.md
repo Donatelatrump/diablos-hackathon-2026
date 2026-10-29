@@ -47,8 +47,8 @@ El ranking incluye media física cruda, score regularizado hacia la media de tem
 ## Interfaz
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-dashboard.txt
-.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus.py
+.\.venv\Scripts\python.exe -m pip install -r requirements/requirements-dashboard.txt
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 La interfaz conserva la referencia v5 si faltan mediciones adicionales. Muestra por separado la velocidad de salida física y contextual, y permite consultar los rankings con intervalos.
