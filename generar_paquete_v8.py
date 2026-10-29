@@ -167,7 +167,7 @@ Completar nombres, correos y elegibilidad del equipo; confirmar la modalidad de 
     source_dir=OUT/'codigo';source_dir.mkdir(exist_ok=True)
     names=['validar_pitchers_v8.py','analisis_operativo_v8.py','explicar_casos_v8.py','generar_paquete_v8.py','verificar_entrega_v8.py','dashboard_entrega_v8.py',
            'dashboard_stuff_plus.py','dashboard_stuff_plus_v5.py','dashboard_stuff_plus_v6.py','dashboard_stuff_plus_v7.py','dashboard_stuff_plus_v8.py',
-           'requirements-entrega.txt','requirements-dashboard.txt','requirements-hackathon.txt','README.md','README_MODELO_V6.md','README_MODELO_V7.md','README_MODELO_V8.md']
+           'requirements-entrega.txt','requirements-dashboard.txt','requirements-hackathon.txt','README.md','docs/archivo/README_MODELO_V6.md','docs/archivo/README_MODELO_V7.md','docs/archivo/README_MODELO_V8.md']
     names += [f'{prefix}_v{version}.py' for version in [5,6,7,8] for prefix in ['entrenar_stuff_plus','verificar_modelo','reportar_mejora']]
     names += ['test_entrega_v8.py','test_stuff_plus_v8.py','dashboard_revision_v8.py','estadios_v8.py','explicacion_simulador_v8.py','test_estadios_v8.py','test_dashboard_revision_v8.py']
     for name in names:

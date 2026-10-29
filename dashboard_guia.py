@@ -220,7 +220,7 @@ def render_guide(root: Path):
         st.markdown("### Descargas")
         col1, col2, col3 = st.columns(3)
         
-        guide = root / "GUIA_PROYECTO.md"
+        guide = root / "docs/guias/GUIA_PROYECTO.md"
         if guide.exists():
             with col1:
                 st.download_button(
@@ -231,7 +231,7 @@ def render_guide(root: Path):
                     use_container_width=True,
                 )
         
-        approach = root / "PROJECT_APPROACH.md"
+        approach = root / "docs/guias/PROJECT_APPROACH.md"
         if approach.exists():
             with col2:
                 st.download_button(

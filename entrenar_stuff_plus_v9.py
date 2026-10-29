@@ -1,4 +1,4 @@
-"""Standalone, grouped and calibrated Stuff+ experiment. See GUIA_PROYECTO.md.
+"""Standalone, grouped and calibrated Stuff+ experiment. See docs/guias/GUIA_PROYECTO.md.
 
 Training freezes decisions before evaluation. 2026 is a reused benchmark.
 The physical index excludes arsenal, location, environment and outcomes.

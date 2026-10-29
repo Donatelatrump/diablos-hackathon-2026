@@ -50,7 +50,7 @@ def report(out=Path("stuff_plus_output_v8")):
               "## Inferencia y límites","",
               "Cada tarea rechazada conserva exactamente la salida v7. Si faltan mediciones nuevas finitas o las mediciones físicas necesarias, la fila usa el respaldo v7. Pitching+ se conserva; Stuff+/Location+ solo cambian si se acepta el control directo de carreras, con una referencia fija de calibración. No mezclar referencias diferentes sin identificarlas.","",
               "Los especialistas se probaron para whiff, whiff dado swing y bola en juego. EV, rodados, HR y carreras recibieron la alternativa global de velocidad. La especialización ya compite con un global que conoce AutoPitchType; no se asume que segmentar mejore. El cambio de velocidades puede reflejar también medición o entorno; no se atribuyen efectos causales.","",
-              "Para confirmar generalización temporal hacen falta fechas y datos futuros reservados; para RE24 hacen falta estados base-out y secuencia verificable. No se inventan esos datos. Ver README_MODELO_V8.md y verificacion.json para reproducir y auditar."]
+              "Para confirmar generalización temporal hacen falta fechas y datos futuros reservados; para RE24 hacen falta estados base-out y secuencia verificable. No se inventan esos datos. Ver docs/archivo/README_MODELO_V8.md y verificacion.json para reproducir y auditar."]
     (out/"RESULTADO_MEJORA.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
     means=[r["bootstrap"]["relative_mse_reduction"]*100 for r in metrics]
     lower=[m-r["bootstrap"]["ci95_low"]*100 for m,r in zip(means,metrics)]

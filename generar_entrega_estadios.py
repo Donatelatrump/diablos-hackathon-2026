@@ -220,7 +220,7 @@ def main():
         'completar_validaciones_estadios.py','generar_entrega_estadios.py','verificar_entrega_estadios.py',
         'test_stuff_plus_v9.py','test_estadios_modelo_v9.py','test_dashboard_estadios_v9.py',
         'test_perfiles_estadios.py','completar_targets_pa.py','indice_integral.py','reportar_complemento_pa.py','test_complemento_pa.py',
-        'REENTRENAMIENTO_ESTADIOS.md','GUIA_PROYECTO.md','.streamlit/config.toml',
+        'docs/guias/REENTRENAMIENTO_ESTADIOS.md','docs/guias/GUIA_PROYECTO.md','.streamlit/config.toml',
         'imgs/diablos-rojos-del-mexico-logo-brandlogos.net_kvga6c13n.svg']
     for name in sources:
         path=ROOT/name

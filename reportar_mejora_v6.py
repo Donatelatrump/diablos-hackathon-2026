@@ -98,7 +98,7 @@ def report(output):
               "- `metricas_benchmark_2026.json`: métricas y bootstrap por tarea.",
               "- `arsenal_con_incertidumbre.csv`: ranking regularizado con intervalos por juego.",
               "- `importancia_variables.csv`: PredictionValuesChange por modelo, sin atribución causal.", "",
-              "Ejecutar `verificar_modelo_v6.py` para auditar artefactos, datos, inferencia y fallback. Consultar `README_MODELO_V6.md` para reproducir las fases separadas.", ""]
+              "Ejecutar `verificar_modelo_v6.py` para auditar artefactos, datos, inferencia y fallback. Consultar `docs/archivo/README_MODELO_V6.md` para reproducir las fases separadas.", ""]
     (output / "RESULTADO_MEJORA.md").write_text("\n".join(lines), encoding="utf-8")
     metadata, _, models = v6.load_bundle(output)
     importances = []
