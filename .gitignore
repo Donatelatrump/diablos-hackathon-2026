@@ -12,6 +12,10 @@
 # Datos privados del reto y artefactos reproducibles de la nueva ejecución.
 /Data/
 /stuff_plus_output_v9*/
+# Ejecuciones v9 completas publicadas con sus modelos y archivos de soporte.
+!/stuff_plus_output_v9_estadios/
+!/stuff_plus_output_v9_estadios_park/
+!/stuff_plus_output_v9_estadios_pitcher/
 /precision*_output_2026_10_28/
 /joint_ensemble_output_2026_10_28/
 /joint_lgb_output_2026_10_28/

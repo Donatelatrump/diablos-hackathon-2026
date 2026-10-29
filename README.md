@@ -21,6 +21,8 @@ En Windows: `.venv\Scripts\Activate.ps1`. El cargador busca el parquet completo 
 
 Cada ejecución requiere una carpeta de salida nueva. Si ya existen modelos locales, abre directamente el dashboard. La opción incremental conserva la capa anterior cuando arsenal o entorno no demuestran valor adicional en desarrollo; consulta `PROJECT_APPROACH.md` antes de interpretar un delta igual a cero.
 
+Las ejecuciones completas `stuff_plus_output_v9_estadios`, `stuff_plus_output_v9_estadios_park` y `stuff_plus_output_v9_estadios_pitcher` incluyen sus 39 modelos CatBoost, bundles, métricas, selecciones y resultados. Después de clonar, ejecuta `git lfs install` y `git lfs pull` para descargar los archivos `.cbm` y `.parquet`. Las ejecuciones interrumpidas permanecen excluidas.
+
 ## Leer y revisar
 
 - [Guía del enfoque y requisitos](GUIA_PROYECTO.md)
@@ -30,4 +32,4 @@ Cada ejecución requiere una carpeta de salida nueva. Si ya existen modelos loca
 - [Entrega histórica v8](entrega_v8/README_ENTREGA.md)
 - [Documentación histórica de los modelos](README_MODELOS_HISTORICOS.md)
 
-**Alcance:** 2026 es un benchmark reutilizado. Las categorías de altitud no identifican Harp Helú. El target de carreras es un proxy, y los escenarios de entorno no son efectos causales. Los datos originales son de uso restringido a la competencia; `Data/` y los nuevos artefactos individuales están excluidos de Git.
+**Alcance:** 2026 es un benchmark reutilizado. Las categorías de altitud no identifican Harp Helú. El target de carreras es un proxy, y los escenarios de entorno no son efectos causales. Los datos originales son de uso restringido a la competencia; `Data/` permanece excluido de Git. Se publican los artefactos de las tres ejecuciones v9 completas indicadas arriba.
