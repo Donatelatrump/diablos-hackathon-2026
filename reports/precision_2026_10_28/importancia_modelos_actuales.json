@@ -1,0 +1,510 @@
+{
+  "stuff_run_value": [
+    {
+      "feature": "VertBreak",
+      "importance": 13.687298955385316
+    },
+    {
+      "feature": "movement_magnitude",
+      "importance": 8.590386096465187
+    },
+    {
+      "feature": "hb_arm_side",
+      "importance": 6.847704846375661
+    },
+    {
+      "feature": "RelSpeed",
+      "importance": 6.429606463935798
+    },
+    {
+      "feature": "SpinRate",
+      "importance": 5.51203773340537
+    },
+    {
+      "feature": "release_side_arm_side",
+      "importance": 5.392532632697884
+    },
+    {
+      "feature": "EffectiveVelo",
+      "importance": 5.156535148193102
+    },
+    {
+      "feature": "SpinAxis_cos",
+      "importance": 4.393148311092539
+    },
+    {
+      "feature": "spin_per_mph",
+      "importance": 4.3807793665234955
+    },
+    {
+      "feature": "InducedVertBreak",
+      "importance": 4.190684326703693
+    },
+    {
+      "feature": "RelHeight",
+      "importance": 4.1244414864548595
+    },
+    {
+      "feature": "effective_speed_delta",
+      "importance": 4.076982372390373
+    },
+    {
+      "feature": "extension_per_height",
+      "importance": 3.464622950081907
+    },
+    {
+      "feature": "movement_angle_cos",
+      "importance": 3.271240687732486
+    },
+    {
+      "feature": "Extension",
+      "importance": 3.159610935943219
+    },
+    {
+      "feature": "AutoPitchType",
+      "importance": 3.063408136219388
+    },
+    {
+      "feature": "HorzBreak",
+      "importance": 2.8979019596913522
+    },
+    {
+      "feature": "spin_axis_cos2",
+      "importance": 2.810217765629467
+    },
+    {
+      "feature": "RelSide",
+      "importance": 2.5728719149710706
+    },
+    {
+      "feature": "spin_axis_sin2",
+      "importance": 1.9988236039667664
+    },
+    {
+      "feature": "movement_angle_sin",
+      "importance": 1.6432664575011149
+    },
+    {
+      "feature": "SpinAxis_sin",
+      "importance": 1.5740259180786735
+    },
+    {
+      "feature": "PitcherThrows",
+      "importance": 0.7618719305612427
+    }
+  ],
+  "xrunvalue": [
+    {
+      "feature": "PlateLocSide",
+      "importance": 29.7910178728208
+    },
+    {
+      "feature": "PlateLocHeight",
+      "importance": 25.01261034874513
+    },
+    {
+      "feature": "Balls",
+      "importance": 22.56506127525466
+    },
+    {
+      "feature": "Strikes",
+      "importance": 4.613893182569773
+    },
+    {
+      "feature": "BatterSide",
+      "importance": 2.624459195740486
+    },
+    {
+      "feature": "VertBreak",
+      "importance": 1.976551483102916
+    },
+    {
+      "feature": "movement_magnitude",
+      "importance": 1.880381818234561
+    },
+    {
+      "feature": "InducedVertBreak",
+      "importance": 1.3415570196726918
+    },
+    {
+      "feature": "hb_arm_side",
+      "importance": 0.9468856116695015
+    },
+    {
+      "feature": "HorzBreak",
+      "importance": 0.8622039638537207
+    },
+    {
+      "feature": "SpinRate",
+      "importance": 0.7967744510991873
+    },
+    {
+      "feature": "RelSpeed",
+      "importance": 0.7489513338122804
+    },
+    {
+      "feature": "EffectiveVelo",
+      "importance": 0.7118227508127093
+    },
+    {
+      "feature": "SpinAxis_sin",
+      "importance": 0.6815627049741797
+    },
+    {
+      "feature": "AutoPitchType",
+      "importance": 0.5996520294379467
+    },
+    {
+      "feature": "movement_angle_sin",
+      "importance": 0.5749353184372022
+    },
+    {
+      "feature": "SpinAxis_cos",
+      "importance": 0.5361332376760676
+    },
+    {
+      "feature": "effective_speed_delta",
+      "importance": 0.5267965261538018
+    },
+    {
+      "feature": "extension_per_height",
+      "importance": 0.5210549220940165
+    },
+    {
+      "feature": "spin_per_mph",
+      "importance": 0.474071806070636
+    },
+    {
+      "feature": "release_side_arm_side",
+      "importance": 0.44070112718138454
+    },
+    {
+      "feature": "RelHeight",
+      "importance": 0.3602527188416856
+    },
+    {
+      "feature": "movement_angle_cos",
+      "importance": 0.3280565449290435
+    },
+    {
+      "feature": "RelSide",
+      "importance": 0.3194762556056404
+    },
+    {
+      "feature": "Extension",
+      "importance": 0.2575876463963841
+    },
+    {
+      "feature": "spin_axis_sin2",
+      "importance": 0.21833444365477772
+    },
+    {
+      "feature": "spin_axis_cos2",
+      "importance": 0.18950488385781503
+    },
+    {
+      "feature": "PitcherThrows",
+      "importance": 0.09970952730103369
+    }
+  ],
+  "whiff_given_swing": [
+    {
+      "feature": "PlateLocHeight",
+      "importance": 40.02501052947306
+    },
+    {
+      "feature": "PlateLocSide",
+      "importance": 14.09312759930751
+    },
+    {
+      "feature": "VertBreak",
+      "importance": 6.830468298527144
+    },
+    {
+      "feature": "Strikes",
+      "importance": 4.542776994262219
+    },
+    {
+      "feature": "AutoPitchType",
+      "importance": 4.152823570997582
+    },
+    {
+      "feature": "BatterSide",
+      "importance": 3.895207194808214
+    },
+    {
+      "feature": "RelHeight",
+      "importance": 2.8026664036267044
+    },
+    {
+      "feature": "EffectiveVelo",
+      "importance": 2.332370562597631
+    },
+    {
+      "feature": "InducedVertBreak",
+      "importance": 2.328327100605446
+    },
+    {
+      "feature": "RelSpeed",
+      "importance": 2.2923707486731377
+    },
+    {
+      "feature": "movement_magnitude",
+      "importance": 1.7849105039484574
+    },
+    {
+      "feature": "hb_arm_side",
+      "importance": 1.4288826009065405
+    },
+    {
+      "feature": "RelSide",
+      "importance": 1.2773153422714563
+    },
+    {
+      "feature": "release_side_arm_side",
+      "importance": 0.9103705029402421
+    },
+    {
+      "feature": "Extension",
+      "importance": 0.8731622007233473
+    },
+    {
+      "feature": "SpinRate",
+      "importance": 0.8728145832825622
+    },
+    {
+      "feature": "spin_axis_sin2",
+      "importance": 0.8149293147000221
+    },
+    {
+      "feature": "stadium_id",
+      "importance": 0.7693451795628816
+    },
+    {
+      "feature": "velo_diff_vs_fb",
+      "importance": 0.7654834427007065
+    },
+    {
+      "feature": "SpinAxis_cos",
+      "importance": 0.7237849770869915
+    },
+    {
+      "feature": "spin_per_mph",
+      "importance": 0.6727064419226082
+    },
+    {
+      "feature": "spin_axis_cos2",
+      "importance": 0.6008363508754068
+    },
+    {
+      "feature": "movement_angle_cos",
+      "importance": 0.569911557256715
+    },
+    {
+      "feature": "HorzBreak",
+      "importance": 0.5645608633313501
+    },
+    {
+      "feature": "SpinAxis_sin",
+      "importance": 0.5224561515104441
+    },
+    {
+      "feature": "movement_angle_sin",
+      "importance": 0.5034561035336111
+    },
+    {
+      "feature": "extension_per_height",
+      "importance": 0.4498422698988688
+    },
+    {
+      "feature": "PitcherThrows",
+      "importance": 0.4078520270924041
+    },
+    {
+      "feature": "arsenal_reliability",
+      "importance": 0.40451011550430627
+    },
+    {
+      "feature": "effective_speed_delta",
+      "importance": 0.339367021449231
+    },
+    {
+      "feature": "ivb_diff_vs_fb",
+      "importance": 0.3370074546737525
+    },
+    {
+      "feature": "Balls",
+      "importance": 0.3075636949953219
+    },
+    {
+      "feature": "altitude_category",
+      "importance": 0.26124518367718313
+    },
+    {
+      "feature": "hb_diff_vs_fb",
+      "importance": 0.25874204907493115
+    },
+    {
+      "feature": "pitch_usage_pct",
+      "importance": 0.15256837215366714
+    },
+    {
+      "feature": "release_distance_vs_fb",
+      "importance": 0.09128551770089223
+    },
+    {
+      "feature": "arsenal_history_available",
+      "importance": 0.039941174347473005
+    }
+  ],
+  "home_run_per_pitch": [
+    {
+      "feature": "PlateLocSide",
+      "importance": 40.58144838664342
+    },
+    {
+      "feature": "PlateLocHeight",
+      "importance": 32.93760833454465
+    },
+    {
+      "feature": "BatterSide",
+      "importance": 4.5713332848834005
+    },
+    {
+      "feature": "Balls",
+      "importance": 2.8025507391868167
+    },
+    {
+      "feature": "Strikes",
+      "importance": 1.7293314937557835
+    },
+    {
+      "feature": "RelSpeed",
+      "importance": 1.5862078831954851
+    },
+    {
+      "feature": "EffectiveVelo",
+      "importance": 1.3853401443126139
+    },
+    {
+      "feature": "stadium_id",
+      "importance": 1.140067739203244
+    },
+    {
+      "feature": "movement_magnitude",
+      "importance": 1.0135916954453914
+    },
+    {
+      "feature": "HorzBreak",
+      "importance": 0.7624970649311887
+    },
+    {
+      "feature": "effective_speed_delta",
+      "importance": 0.6791395483359919
+    },
+    {
+      "feature": "VertBreak",
+      "importance": 0.6715018989232531
+    },
+    {
+      "feature": "SpinRate",
+      "importance": 0.6325534227907522
+    },
+    {
+      "feature": "spin_axis_sin2",
+      "importance": 0.628731676599714
+    },
+    {
+      "feature": "InducedVertBreak",
+      "importance": 0.6032150840187618
+    },
+    {
+      "feature": "SpinAxis_cos",
+      "importance": 0.5921790768753066
+    },
+    {
+      "feature": "SpinAxis_sin",
+      "importance": 0.587177244190963
+    },
+    {
+      "feature": "spin_per_mph",
+      "importance": 0.5477796215750932
+    },
+    {
+      "feature": "RelHeight",
+      "importance": 0.48746975436714174
+    },
+    {
+      "feature": "movement_angle_cos",
+      "importance": 0.4843939718485412
+    },
+    {
+      "feature": "RelSide",
+      "importance": 0.4536933558278847
+    },
+    {
+      "feature": "movement_angle_sin",
+      "importance": 0.450113900452722
+    },
+    {
+      "feature": "arsenal_reliability",
+      "importance": 0.43864504397376003
+    },
+    {
+      "feature": "Extension",
+      "importance": 0.40298054830594254
+    },
+    {
+      "feature": "velo_diff_vs_fb",
+      "importance": 0.3891865335791239
+    },
+    {
+      "feature": "extension_per_height",
+      "importance": 0.37842648012856117
+    },
+    {
+      "feature": "pitch_usage_pct",
+      "importance": 0.36480203906677716
+    },
+    {
+      "feature": "PitcherThrows",
+      "importance": 0.3639698934565447
+    },
+    {
+      "feature": "hb_diff_vs_fb",
+      "importance": 0.3124520434805663
+    },
+    {
+      "feature": "release_side_arm_side",
+      "importance": 0.30817241321968036
+    },
+    {
+      "feature": "hb_arm_side",
+      "importance": 0.29880019049530765
+    },
+    {
+      "feature": "spin_axis_cos2",
+      "importance": 0.2813500502397767
+    },
+    {
+      "feature": "ivb_diff_vs_fb",
+      "importance": 0.278502372040786
+    },
+    {
+      "feature": "AutoPitchType",
+      "importance": 0.24835898891468106
+    },
+    {
+      "feature": "release_distance_vs_fb",
+      "importance": 0.24629384694905576
+    },
+    {
+      "feature": "arsenal_history_available",
+      "importance": 0.21571731003795985
+    },
+    {
+      "feature": "altitude_category",
+      "importance": 0.14441692420328633
+    }
+  ]
+}

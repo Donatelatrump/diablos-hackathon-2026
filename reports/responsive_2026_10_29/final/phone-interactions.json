@@ -1,0 +1,283 @@
+{
+  "viewerControls": true,
+  "swipeDelta": 145,
+  "presetAndHand": true,
+  "evaluation": true,
+  "sections": [
+    {
+      "name": "Comparar estadios",
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 197,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 197,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 162,
+          "height": 48
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "name": "Lanzadores",
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 197,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 197,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 162,
+          "height": 48
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "name": "Confianza",
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 197,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 197,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 162,
+          "height": 48
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "name": "Ayuda",
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 197,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 197,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 162,
+          "height": 48
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "name": "Simulador",
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 197,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 197,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 699.140625,
+          "width": 175,
+          "height": 62.78125
+        },
+        {
+          "text": "Curva",
+          "x": 199,
+          "y": 699.140625,
+          "width": 175,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 769.921875,
+          "width": 175,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 199,
+          "y": 769.921875,
+          "width": 175,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 1018.921875,
+          "width": 320,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 1072.921875,
+          "width": 320,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1613.96875,
+          "width": 320,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 358
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "task": "environment_run_value",
+    "variant": "actual",
+    "features": 37,
+    "n_fit": 249488,
+    "n_evaluation": 48963,
+    "trees": 200,
+    "seconds": 56.42,
+    "metrics": {
+      "rmse": 0.2149263086976472,
+      "r2": 0.03985418011008013,
+      "mse_skill": 0.03986010263485984,
+      "baseline_rmse": 0.21934226385435948,
+      "count_baseline_rmse": 0.21774782616519625,
+      "mse_skill_vs_count": 0.02574755658062322
+    },
+    "vs_same_budget_current": {
+      "gain": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": 0.0,
+      "2025": 0.0
+    },
+    "postprocessor": {
+      "method": "shrink",
+      "weight": 1.0
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "variant": "aerodinamica",
+    "features": 44,
+    "n_fit": 249488,
+    "n_evaluation": 48963,
+    "trees": 200,
+    "seconds": 56.16,
+    "metrics": {
+      "rmse": 0.21499388224203975,
+      "r2": 0.03925033913879861,
+      "mse_skill": 0.03925626538828664,
+      "baseline_rmse": 0.21934226385435948,
+      "count_baseline_rmse": 0.21774782616519625,
+      "mse_skill_vs_count": 0.0251348438764476
+    },
+    "vs_same_budget_current": {
+      "gain": -0.0006289054837012031,
+      "ci_low": -0.0009007340422937827,
+      "ci_high": -0.0003400613091801674,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": -0.0006867296831305492,
+      "2025": -0.000572541552742889
+    },
+    "postprocessor": {
+      "method": "shrink",
+      "weight": 1.0
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "variant": "vuelo_y_angulos",
+    "features": 44,
+    "n_fit": 249488,
+    "n_evaluation": 48963,
+    "trees": 200,
+    "seconds": 47.44,
+    "metrics": {
+      "rmse": 0.2149862063308437,
+      "r2": 0.03931894106694256,
+      "mse_skill": 0.039324866893269195,
+      "baseline_rmse": 0.21934226385435948,
+      "count_baseline_rmse": 0.21774782616519625,
+      "mse_skill_vs_count": 0.0252044537156334
+    },
+    "vs_same_budget_current": {
+      "gain": -0.0005574559947558733,
+      "ci_low": -0.0008981218981961469,
+      "ci_high": -0.0002134428121163934,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": -0.0005586125364582806,
+      "2025": -0.000556328659880645
+    },
+    "postprocessor": {
+      "method": "shrink",
+      "weight": 1.0
+    }
+  },
+  {
+    "task": "environment_run_value",
+    "variant": "entorno_y_situacion",
+    "features": 43,
+    "n_fit": 249488,
+    "n_evaluation": 48963,
+    "trees": 200,
+    "seconds": 47.33,
+    "metrics": {
+      "rmse": 0.21496291627321543,
+      "r2": 0.03952707632985597,
+      "mse_skill": 0.03953300087232947,
+      "baseline_rmse": 0.21934226385435948,
+      "count_baseline_rmse": 0.21774782616519625,
+      "mse_skill_vs_count": 0.02541564693676135
+    },
+    "vs_same_budget_current": {
+      "gain": -0.00034068135636067254,
+      "ci_low": -0.0006001836908331004,
+      "ci_high": -2.7255854978602977e-05,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": -0.0002949204925535298,
+      "2025": -0.0003852865941968986
+    },
+    "postprocessor": {
+      "method": "shrink",
+      "weight": 1.0
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "variant": "actual",
+    "features": 37,
+    "n_fit": 117175,
+    "n_evaluation": 23010,
+    "trees": 200,
+    "seconds": 34.09,
+    "metrics": {
+      "roc_auc": 0.7457964359456569,
+      "average_precision": 0.5347572061805939,
+      "brier": 0.15131850314520082,
+      "brier_baseline": 0.18277466438863438,
+      "brier_skill": 0.17210350979798938,
+      "ece_10_bins": 0.010164203710807429,
+      "positive_rate_test": 0.24072142546718817,
+      "mean_probability": 0.24696310952464123
+    },
+    "vs_same_budget_current": {
+      "gain": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": 0.0,
+      "2025": 0.0
+    },
+    "postprocessor": {
+      "method": "sigmoid",
+      "slope": 1.1172651055308453,
+      "intercept": 0.17557803004392844
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "variant": "aerodinamica",
+    "features": 44,
+    "n_fit": 117175,
+    "n_evaluation": 23010,
+    "trees": 200,
+    "seconds": 34.8,
+    "metrics": {
+      "roc_auc": 0.7470107144463646,
+      "average_precision": 0.5362680077191732,
+      "brier": 0.151057058082922,
+      "brier_baseline": 0.18277466438863438,
+      "brier_skill": 0.1735339326804678,
+      "ece_10_bins": 0.009354227346639009,
+      "positive_rate_test": 0.24072142546718817,
+      "mean_probability": 0.24709071546575914
+    },
+    "vs_same_budget_current": {
+      "gain": 0.0017277798606555317,
+      "ci_low": 0.0005543811920321745,
+      "ci_high": 0.002880046819734011,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": 0.0014535683370767716,
+      "2025": 0.0020007194829098074
+    },
+    "postprocessor": {
+      "method": "sigmoid",
+      "slope": 1.1213867927535266,
+      "intercept": 0.18058701149384135
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "variant": "vuelo_y_angulos",
+    "features": 44,
+    "n_fit": 117175,
+    "n_evaluation": 23010,
+    "trees": 200,
+    "seconds": 43.7,
+    "metrics": {
+      "roc_auc": 0.7482370005688326,
+      "average_precision": 0.537172885693505,
+      "brier": 0.1508080027260215,
+      "brier_baseline": 0.18277466438863438,
+      "brier_skill": 0.17489656878615334,
+      "ece_10_bins": 0.007173093229769314,
+      "positive_rate_test": 0.24072142546718817,
+      "mean_probability": 0.24688624085555752
+    },
+    "vs_same_budget_current": {
+      "gain": 0.0033736813976374957,
+      "ci_low": 0.0015208820313383996,
+      "ci_high": 0.005143465824442593,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": 0.004482640383791536,
+      "2025": 0.00226986620115599
+    },
+    "postprocessor": {
+      "method": "sigmoid",
+      "slope": 1.1036166920872288,
+      "intercept": 0.1607206176241321
+    }
+  },
+  {
+    "task": "whiff_given_swing",
+    "variant": "entorno_y_situacion",
+    "features": 43,
+    "n_fit": 117175,
+    "n_evaluation": 23010,
+    "trees": 200,
+    "seconds": 41.56,
+    "metrics": {
+      "roc_auc": 0.7469302261796762,
+      "average_precision": 0.5366352687642085,
+      "brier": 0.151018634806364,
+      "brier_baseline": 0.18277466438863438,
+      "brier_skill": 0.1737441547956966,
+      "ece_10_bins": 0.008071609579094247,
+      "positive_rate_test": 0.24072142546718817,
+      "mean_probability": 0.24675591760046398
+    },
+    "vs_same_budget_current": {
+      "gain": 0.0019817030475716146,
+      "ci_low": 0.00023289277704074686,
+      "ci_high": 0.0037321845059786777,
+      "groups": 168
+    },
+    "year_gains": {
+      "2024": 0.003995558137466659,
+      "2025": -2.281098720557928e-05
+    },
+    "postprocessor": {
+      "method": "sigmoid",
+      "slope": 1.1241203009519831,
+      "intercept": 0.18532098072494674
+    }
+  }
+]

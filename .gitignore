@@ -2,9 +2,26 @@
 # Datos privados del reto y artefactos reproducibles de la nueva ejecución.
 /Data/
 /stuff_plus_output_v9*/
+/precision*_output_2026_10_28/
+/joint_ensemble_output_2026_10_28/
+/joint_lgb_output_2026_10_28/
+/ensemble_screen_output_2026_10_28/
 /entrega_estadios/
 /ENTREGA_ESTADIOS_ACTUALIZADA.zip
 /tmp/
+/comparativas/repos/
+/comparativas/entornos/
+/comparativas/cache/
+# Investigación local: no publicar proyectos ajenos ni comparativas.
+/comparativas/
+/investigacion_interfaces_2026_10_28/
+/investigar_interfaces_github.py
+/ANALISIS_Y_CAMBIOS_VISUALES_DULONGKI.md
+/COMPARACION_DULONGSKI_8511_2026-10-28.md
+/COMPARACION_GITHUB_INTERFACES_MEDICIONES_2026-10-28.md
+/MEJORAS_COMPARACION_Y_DECISIONES_2026-10-28.md
+/REDISENO_EDITORIAL_2026-10-28.md
+/REVISION_RIVALES_PRECISION_2026-10-28.md
 /stuff_model_df_con_estadios.parquet
 /clasificacion_estadios/*.xlsx
 /clasificacion_estadios/*.parquet

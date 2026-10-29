@@ -1,0 +1,2 @@
+# Add to the existing v9 environment only when running the model experiments.
+lightgbm==4.7.0

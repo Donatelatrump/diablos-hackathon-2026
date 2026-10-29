@@ -1,0 +1,52 @@
+{
+  "scope": "Exploratory ablations; development partitions already inspected in v9; not new confirmation or production validation.",
+  "source": "stuff_model_df_con_estadios.parquet",
+  "source_sha256": "7bb6ff34ae66c1dcb802f644f0ba94ca27cb656092e4275a033e1b8d4098f3d2",
+  "years": [
+    2024,
+    2025
+  ],
+  "iterations": 200,
+  "groups": {
+    "actual": [],
+    "aerodinamica": [
+      "pfxx_arm_side",
+      "pfxz",
+      "drag_proxy",
+      "lift_vertical_proxy",
+      "lift_horizontal_arm_side_proxy",
+      "lift_magnitude_proxy",
+      "movement_per_spin"
+    ],
+    "vuelo_y_angulos": [
+      "ZoneSpeed",
+      "ZoneTime",
+      "SpeedDrop",
+      "VertRelAngle",
+      "HorzRelAngle",
+      "VertApprAngle",
+      "HorzApprAngle"
+    ],
+    "entorno_y_situacion": [
+      "altitud_estadio_m",
+      "density_standard",
+      "month_sin",
+      "month_cos",
+      "Inning",
+      "Outs"
+    ]
+  },
+  "seed": 904,
+  "tasks": [
+    "environment_run_value",
+    "whiff_given_swing"
+  ],
+  "code_sha256": "719f800c16595eb1ad2fa63347905a3c5706c1c53a0972460520ea8ad29b6b84",
+  "rows_by_partition": {
+    "fit": 249488,
+    "early_stop": 75161,
+    "calibration": 74833,
+    "tune": 50953,
+    "confirmation": 48963
+  }
+}

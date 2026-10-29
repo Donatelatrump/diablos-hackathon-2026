@@ -1,0 +1,36 @@
+{
+  "coverage_all_years": [
+    {
+      "year": 2024,
+      "n": 243254,
+      "altitude_known": 223229,
+      "date_known": 233565
+    },
+    {
+      "year": 2025,
+      "n": 256144,
+      "altitude_known": 244847,
+      "date_known": 244847
+    },
+    {
+      "year": 2026,
+      "n": 135604,
+      "altitude_known": 120870,
+      "date_known": 122708
+    }
+  ],
+  "correlations_development": {
+    "ZoneSpeed__RelSpeed": 0.9867899305247777,
+    "SpeedDrop__RelSpeed": 0.5422233394582183,
+    "ZoneTime__RelSpeed": -0.9808229979078281,
+    "pfxx__HorzBreak": -0.9945738783483425,
+    "pfxz__InducedVertBreak": 0.9973906936619396,
+    "VertApprAngle__PlateLocHeight": 0.7806498638572666,
+    "HorzApprAngle__PlateLocSide": 0.5776859327629585
+  },
+  "quality_development": {
+    "whiff_without_swing": 0,
+    "inplay_flag_mismatch": 1,
+    "invalid_count": 0
+  }
+}
