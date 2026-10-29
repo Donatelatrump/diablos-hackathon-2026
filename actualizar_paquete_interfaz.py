@@ -9,7 +9,8 @@ BASE = ROOT / 'ENTREGA_ESTADIOS_ACTUALIZADA.zip'
 TARGET = ROOT / 'ENTREGA_ESTADIOS_REVISION_USABILIDAD.zip'
 UPDATES = [
     'dashboard_stuff_plus.py', 'dashboard_stuff_plus_v9.py', 'dashboard_perfiles_estadios.py',
-    'test_dashboard_estadios_v9.py', 'test_dashboard_stuff_plus_v9.py',
+    'tests/__init__.py', 'tests/test_dashboard_navigation_helpers.py',
+    'tests/test_dashboard_estadios_v9.py', 'tests/test_dashboard_stuff_plus_v9.py',
     'actualizar_paquete_interfaz.py',
     'reports/v9_estadios/MEJORAS_2026-10-28.md',
     'reports/v9_estadios/REVISION_INTERFAZ_2026-10-28.json',

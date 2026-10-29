@@ -206,7 +206,7 @@ def render_guide(root: Path):
                 "python -m venv .venv\n"
                 "source .venv/bin/activate\n"
                 "python -m pip install -r requirements-entrega.txt\n"
-                "python -m unittest test_stuff_plus_v9 -v\n"
+                "python -m unittest tests.test_stuff_plus_v9 -v\n"
                 "python entrenar_stuff_plus_v9.py --incremental-gate --iteraciones 300 --hilos 3 --salida stuff_plus_output_v9_incremental\n"
                 "python -m streamlit run dashboard_stuff_plus.py",
                 language="bash",

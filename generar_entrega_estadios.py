@@ -218,8 +218,9 @@ def main():
         'entrenar_stuff_plus_v5.py','entrenar_stuff_plus_v6.py','entrenar_stuff_plus_v9.py','explicar_v9.py',
         'actualizar_estadios.py','reportar_estadios_v9.py','analizar_perfiles_estadios.py','analizar_casos_scouting.py',
         'completar_validaciones_estadios.py','generar_entrega_estadios.py','verificar_entrega_estadios.py',
-        'test_stuff_plus_v9.py','test_estadios_modelo_v9.py','test_dashboard_estadios_v9.py',
-        'test_perfiles_estadios.py','completar_targets_pa.py','indice_integral.py','reportar_complemento_pa.py','test_complemento_pa.py',
+        'tests/__init__.py','tests/test_dashboard_navigation_helpers.py',
+        'tests/test_stuff_plus_v9.py','tests/test_estadios_modelo_v9.py','tests/test_dashboard_estadios_v9.py',
+        'tests/test_perfiles_estadios.py','completar_targets_pa.py','indice_integral.py','reportar_complemento_pa.py','tests/test_complemento_pa.py',
         'docs/guias/REENTRENAMIENTO_ESTADIOS.md','docs/guias/GUIA_PROYECTO.md','.streamlit/config.toml',
         'imgs/diablos-rojos-del-mexico-logo-brandlogos.net_kvga6c13n.svg']
     for name in sources:
