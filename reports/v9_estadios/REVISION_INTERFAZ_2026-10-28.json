@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-28",
+  "suites": [
+    "test_dashboard_estadios_v9",
+    "test_dashboard_stuff_plus_v9"
+  ],
+  "tests_run": 9,
+  "passed": 7,
+  "skipped": 2,
+  "failures": 0,
+  "errors": 0,
+  "browser_visual_review": false,
+  "model_retraining": false,
+  "source_sha256": {
+    "dashboard_stuff_plus.py": "ce3fc16d345bb4dc4bda84bf737d4c85f508a7fee1e3f3b6efca7159e549ae56",
+    "dashboard_stuff_plus_v9.py": "5fce3646dcc3aa9808d7c36128495de55b795025ee2322bcb9fbbc5a29e4954d",
+    "dashboard_perfiles_estadios.py": "245890813004812791e07d7cde441199c09c1a49f9082d9d2d0ccf355c953c45",
+    "test_dashboard_estadios_v9.py": "3bc3e0bddb3e01353f186c7ee9e20ce6eabcb046ea8997000860ac5374612936",
+    "test_dashboard_stuff_plus_v9.py": "73317c328dcf8d0e0718816aee332e85f2eeed8d523e6ff1b2934a5613716693"
+  },
+  "post_test_change": "Whitespace formatting only"
+}
