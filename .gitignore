@@ -1,4 +1,14 @@
 .venv/
+# Investigación externa y paquetes generados: se conservan solo localmente.
+/investigacion_github_2026_10_27/
+/github_search_*.json
+/github_tree_*.json
+/ENTREGA_*.zip
+/organizar_repo_local.py
+/organizar_codigo_local.py
+/tmp*
+/tmp*/
+/estadios_*/
 # Datos privados del reto y artefactos reproducibles de la nueva ejecución.
 /Data/
 /stuff_plus_output_v9*/
@@ -103,3 +113,15 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Informacion confidencial del hackathon: conservar Excel solo localmente.
+*.[xX][lL][sS]
+*.[xX][lL][sS][xX]
+*.[xX][lL][sS][mM]
+*.[xX][lL][sS][bB]
+# Credenciales locales.
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.aws/
