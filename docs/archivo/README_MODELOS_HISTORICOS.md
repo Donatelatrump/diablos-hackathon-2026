@@ -16,7 +16,7 @@ Modelo CatBoost para lanzamientos de LMB. La versión v5 corrige la independenci
 
 ## Ejecutar
 
-Desde la carpeta del proyecto, con Python 3.11 o posterior y las dependencias de `requirements-hackathon.txt`:
+Desde la carpeta del proyecto, con Python 3.11 o posterior y las dependencias de `requirements/requirements-hackathon.txt`:
 
 ```powershell
 .\.venv\Scripts\python.exe -m unittest test_stuff_plus_v5.py -v
@@ -64,10 +64,10 @@ scores = infer(frame_con_mediciones, bundle)
 
 Las columnas necesarias están en `PHYSICAL`, `LOCATION` y las transformaciones de `features` y `apply_profile`. No se necesitan outcomes para inferir. Un pitcher desconocido usa características de arsenal ausentes.
 
-Instalar `requirements-dashboard.txt` y ejecutar:
+Instalar `requirements/requirements-dashboard.txt` y ejecutar:
 
 ```powershell
-.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus_v5.py
+.\.venv\Scripts\python.exe -m streamlit run src/dashboard_stuff_plus_v5.py
 ```
 
 Esta interfaz usa los modelos exportados y la misma función de inferencia. La entrada habitual `dashboard_stuff_plus.py` también abre v5. El simulador heurístico anterior se conserva en `dashboard_stuff_plus_legacy.py` como antecedente.

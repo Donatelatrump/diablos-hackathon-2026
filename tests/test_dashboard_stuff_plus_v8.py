@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class DashboardV8Tests(unittest.TestCase):
     def test_simulation_velocity_and_ranking(self):
         from streamlit.testing.v1 import AppTest
-        app=AppTest.from_file(str(ROOT/"dashboard_stuff_plus_v8.py")).run(timeout=60)
+        app=AppTest.from_file(str(ROOT/"src/dashboard_stuff_plus_v8.py")).run(timeout=60)
         self.assertEqual(len(app.exception),0)
         self.assertTrue(any("Faltan mediciones" in i.value for i in app.info))
         app.checkbox[0].check().run(timeout=60)

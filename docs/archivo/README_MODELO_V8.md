@@ -17,13 +17,13 @@ El protocolo y hashes se guardan antes del ajuste. La selección se congela ante
 ## Ejecución
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-dashboard.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements/requirements-dashboard.txt
 .\.venv\Scripts\python.exe -m unittest test_stuff_plus_v8 -v
 .\.venv\Scripts\python.exe entrenar_stuff_plus_v8.py --fase todo --hilos 6
 .\.venv\Scripts\python.exe verificar_modelo_v8.py
 .\.venv\Scripts\python.exe reportar_mejora_v8.py
 .\.venv\Scripts\python.exe -m unittest test_dashboard_stuff_plus_v8 -v
-.\.venv\Scripts\python.exe -m streamlit run dashboard_stuff_plus.py
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 Las fases `entrenar` y `evaluar` pueden ejecutarse por separado. Una salida con protocolo existente no se sobrescribe. El código y los datos deben conservar sus hashes entre fases. La preparación requiere los artefactos v7 originales; el bundle final contiene los modelos padres necesarios para inferencia sin consultar otras carpetas de salida.

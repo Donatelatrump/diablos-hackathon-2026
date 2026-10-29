@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class WalkthroughTests(unittest.TestCase):
     def test_guide_explains_scale_and_archive_handles_lfs(self):
-        app = AppTest.from_file(str(ROOT/"dashboard_stuff_plus.py")).run(timeout=60)
+        app = AppTest.from_file(str(ROOT/"app.py")).run(timeout=60)
         navigate(app, "Entender el proyecto").run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         self.assertTrue(any(t.label == "El reto y su alcance" for t in app.tabs))
@@ -22,7 +22,7 @@ class WalkthroughTests(unittest.TestCase):
 @unittest.skipUnless(bundle_ready(ROOT/"stuff_plus_output_v9"), "Requiere modelos v9 entrenados")
 class SimulatorTests(unittest.TestCase):
     def test_context_changes_preserve_physical_score(self):
-        app = AppTest.from_file(str(ROOT/"dashboard_stuff_plus.py")).run(timeout=60)
+        app = AppTest.from_file(str(ROOT/"app.py")).run(timeout=60)
         navigate(app, "Simular y comparar v9").run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         physical = [metric.value for metric in app.metric if metric.label == "Stuff+ · física"]
@@ -40,7 +40,7 @@ class SimulatorTests(unittest.TestCase):
 
     @unittest.skipUnless((ROOT/"stuff_plus_output_v9_incremental/metricas.json").exists(), "Requiere evaluación incremental")
     def test_incremental_run_explains_fallback_and_can_switch_to_original(self):
-        app = AppTest.from_file(str(ROOT/"dashboard_stuff_plus.py")).run(timeout=60)
+        app = AppTest.from_file(str(ROOT/"app.py")).run(timeout=60)
         navigate(app, "Simular y comparar v9").run(timeout=60)
         chooser = next(w for w in app.selectbox if w.label == "Experimento")
         self.assertEqual(chooser.value, "v9 con validación incremental")

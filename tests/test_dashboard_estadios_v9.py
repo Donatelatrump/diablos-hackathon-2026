@@ -11,7 +11,7 @@ READY = (ROOT / 'stuff_plus_output_v9_estadios/estadios.csv').is_file()
 @unittest.skipUnless(READY, 'Requiere entrenamiento y reporte por estadios completos')
 class StadiumDashboardTests(unittest.TestCase):
     def test_compare_stadiums_and_preserve_physical_score(self):
-        app = AppTest.from_file(str(ROOT / 'dashboard_stuff_plus.py')).run(timeout=60)
+        app = AppTest.from_file(str(ROOT / 'app.py')).run(timeout=60)
         navigate(app, 'Simular y comparar v9').run(timeout=60)
         self.assertEqual(len(app.exception), 0)
 
@@ -34,7 +34,7 @@ class StadiumDashboardTests(unittest.TestCase):
         self.assertEqual(len(app.exception), 0)
 
     def test_profile_support_and_empty_comparison_are_explained(self):
-        app = AppTest.from_file(str(ROOT / 'dashboard_stuff_plus.py')).run(timeout=60)
+        app = AppTest.from_file(str(ROOT / 'app.py')).run(timeout=60)
         navigate(app, 'Simular y comparar v9').run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         next(w for w in app.selectbox if w.key == 'coach_profile_type').select('Knuckleball').run(timeout=60)

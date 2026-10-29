@@ -5,6 +5,6 @@
 - [Actualizar estadios](guias/ACTUALIZAR_ESTADIOS.md): mantenimiento del catálogo.
 - [Reentrenamiento](guias/REENTRENAMIENTO_ESTADIOS.md): reconstrucción de modelos.
 - [Recomendaciones operativas](guias/RECOMENDACIONES_OPERATIVAS.md).
-- [Archivo de análisis y revisiones](archivo/): antecedentes y revisiones por fecha.
+- [Archivo de análisis y revisiones](archivo): antecedentes y revisiones por fecha.
 
 Los resultados, figuras y documentos técnicos generados se encuentran en `reports/`.

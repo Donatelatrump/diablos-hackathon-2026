@@ -16,9 +16,9 @@ python -m pip install pandas openpyxl xlsxwriter pyarrow
 Desde la carpeta donde está el script, ejecuta el ejemplo correspondiente:
 
 ```powershell
-python actualizar_estadios.py "datos_antiguos.csv" --salida "datos_con_estadios.csv"
-python actualizar_estadios.py "datos_antiguos.xlsx" --hoja "Lanzamientos" --salida "datos_con_estadios.xlsx"
-python actualizar_estadios.py "stuff_model_df.parquet" --salida "stuff_model_df_con_estadios.parquet"
+python src/actualizar_estadios.py "datos_antiguos.csv" --salida "datos_con_estadios.csv"
+python src/actualizar_estadios.py "datos_antiguos.xlsx" --hoja "Lanzamientos" --salida "datos_con_estadios.xlsx"
+python src/actualizar_estadios.py "stuff_model_df.parquet" --salida "stuff_model_df_con_estadios.parquet"
 ```
 
 Puedes convertir entre esos formatos cambiando la extensión de salida. Para CSV separado por punto y coma añade `--separador ";"`. La entrada CSV se interpreta como UTF-8; los identificadores deben conservarse como texto en el archivo original. `.xls` requiere guardarlo primero como `.xlsx`.

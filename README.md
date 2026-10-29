@@ -11,7 +11,7 @@ El proyecto incorpora un experimento **v9 independiente** con separación físic
 Si ya tienes el entorno y los modelos locales, inicia directamente:
 
 ```bash
-python -m streamlit run dashboard_stuff_plus.py
+python -m streamlit run app.py
 ```
 
 Para preparar un entorno nuevo:
@@ -19,10 +19,10 @@ Para preparar un entorno nuevo:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements-entrega.txt
+python -m pip install -r requirements/requirements-entrega.txt
 python -m unittest tests.test_stuff_plus_v9 -v
-python entrenar_stuff_plus_v9.py --incremental-gate --iteraciones 300 --hilos 3 --salida stuff_plus_output_v9_incremental
-python -m streamlit run dashboard_stuff_plus.py
+python src/entrenar_stuff_plus_v9.py --incremental-gate --iteraciones 300 --hilos 3 --salida stuff_plus_output_v9_incremental
+python -m streamlit run app.py
 ```
 
 En Windows: `.venv\Scripts\Activate.ps1`. El cargador busca el parquet completo en `Data/stuff_model_df.parquet`. Los punteros Git LFS no sustituyen los archivos reales. v9 no necesita modelos históricos para entrenar.
@@ -34,7 +34,7 @@ Cada ejecución requiere una carpeta de salida nueva. Si ya existen modelos loca
 - [Guía del enfoque y requisitos](docs/guias/GUIA_PROYECTO.md)
 - [Resultados y documento técnico v9](reports/v9/README.md)
 - [Comparación medida de la validación incremental](reports/v9_incremental/README.md)
-- [Entrenamiento e inferencia v9](entrenar_stuff_plus_v9.py)
+- [Entrenamiento e inferencia v9](src/entrenar_stuff_plus_v9.py)
 - [Entrega histórica v8](entrega_v8/README_ENTREGA.md)
 - [Documentación histórica de los modelos](docs/archivo/README_MODELOS_HISTORICOS.md)
 
@@ -44,8 +44,12 @@ Cada ejecución requiere una carpeta de salida nueva. Si ya existen modelos loca
 
 | Ubicación | Contenido |
 | --- | --- |
-| `dashboard_stuff_plus.py` | Entrada principal del dashboard |
-| `dashboard_*.py` | Pantallas, navegación y visualizaciones |
+| `app.py` | Entrada principal del dashboard |
+| `src/` | Código del dashboard, modelos, entrenamiento y validaciones |
+| `assets/visualizacion/` | Escena 3D, JavaScript, HTML y estilos |
+| `requirements/` | Dependencias y versiones verificadas |
+| `notebooks/` | Experimentos en Jupyter/Colab |
+| `scripts/` | Herramientas de verificación en navegador |
 | `docs/guias/` | Guías de uso, metodología y mantenimiento |
 | `docs/archivo/` | Análisis y revisiones históricas |
 | `tests/` | Pruebas automatizadas |
@@ -53,9 +57,8 @@ Cada ejecución requiere una carpeta de salida nueva. Si ya existen modelos loca
 | `imgs/` | Identidad visual, fuentes e imágenes |
 | `clasificacion_estadios/` | Catálogo y auditorías de estadios |
 | `entrega_v8/` | Entrega histórica reproducible |
-| `entrenar_*.py`, `reportar_*.py`, `verificar_*.py` | Entrenamiento, reportes y validaciones |
 
-Los módulos ejecutables permanecen en la raíz para conservar sus imports y rutas de datos.
+Ejecuta los comandos desde la raíz. `app.py` carga los módulos de `src/`; los scripts de entrenamiento y reportes se ejecutan con `python src/nombre_del_script.py`.
 Las copias de proyectos externos, logs, temporales y ZIP generados no forman parte de la publicación.
 Los modelos y datos locales se conservan en sus rutas originales; los archivos administrados por Git LFS requieren `git lfs pull`.
 
@@ -63,5 +66,5 @@ Consulta el [índice de documentación](docs/README.md). Desde la raíz puedes e
 
 ```bash
 python -m unittest discover -s tests -t . -v
-node --test test_dashboard_pitch_trajectory.mjs
+node --test tests/test_dashboard_pitch_trajectory.mjs
 ```

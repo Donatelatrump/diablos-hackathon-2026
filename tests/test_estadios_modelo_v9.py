@@ -39,7 +39,7 @@ class StadiumModelTests(unittest.TestCase):
             self.assertTrue(np.isfinite(after.pitching_plus).all())
             with self.assertRaisesRegex(ValueError, 'stadium_id'):
                 v9.infer(rows.drop(columns='stadium_id'), bundle)
-            subprocess.run([sys.executable, str(Path(__file__).resolve().parents[1] / 'reportar_estadios_v9.py'),
+            subprocess.run([sys.executable, str(Path(__file__).resolve().parents[1] / 'src/reportar_estadios_v9.py'),
                 '--parquet', str(source), '--salida', str(args.salida)],
                 check=True, capture_output=True, text=True)
             self.assertTrue((args.salida / 'HARP_HELU.md').exists())

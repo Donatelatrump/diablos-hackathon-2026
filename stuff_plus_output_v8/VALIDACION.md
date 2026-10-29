@@ -5,8 +5,8 @@ Entrega completada el 17 de octubre de 2026.
 - Entrenamiento de siete alternativas globales y nueve especialistas; controles v7 reutilizados con las mismas particiones, semillas y presupuestos de las alternativas globales.
 - Selección congelada antes de evaluar 135,604 pitches de 2026. Cuatro tareas aceptadas en desarrollo: whiff, whiff dado swing, bola en juego y EV.
 - `python -m unittest test_stuff_plus_v5 test_stuff_plus_v6 test_stuff_plus_v7 test_stuff_plus_v8 -v`: 39 pruebas aprobadas.
-- `python verificar_modelo_v8.py`: auditoría aprobada; hashes, particiones iguales al control, juegos disjuntos, decisiones reproducidas, predicciones reproducidas, inferencia sin outcomes, invariancia física, respaldo completo y por fila, e independencia del tamaño de lote.
-- `python reportar_mejora_v8.py`: reporte, ranking y gráfica generados; gráfica inspeccionada visualmente.
+- `python src/verificar_modelo_v8.py`: auditoría aprobada; hashes, particiones iguales al control, juegos disjuntos, decisiones reproducidas, predicciones reproducidas, inferencia sin outcomes, invariancia física, respaldo completo y por fila, e independencia del tamaño de lote.
+- `python src/reportar_mejora_v8.py`: reporte, ranking y gráfica generados; gráfica inspeccionada visualmente.
 - `python -m unittest test_dashboard_stuff_plus_v6 test_dashboard_stuff_plus_v7 test_dashboard_stuff_plus_v8 -v`: tres pruebas de interfaz aprobadas, incluida la entrada principal activa en v8, simulación, mediciones nuevas y ordenamiento del arsenal.
 
 En total: 42 pruebas aprobadas, además de la auditoría de artefactos. La interfaz principal activa v8 porque la selección anterior a 2026 aceptó cambios y los artefactos están verificados.
