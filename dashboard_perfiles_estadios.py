@@ -43,7 +43,14 @@ def render_validation_summary(output):
             st.image(str(figure), width='stretch')
 
 
-def render_profiles(report):
+def use_profile_in_comparison(kind, hand):
+    st.session_state["sim_pitch_type"] = kind
+    st.session_state["sim_hand"] = hand
+    st.session_state["coach_workspace"] = "Comparar en Harp"
+    st.session_state.pop("_confirmed_comparison", None)
+
+
+def render_profiles(report, input_profiles=None):
     report = Path(report)
     st.subheader('Qué revisar para Harp Helú')
     st.write('Compara perfiles similares y prepara la conversación con el coach. Los datos orientan qué revisar; la decisión requiere video, salud, rol y consistencia.')
@@ -58,6 +65,10 @@ def render_profiles(report):
         format_func=lambda value: PITCH_NAMES.get(value, value), key='coach_profile_type')
     hands = sorted(coverage.loc[coverage.pitch_type.eq(kind), 'hand'].unique())
     hand = right.selectbox('Brazo del lanzador', hands, format_func=lambda value: HANDS.get(value, value), key='coach_profile_hand')
+    if input_profiles and any(p['type'] == kind and p['hand'] == hand for p in input_profiles):
+        st.button('Comparar este perfil en Harp', on_click=use_profile_in_comparison, args=(kind, hand),
+                  help='Carga el tipo y la mano en el simulador. Sus valores son un ejemplo con medianas, no un pitch observado.')
+    st.caption('Este informe compara grupos de lanzamientos, no un jugador seleccionado. Los rangos son referencias descriptivas; no demuestran un perfil ideal exclusivo de Harp.')
     support = coverage.loc[coverage.pitch_type.eq(kind) & coverage.hand.eq(hand)].iloc[0]
     local = deltas.loc[deltas.pitch_type.eq(kind) & deltas.hand.eq(hand)]
     a, b, c = st.columns(3)

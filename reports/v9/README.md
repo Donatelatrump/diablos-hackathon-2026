@@ -17,7 +17,7 @@ Las predicciones de carreras v8 se reconstruyen invirtiendo su referencia guarda
 - [Ablaciones de ubicación, arsenal y entorno](ablaciones.json)
 - [Documento técnico de ocho páginas](DOCUMENTO_TECNICO_V9.pdf)
 - [Verificación de inferencia](VERIFICACION.json)
-- [Guía del proyecto y requisitos](../../GUIA_PROYECTO.md)
+- [Guía del proyecto y requisitos](../../docs/guias/GUIA_PROYECTO.md)
 
 ![Calibración v9](calibracion_v9.png)
 

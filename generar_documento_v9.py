@@ -74,7 +74,7 @@ def main():
                ["Aplicabilidad", "25%", "Scores, simulador, mapa, guía y casos descriptivos"]], [4*cm, 1.6*cm, 11*cm]),
         Spacer(1, 12),
         p("<b>Estado de la evidencia.</b> Este es un experimento v9 reproducible, independiente de los bundles históricos. 2026 ya fue usado en versiones previas y sigue siendo un benchmark reutilizado. Una nueva partición no crea evidencia futura intacta."),
-        p("Fuente del alcance: HTML local ‘2026 ISAC Hackathon – Diablos Rojos: Stuff Plus Model, Calidad de Pitcheo Ajustada por Entorno’. La guía GUIA_PROYECTO.md conserva el detalle de requisitos administrativos y restricciones.", True),
+        p("Fuente del alcance: HTML local ‘2026 ISAC Hackathon – Diablos Rojos: Stuff Plus Model, Calidad de Pitcheo Ajustada por Entorno’. La guía docs/guias/GUIA_PROYECTO.md conserva el detalle de requisitos administrativos y restricciones.", True),
     ])
     pages.append([
         Paragraph("2. Datos, población y objetivos", styles["HeadingV9"]),
@@ -169,7 +169,7 @@ def main():
         p("<b>Fuentes.</b> Convocatoria HTML y stuff_plus_data_dictionary.csv locales; código/artefactos históricos v5–v8; documentación de calibración de scikit-learn (scikit-learn.org/stable/modules/calibration.html); pérdidas CatBoost (catboost.ai/docs/en/concepts/loss-functions-regression). La fundamentación física se toma como hipótesis del reto, sin cuantificar causalmente Harp Helú.", True),
         p("Origen SHA-256: " + verification["source_sha256"], True),
         p("Protocolo SHA-256: " + verification["protocol_sha256"], True),
-        p("Ver GUIA_PROYECTO.md para explicación completa, semántica de columnas, ejemplos y comandos por plataforma.", True),
+        p("Ver docs/guias/GUIA_PROYECTO.md para explicación completa, semántica de columnas, ejemplos y comandos por plataforma.", True),
     ])
     story = []
     for index, page in enumerate(pages):

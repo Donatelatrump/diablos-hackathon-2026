@@ -206,7 +206,7 @@ def render_guide(root: Path):
                 "python -m venv .venv\n"
                 "source .venv/bin/activate\n"
                 "python -m pip install -r requirements-entrega.txt\n"
-                "python -m unittest test_stuff_plus_v9 -v\n"
+                "python -m unittest tests.test_stuff_plus_v9 -v\n"
                 "python entrenar_stuff_plus_v9.py --incremental-gate --iteraciones 300 --hilos 3 --salida stuff_plus_output_v9_incremental\n"
                 "python -m streamlit run dashboard_stuff_plus.py",
                 language="bash",
@@ -220,7 +220,7 @@ def render_guide(root: Path):
         st.markdown("### Descargas")
         col1, col2, col3 = st.columns(3)
         
-        guide = root / "GUIA_PROYECTO.md"
+        guide = root / "docs/guias/GUIA_PROYECTO.md"
         if guide.exists():
             with col1:
                 st.download_button(
@@ -231,7 +231,7 @@ def render_guide(root: Path):
                     use_container_width=True,
                 )
         
-        approach = root / "PROJECT_APPROACH.md"
+        approach = root / "docs/guias/PROJECT_APPROACH.md"
         if approach.exists():
             with col2:
                 st.download_button(

@@ -111,7 +111,7 @@ def report(output, source):
               "## Límites", "",
               "Los intervalos usan 1,000 remuestreos pareados de juegos y son condicionales a estos modelos; no incluyen incertidumbre de entrenamiento ni corrigen la reutilización de 2026. Si cruzan cero, la mejora no es concluyente bajo este procedimiento. El target de carreras sigue siendo un proxy de pesos fijos, no RE24. El ranking usa regularización descriptiva e intervalos de variación de scores, no de talento real.", "",
               "## Reproducir y auditar", "",
-              "`README_MODELO_V7.md` describe las fases. `verificar_modelo_v7.py` comprueba hashes, particiones, exclusión del propio juego, predicciones OOF y calibradas, pesos, selección e inferencia. Los resultados están en `verificacion.json` cuando esa auditoría ha terminado.", ""]
+              "`docs/archivo/README_MODELO_V7.md` describe las fases. `verificar_modelo_v7.py` comprueba hashes, particiones, exclusión del propio juego, predicciones OOF y calibradas, pesos, selección e inferencia. Los resultados están en `verificacion.json` cuando esa auditoría ha terminado.", ""]
     (output / "RESULTADO_MEJORA.md").write_text("\n".join(lines), encoding="utf-8")
     print(output / "RESULTADO_MEJORA.md")
 

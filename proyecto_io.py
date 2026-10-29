@@ -16,7 +16,7 @@ def is_lfs_pointer(path):
 def require_local_file(path):
     path = Path(path)
     if not path.is_file():
-        raise FileNotFoundError(f"No existe {path}. Consulta GUIA_PROYECTO.md.")
+        raise FileNotFoundError(f"No existe {path}. Consulta docs/guias/GUIA_PROYECTO.md.")
     if is_lfs_pointer(path):
         raise ValueError(
             f"{path} es un puntero Git LFS, no el archivo completo. "

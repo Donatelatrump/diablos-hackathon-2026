@@ -1,7 +1,7 @@
 """Mejoras selectivas v6 elegidas con 2025 y evaluadas una vez en 2026.
 
 2026 es un benchmark reutilizado despues de v5, no un test nunca observado.
-No se modifica el target ni los artefactos de v5. Ver README_MODELO_V6.md.
+No se modifica el target ni los artefactos de v5. Ver docs/archivo/README_MODELO_V6.md.
 """
 from __future__ import annotations
 

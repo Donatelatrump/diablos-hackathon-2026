@@ -18,4 +18,4 @@ Las diferencias se calculan sobre predicciones de carreras, no sobre índices co
 
 Si entorno hereda la capa anterior, su delta de carreras es cero por construcción. No equivale a demostrar que no existe un efecto físico de altitud. Los clasificadores contextuales siguen siendo independientes. Esta ejecución no incorpora una nueva auditoría por pitcher o parque.
 
-[Explicación completa](../../PROJECT_APPROACH.md)
+[Explicación completa](../../docs/guias/PROJECT_APPROACH.md)

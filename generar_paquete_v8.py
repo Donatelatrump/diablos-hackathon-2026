@@ -167,11 +167,13 @@ Completar nombres, correos y elegibilidad del equipo; confirmar la modalidad de 
     source_dir=OUT/'codigo';source_dir.mkdir(exist_ok=True)
     names=['validar_pitchers_v8.py','analisis_operativo_v8.py','explicar_casos_v8.py','generar_paquete_v8.py','verificar_entrega_v8.py','dashboard_entrega_v8.py',
            'dashboard_stuff_plus.py','dashboard_stuff_plus_v5.py','dashboard_stuff_plus_v6.py','dashboard_stuff_plus_v7.py','dashboard_stuff_plus_v8.py',
-           'requirements-entrega.txt','requirements-dashboard.txt','requirements-hackathon.txt','README.md','README_MODELO_V6.md','README_MODELO_V7.md','README_MODELO_V8.md']
+           'requirements-entrega.txt','requirements-dashboard.txt','requirements-hackathon.txt','README.md','docs/archivo/README_MODELO_V6.md','docs/archivo/README_MODELO_V7.md','docs/archivo/README_MODELO_V8.md']
     names += [f'{prefix}_v{version}.py' for version in [5,6,7,8] for prefix in ['entrenar_stuff_plus','verificar_modelo','reportar_mejora']]
-    names += ['test_entrega_v8.py','test_stuff_plus_v8.py','dashboard_revision_v8.py','estadios_v8.py','explicacion_simulador_v8.py','test_estadios_v8.py','test_dashboard_revision_v8.py']
+    names += ['tests/__init__.py','tests/test_entrega_v8.py','tests/test_stuff_plus_v8.py','dashboard_revision_v8.py','estadios_v8.py','explicacion_simulador_v8.py','tests/test_estadios_v8.py','tests/test_dashboard_revision_v8.py']
     for name in names:
-        if (ROOT/name).exists(): shutil.copy2(ROOT/name,source_dir/name)
+        if (ROOT/name).exists():
+            (source_dir/name).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT/name,source_dir/name)
     published=[p for p in OUT.iterdir() if p.is_file() and p.suffix in ['.csv','.md','.pdf']]
     published += [OUT/'casos_scouting.json',OUT/'analisis_manifest.json',OUT/'METRICAS_BENCHMARK_V8.json',OUT/'verificacion_shap.json',OUT/'validacion_pitchers/metricas.json',OUT/'validacion_pitchers/verificacion.json']
     if (OUT/'AUDITORIA_ESTADIOS.json').exists(): published.append(OUT/'AUDITORIA_ESTADIOS.json')

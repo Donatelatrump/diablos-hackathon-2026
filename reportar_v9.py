@@ -155,7 +155,7 @@ def main(args):
               "- [Métricas temporales completas](RESULTADOS.md)", "- [Comparación de carreras en CSV](comparacion_carreras_v8_v9.csv)",
               "- [Auditorías de pitchers y entorno](auditorias.csv)", "- [Ablaciones de ubicación, arsenal y entorno](ablaciones.json)",
               "- [Documento técnico de ocho páginas](DOCUMENTO_TECNICO_V9.pdf)", "- [Verificación de inferencia](VERIFICACION.json)",
-              "- [Guía del proyecto y requisitos](../../GUIA_PROYECTO.md)", "", "![Calibración v9](calibracion_v9.png)", "",
+              "- [Guía del proyecto y requisitos](../../docs/guias/GUIA_PROYECTO.md)", "", "![Calibración v9](calibracion_v9.png)", "",
               "Las probabilidades v9 incorporan ubicación y contexto. No se presenta su cambio de AUC frente a las probabilidades físicas v8 como una mejora algorítmica aislada. El gráfico de calibración es descriptivo y no incluye intervalos.", "",
               "Las auditorías de pitcher y entorno reentrenan los cuatro modelos de carreras. No certifican los nueve clasificadores contextuales. La auditoría de entorno excluye una categoría de altitud, no un parque identificado."]
     (out/"README.md").write_text("\n".join(lines)+"\n", encoding="utf-8")

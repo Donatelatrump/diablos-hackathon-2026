@@ -16,7 +16,7 @@ Resultado: **2,009 de 2,127 juegos y 601,120 de 635,002 lanzamientos clasificado
 
 El Parquet original no se modifica. Se verificó igualdad exacta de sus columnas y valores contra las columnas originales del resultado, además de conservar filas y orden.
 
-Para aplicar estas correspondencias a un CSV o Excel antiguo en otra PC, usa [actualizar_estadios.py y su guía](../ACTUALIZAR_ESTADIOS.md).
+Para aplicar estas correspondencias a un CSV o Excel antiguo en otra PC, usa [actualizar_estadios.py y su guía](../docs/guias/ACTUALIZAR_ESTADIOS.md).
 
 ## Cómo usar el Excel
 
