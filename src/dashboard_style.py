@@ -19,20 +19,20 @@ def apply_dashboard_style():
            ======================================================================== */
         :root {
           /* Brand */
-          --brand-primary: #cf202e;
-          --brand-primary-hover: #ad1830;
-          --brand-primary-light: #fff1f3;
-          --brand-primary-muted: #fef2f4;
+          --brand-primary: #d71920;
+          --brand-primary-hover: #b5121b;
+          --brand-primary-light: #fff1f2;
+          --brand-primary-muted: #fff1f2;
           
           /* Neutral Scale */
-          --ink-900: #111317;
-          --ink-700: #2a2e35;
-          --ink-500: #565d6a;
-          --ink-400: #717a8a;
-          --ink-300: #9aa3af;
-          --ink-200: #c8ced6;
-          --ink-100: #e8ebef;
-          --ink-50: #f5f6f8;
+          --ink-900: #18181b;
+          --ink-700: #27272a;
+          --ink-500: #52525b;
+          --ink-400: #71717a;
+          --ink-300: #a1a1aa;
+          --ink-200: #d4d4d8;
+          --ink-100: #e4e4e7;
+          --ink-50: #f5f5f6;
           --white: #ffffff;
           
           /* Semantic */
@@ -102,7 +102,7 @@ def apply_dashboard_style():
           --font-sans: "Inter", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
           --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", monospace;
           --font-display: "Big Shoulders Display", "Arial Narrow", "Segoe UI", sans-serif;
-          --color-harp: #cf202e;
+          --color-harp: #d71920;
           --color-sea: #2E6FA6;
           
           --text-xs: 0.8125rem;
@@ -810,7 +810,7 @@ def apply_dashboard_style():
 
         /* Binary color cues: Red = Harp Helu (altitude), Blue = Sea level */
         .badge-alt, .tag-harp {
-          color: #cf202e;
+          color: #d71920;
           background: #fdf2f4;
           border: 1px solid #f8d7dc;
           padding: 2px 8px;
@@ -841,7 +841,7 @@ def apply_dashboard_style():
         .question-card {
           background: #ffffff;
           border: 1px solid #e9e6e2;
-          border-top: 3px solid #cf202e;
+          border-top: 3px solid #d71920;
           border-radius: 12px;
           padding: 16px 18px;
           display: flex;
@@ -852,7 +852,7 @@ def apply_dashboard_style():
         }
         .question-card:hover {
           transform: translateY(-2px);
-          border-color: #cf202e;
+          border-color: #d71920;
           box-shadow: 0 6px 16px rgba(207,32,46,0.08);
         }
         .question-card .q-ent {
@@ -877,7 +877,7 @@ def apply_dashboard_style():
           flex: 1;
         }
         .question-card .q-desc b {
-          color: #cf202e;
+          color: #d71920;
           font-family: var(--font-mono);
         }
 
@@ -885,7 +885,7 @@ def apply_dashboard_style():
         .callout-short-response {
           background: #ffffff;
           border: 1px solid #e8e2dc;
-          border-left: 4px solid #cf202e;
+          border-left: 4px solid #d71920;
           border-radius: 14px;
           padding: 18px 22px;
           margin: 16px 0 20px;
@@ -920,7 +920,7 @@ def apply_dashboard_style():
           font-size: 1.65rem;
           font-weight: 700;
           line-height: 1.1;
-          color: #cf202e;
+          color: #d71920;
         }
         .csr-stat .stat-num.neutral { color: #2E6FA6; }
         .csr-stat .stat-num.gains { color: #1a7f37; }
@@ -1022,7 +1022,7 @@ def apply_dashboard_style():
           padding-right: 0; font-size: 14px;
         }
         [data-baseweb="select"] svg { fill: #77717b; }
-        [data-baseweb="select"] > div:focus-within { outline: 2px solid #cf202e; outline-offset: 2px; }
+        [data-baseweb="select"] > div:focus-within { outline: 2px solid #d71920; outline-offset: 2px; }
         .example-note { margin-top: 9px; padding: 14px 16px; border-radius: 10px; background: #f8f7f4; border-left: 3px solid #d6c8bf; }
         .example-note b { display: block; font-size: 12px; color: #514851; margin-bottom: 5px; }
         .example-note p { font-size: 12px; line-height: 1.6; margin: 0; color: #7a717a; }

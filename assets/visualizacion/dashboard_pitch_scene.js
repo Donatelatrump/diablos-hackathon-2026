@@ -16,8 +16,8 @@ function startScene() {
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.2;
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color('#edf1e6');
-  scene.fog = new THREE.Fog('#edf1e6', 36, 100);
+  scene.background = new THREE.Color('#f4f4f5');
+  scene.fog = new THREE.Fog('#f4f4f5', 36, 100);
   const camera = new THREE.PerspectiveCamera(43, 1, 0.1, 160);
   const orbit = new OrbitControls(camera, canvas);
   // OrbitControls sets touch-action:none. Allow vertical page scrolling on phones;
@@ -36,7 +36,7 @@ function startScene() {
   const rim = new THREE.DirectionalLight('#9bdaff', 2.2); rim.position.set(18, 12, 22); scene.add(rim);
   const mat = (color, roughness = 0.8) => new THREE.MeshStandardMaterial({ color, roughness });
   const turf = mat('#6d975d'), dirt = mat('#c7a17a'), chalk = mat('#fffdf4');
-  const red = mat('#c12b43'), pants = mat('#ece6dc'), skin = mat('#cf9877'), dark = mat('#25313a');
+  const red = mat('#d71920'), pants = mat('#ece6dc'), skin = mat('#cf9877'), dark = mat('#25313a');
   function mesh(geometry, material, x = 0, y = 0, z = 0, parent = scene) {
     const object = new THREE.Mesh(geometry, material);
     object.position.set(x, y, z); object.castShadow = true; object.receiveShadow = true;
@@ -119,7 +119,7 @@ function startScene() {
   function curve(t) {
     return new THREE.Vector3(...pitchPoint(t * endFraction, data, start));
   }
-  const trajectory = line(Array.from({ length: 101 }, () => [0, 0, 0]), '#c82c38', 1);
+  const trajectory = line(Array.from({ length: 101 }, () => [0, 0, 0]), '#d71920', 1);
   const reference = data.comparison ?? { RelSpeed: 90, HorzBreak: 0, InducedVertBreak: 0 };
   const ghost = line(Array.from({ length: 101 }, () => [0, 0, 0]), '#2e6fa6', .55);
   ghost.material = new THREE.LineDashedMaterial({ color: '#2e6fa6', transparent: true, opacity: .55, dashSize: .25, gapSize: .2 });
@@ -147,7 +147,7 @@ function startScene() {
   const referenceEnd = groundContactFraction(reference, start);
   ghost.geometry.setFromPoints(Array.from({ length: 101 }, (_, i) => new THREE.Vector3(...pitchPoint(i / 100 * referenceEnd, reference, start))));
   ghost.computeLineDistances();
-  const arrival = mesh(new THREE.RingGeometry(.14, .19, 32), new THREE.MeshBasicMaterial({ color: '#c82c38', transparent: true, opacity: .85, side: THREE.DoubleSide, depthWrite: false }));
+  const arrival = mesh(new THREE.RingGeometry(.14, .19, 32), new THREE.MeshBasicMaterial({ color: '#d71920', transparent: true, opacity: .85, side: THREE.DoubleSide, depthWrite: false }));
   arrival.position.copy(curve(1)); arrival.castShadow = false;
   const movement = document.getElementById('movement');
   movement.textContent = `Movimiento lateral: ${Math.abs(data.HorzBreak).toFixed(1)}″ · Vertical inducido: ${data.InducedVertBreak > 0 ? '+' : ''}${data.InducedVertBreak.toFixed(1)}″`;
