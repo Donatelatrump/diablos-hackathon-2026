@@ -1,6 +1,7 @@
 import unittest
 from pathlib import Path
 from streamlit.testing.v1 import AppTest
+from test_dashboard_navigation_helpers import navigate
 from proyecto_io import bundle_ready
 
 ROOT = Path(__file__).resolve().parent
@@ -9,11 +10,12 @@ ROOT = Path(__file__).resolve().parent
 class WalkthroughTests(unittest.TestCase):
     def test_guide_explains_scale_and_archive_handles_lfs(self):
         app = AppTest.from_file(str(ROOT/"dashboard_stuff_plus.py")).run(timeout=60)
+        navigate(app, "Entender el proyecto").run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         self.assertTrue(any(t.label == "El reto y su alcance" for t in app.tabs))
         app.slider[0].set_value(90).run(timeout=60)
         self.assertEqual(app.metric[0].value, "90")
-        app.radio[0].set_value("Entrega histórica v8").run(timeout=60)
+        navigate(app, "Entrega histórica v8").run(timeout=60)
         self.assertEqual(len(app.exception), 0)
 
 
@@ -21,7 +23,7 @@ class WalkthroughTests(unittest.TestCase):
 class SimulatorTests(unittest.TestCase):
     def test_context_changes_preserve_physical_score(self):
         app = AppTest.from_file(str(ROOT/"dashboard_stuff_plus.py")).run(timeout=60)
-        app.radio[0].set_value("Simular y comparar v9").run(timeout=60)
+        navigate(app, "Simular y comparar v9").run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         physical = [metric.value for metric in app.metric if metric.label == "Stuff+ · física"]
         self.assertEqual(len(physical), 3)
@@ -39,7 +41,7 @@ class SimulatorTests(unittest.TestCase):
     @unittest.skipUnless((ROOT/"stuff_plus_output_v9_incremental/metricas.json").exists(), "Requiere evaluación incremental")
     def test_incremental_run_explains_fallback_and_can_switch_to_original(self):
         app = AppTest.from_file(str(ROOT/"dashboard_stuff_plus.py")).run(timeout=60)
-        app.radio[0].set_value("Simular y comparar v9").run(timeout=60)
+        navigate(app, "Simular y comparar v9").run(timeout=60)
         chooser = next(w for w in app.selectbox if w.label == "Experimento")
         self.assertEqual(chooser.value, "v9 con validación incremental")
         self.assertTrue(any("no demuestra ausencia" in item.value for item in app.info))

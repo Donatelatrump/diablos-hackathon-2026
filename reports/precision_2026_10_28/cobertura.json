@@ -1,0 +1,306 @@
+[
+  {
+    "year": 2024,
+    "variable": "pfxx",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 189179
+  },
+  {
+    "year": 2024,
+    "variable": "pfxz",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 179429
+  },
+  {
+    "year": 2024,
+    "variable": "vx0",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 225381
+  },
+  {
+    "year": 2024,
+    "variable": "vy0",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 232887
+  },
+  {
+    "year": 2024,
+    "variable": "vz0",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 215999
+  },
+  {
+    "year": 2024,
+    "variable": "ax0",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 233773
+  },
+  {
+    "year": 2024,
+    "variable": "ay0",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 221441
+  },
+  {
+    "year": 2024,
+    "variable": "az0",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 232354
+  },
+  {
+    "year": 2024,
+    "variable": "ZoneSpeed",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 227160
+  },
+  {
+    "year": 2024,
+    "variable": "ZoneTime",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 100171
+  },
+  {
+    "year": 2024,
+    "variable": "SpeedDrop",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 176019
+  },
+  {
+    "year": 2024,
+    "variable": "VertRelAngle",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 237161
+  },
+  {
+    "year": 2024,
+    "variable": "HorzRelAngle",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 239133
+  },
+  {
+    "year": 2024,
+    "variable": "VertApprAngle",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 238424
+  },
+  {
+    "year": 2024,
+    "variable": "HorzApprAngle",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 239078
+  },
+  {
+    "year": 2024,
+    "variable": "altitud_estadio_m",
+    "n": 243254,
+    "finite": 223229,
+    "coverage": 0.9176786404334564,
+    "unique": 19
+  },
+  {
+    "year": 2024,
+    "variable": "fecha_partido",
+    "n": 243254,
+    "finite": 233565,
+    "coverage": 0.9601692058506746,
+    "unique": 135
+  },
+  {
+    "year": 2024,
+    "variable": "Inning",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 12
+  },
+  {
+    "year": 2024,
+    "variable": "Outs",
+    "n": 243254,
+    "finite": 243254,
+    "coverage": 1.0,
+    "unique": 4
+  },
+  {
+    "year": 2025,
+    "variable": "pfxx",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 198897
+  },
+  {
+    "year": 2025,
+    "variable": "pfxz",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 186151
+  },
+  {
+    "year": 2025,
+    "variable": "vx0",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 236843
+  },
+  {
+    "year": 2025,
+    "variable": "vy0",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 244210
+  },
+  {
+    "year": 2025,
+    "variable": "vz0",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 226253
+  },
+  {
+    "year": 2025,
+    "variable": "ax0",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 246041
+  },
+  {
+    "year": 2025,
+    "variable": "ay0",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 232720
+  },
+  {
+    "year": 2025,
+    "variable": "az0",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 243881
+  },
+  {
+    "year": 2025,
+    "variable": "ZoneSpeed",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 237895
+  },
+  {
+    "year": 2025,
+    "variable": "ZoneTime",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 100480
+  },
+  {
+    "year": 2025,
+    "variable": "SpeedDrop",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 183989
+  },
+  {
+    "year": 2025,
+    "variable": "VertRelAngle",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 249447
+  },
+  {
+    "year": 2025,
+    "variable": "HorzRelAngle",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 251712
+  },
+  {
+    "year": 2025,
+    "variable": "VertApprAngle",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 250703
+  },
+  {
+    "year": 2025,
+    "variable": "HorzApprAngle",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 251649
+  },
+  {
+    "year": 2025,
+    "variable": "altitud_estadio_m",
+    "n": 256144,
+    "finite": 244847,
+    "coverage": 0.9558959023049535,
+    "unique": 20
+  },
+  {
+    "year": 2025,
+    "variable": "fecha_partido",
+    "n": 256144,
+    "finite": 244847,
+    "coverage": 0.9558959023049535,
+    "unique": 131
+  },
+  {
+    "year": 2025,
+    "variable": "Inning",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 14
+  },
+  {
+    "year": 2025,
+    "variable": "Outs",
+    "n": 256144,
+    "finite": 256144,
+    "coverage": 1.0,
+    "unique": 4
+  }
+]

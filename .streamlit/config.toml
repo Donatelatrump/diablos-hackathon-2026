@@ -1,7 +1,11 @@
 [theme]
 base = "light"
 primaryColor = "#cf202e"
-backgroundColor = "#f5f6f8"
-secondaryBackgroundColor = "#ffffff"
-textColor = "#20242b"
+backgroundColor = "#f7f5ef"
+secondaryBackgroundColor = "#fffefa"
+textColor = "#202b26"
 font = "sans serif"
+
+[server]
+runOnSave = true
+fileWatcherType = "poll"

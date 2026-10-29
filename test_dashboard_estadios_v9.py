@@ -2,6 +2,7 @@ import unittest
 from pathlib import Path
 
 from streamlit.testing.v1 import AppTest
+from test_dashboard_navigation_helpers import navigate
 
 ROOT = Path(__file__).resolve().parent
 READY = (ROOT / 'stuff_plus_output_v9_estadios/estadios.csv').is_file()
@@ -11,7 +12,7 @@ READY = (ROOT / 'stuff_plus_output_v9_estadios/estadios.csv').is_file()
 class StadiumDashboardTests(unittest.TestCase):
     def test_compare_stadiums_and_preserve_physical_score(self):
         app = AppTest.from_file(str(ROOT / 'dashboard_stuff_plus.py')).run(timeout=60)
-        app.radio[0].set_value('Simular y comparar v9').run(timeout=60)
+        navigate(app, 'Simular y comparar v9').run(timeout=60)
         self.assertEqual(len(app.exception), 0)
 
         chooser = next(w for w in app.selectbox if w.label == 'Experimento')
@@ -34,7 +35,7 @@ class StadiumDashboardTests(unittest.TestCase):
 
     def test_profile_support_and_empty_comparison_are_explained(self):
         app = AppTest.from_file(str(ROOT / 'dashboard_stuff_plus.py')).run(timeout=60)
-        app.radio[0].set_value('Simular y comparar v9').run(timeout=60)
+        navigate(app, 'Simular y comparar v9').run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         next(w for w in app.selectbox if w.key == 'coach_profile_type').select('Knuckleball').run(timeout=60)
         self.assertEqual(len(app.exception), 0)
@@ -42,6 +43,9 @@ class StadiumDashboardTests(unittest.TestCase):
         next(w for w in app.multiselect if w.label == 'Estadios para comparar').set_value([]).run(timeout=60)
         self.assertEqual(len(app.exception), 0)
         self.assertTrue(any('Selecciona al menos' in w.value for w in app.info))
+        navigate(app, 'Lanzadores').run(timeout=60)
+        self.assertEqual(len(app.exception), 0)
+        self.assertTrue(any(w.key == 'movement_pitcher' for w in app.selectbox))
 
 
 if __name__ == '__main__':

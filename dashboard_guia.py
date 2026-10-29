@@ -1,5 +1,4 @@
 """A project walkthrough that works even without model binaries."""
-import base64
 import json
 from pathlib import Path
 import pandas as pd
@@ -7,25 +6,16 @@ import streamlit as st
 
 
 def render_guide(root: Path):
-    logo = root / "imgs" / "diablos-rojos-del-mexico-logo-brandlogos.net_kvga6c13n.svg"
-    
-    # Hero section
-    col_logo, col_title = st.columns([1, 7], vertical_alignment="center")
-    with col_logo:
-        if logo.exists():
-            encoded_logo = base64.b64encode(logo.read_bytes()).decode("ascii")
-            st.markdown(
-                f'<img class="diablos-brand-mark" src="data:image/svg+xml;base64,{encoded_logo}" alt="Escudo de Diablos Rojos del México">',
-                unsafe_allow_html=True,
-            )
-    with col_title:
-        st.caption("GUÍA DE SCOUTING · BÉISBOL")
-        st.title("¿Qué tan bueno es este lanzamiento?")
-        st.write(
-            "Compara lo que trae el pitcheo, dónde llega y cómo encaja en su contexto. "
-            "El tablero organiza esas señales para apoyar una revisión de scouting; "
-            "no sustituye el video ni el criterio del coach."
-        )
+    st.title('Cómo leer tu evaluación')
+    st.write('Empieza por estas respuestas. Más abajo encontrarás ejemplos y el detalle del proyecto.')
+    for question, answer in [
+        ('¿Qué significa el resultado?', 'Es una puntuación comparada con una referencia histórica de 100. Más alto indica una evaluación más favorable. No es un porcentaje de éxito.'),
+        ('¿Qué datos puedo cambiar?', 'Puedes elegir tipo de lanzamiento, mano y estadio. Si tienes mediciones propias, añade velocidad, giro y movimiento. Los demás datos conservan los valores del ejemplo.'),
+        ('¿Por qué a veces no cambia entre estadios?', 'El modelo conserva una estimación anterior cuando la capa de estadio no demuestra una mejora adicional. La comparación mantiene las mediciones físicas; no traslada el vuelo a otro aire.'),
+        ('¿Qué representa la animación?', 'Ilustra el movimiento del lanzamiento elegido, amplificado para verlo mejor. El modo normal no cambia con el estadio. El laboratorio permite explorar una hipótesis de densidad con altitudes de origen y destino; no predice el vuelo real ni modifica los índices.'),
+    ]:
+        with st.expander(question):
+            st.write(answer)
     
     tabs = st.tabs(["En dos minutos", "El reto y su alcance", "Evidencia", "Reproducir"])
     

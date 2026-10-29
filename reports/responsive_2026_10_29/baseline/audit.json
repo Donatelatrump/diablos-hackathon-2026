@@ -1,0 +1,833 @@
+[
+  {
+    "profile": {
+      "name": "small",
+      "width": 320,
+      "height": 740,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 320,
+      "documentWidth": 320,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 167.6875,
+          "width": 83.328125,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 118.328125,
+          "y": 167.6875,
+          "width": 83.328125,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 205.65625,
+          "y": 167.6875,
+          "width": 83.34375,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 31,
+          "y": 219.6875,
+          "width": 83.328125,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 118.328125,
+          "y": 219.6875,
+          "width": 83.328125,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 719.328125,
+          "width": 140,
+          "height": 43
+        },
+        {
+          "text": "Curva",
+          "x": 164,
+          "y": 719.328125,
+          "width": 140,
+          "height": 43
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 770.328125,
+          "width": 140,
+          "height": 43
+        },
+        {
+          "text": "Cambio",
+          "x": 164,
+          "y": 770.328125,
+          "width": 140,
+          "height": 43
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 1012.109375,
+          "width": 250,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 1066.109375,
+          "width": 250,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1596.921875,
+          "width": 250,
+          "height": 50
+        }
+      ],
+      "overflow": [
+        {
+          "tag": "DIV",
+          "testid": "stSidebarContent",
+          "cls": "st-emotion-cache-1csi29a e15rayve2",
+          "text": "Diablos · BéisbolEmpieza con un ejemplo. En el menú de arriba puedes v",
+          "left": -300,
+          "right": -260
+        },
+        {
+          "tag": "DIV",
+          "testid": "stVerticalBlock",
+          "cls": "stVerticalBlock st-emotion-cache-1ndxyp5 e1a2occc3",
+          "text": "Diablos · BéisbolEmpieza con un ejemplo. En el menú de arriba puedes v",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdownContainer",
+          "cls": "st-emotion-cache-t90byd e12uj6qz0",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "SPAN",
+          "cls": "st-emotion-cache-0 e12uj6qz3",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264.140625
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stCaptionContainer",
+          "cls": "st-emotion-cache-161tk9j e12uj6qz0",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdownContainer",
+          "cls": "st-emotion-cache-t90byd e12uj6qz0",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "sidebar-section",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -256
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Este dashboard implementa el reto 2026 ISAC Hackathon – Diablos Rojos.",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Este dashboard implementa el reto 2026 ISAC Hackathon – Diablos Rojos.",
+          "left": -280,
+          "right": -264
+        }
+      ]
+    },
+    "scene": {
+      "width": 288,
+      "scrollWidth": 288,
+      "title": {
+        "left": 15,
+        "top": 43.796875,
+        "right": 225.46875,
+        "bottom": 70.796875,
+        "width": 210.46875,
+        "height": 27
+      },
+      "badge": {
+        "left": 185.25,
+        "top": 23,
+        "right": 269,
+        "bottom": 58,
+        "width": 83.75,
+        "height": 35
+      },
+      "overlap": true,
+      "controlsWidth": 286,
+      "controlsScrollWidth": 286,
+      "touchAction": "none",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 362,
+          "right": 109.671875,
+          "bottom": 406,
+          "width": 95.671875,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 115.671875,
+          "top": 362,
+          "right": 202.3125,
+          "bottom": 406,
+          "width": 86.640625,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 48.765625,
+          "top": 412,
+          "right": 274,
+          "bottom": 456,
+          "width": 225.234375,
+          "height": 44
+        },
+        {
+          "id": "rate",
+          "left": 76.90625,
+          "top": 462,
+          "right": 274,
+          "bottom": 506,
+          "width": 197.09375,
+          "height": 44
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 167.6875,
+          "width": 106.65625,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 141.65625,
+          "y": 167.6875,
+          "width": 106.671875,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 252.328125,
+          "y": 167.6875,
+          "width": 106.65625,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 31,
+          "y": 219.6875,
+          "width": 106.65625,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 141.65625,
+          "y": 219.6875,
+          "width": 106.671875,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 659.140625,
+          "width": 175,
+          "height": 43
+        },
+        {
+          "text": "Curva",
+          "x": 199,
+          "y": 659.140625,
+          "width": 175,
+          "height": 43
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 710.140625,
+          "width": 175,
+          "height": 43
+        },
+        {
+          "text": "Cambio",
+          "x": 199,
+          "y": 710.140625,
+          "width": 175,
+          "height": 43
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 926.140625,
+          "width": 320,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 980.140625,
+          "width": 320,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1465.1875,
+          "width": 320,
+          "height": 50
+        }
+      ],
+      "overflow": [
+        {
+          "tag": "DIV",
+          "testid": "stSidebarContent",
+          "cls": "st-emotion-cache-1csi29a e15rayve2",
+          "text": "Diablos · BéisbolEmpieza con un ejemplo. En el menú de arriba puedes v",
+          "left": -300,
+          "right": -260
+        },
+        {
+          "tag": "DIV",
+          "testid": "stVerticalBlock",
+          "cls": "stVerticalBlock st-emotion-cache-1ndxyp5 e1a2occc3",
+          "text": "Diablos · BéisbolEmpieza con un ejemplo. En el menú de arriba puedes v",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdownContainer",
+          "cls": "st-emotion-cache-t90byd e12uj6qz0",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "SPAN",
+          "cls": "st-emotion-cache-0 e12uj6qz3",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264.140625
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stCaptionContainer",
+          "cls": "st-emotion-cache-161tk9j e12uj6qz0",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdownContainer",
+          "cls": "st-emotion-cache-t90byd e12uj6qz0",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "sidebar-section",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -256
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Este dashboard implementa el reto 2026 ISAC Hackathon – Diablos Rojos.",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Este dashboard implementa el reto 2026 ISAC Hackathon – Diablos Rojos.",
+          "left": -280,
+          "right": -264
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "mobile": false
+    },
+    "initial": {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "mainWidth": 1439,
+      "mainScrollWidth": 1439,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 420.671875,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 597.234375,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Lanzadores",
+          "x": 773.796875,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Confianza",
+          "x": 950.359375,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Ayuda",
+          "x": 1126.921875,
+          "y": 101,
+          "width": 172.578125,
+          "height": 46
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 120.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 43
+        },
+        {
+          "text": "Curva",
+          "x": 422.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 43
+        },
+        {
+          "text": "Slider",
+          "x": 724.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 43
+        },
+        {
+          "text": "Cambio",
+          "x": 1026.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 43
+        },
+        {
+          "text": "Zurdo",
+          "x": 143.5,
+          "y": 708.140625,
+          "width": 173,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 324.5,
+          "y": 708.140625,
+          "width": 173,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 143.5,
+          "y": 1174.796875,
+          "width": 354,
+          "height": 50
+        }
+      ],
+      "overflow": [
+        {
+          "tag": "DIV",
+          "testid": "stSidebarContent",
+          "cls": "st-emotion-cache-1csi29a e15rayve2",
+          "text": "Diablos · BéisbolEmpieza con un ejemplo. En el menú de arriba puedes v",
+          "left": -300,
+          "right": -260
+        },
+        {
+          "tag": "DIV",
+          "testid": "stVerticalBlock",
+          "cls": "stVerticalBlock st-emotion-cache-1ndxyp5 e1a2occc3",
+          "text": "Diablos · BéisbolEmpieza con un ejemplo. En el menú de arriba puedes v",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdownContainer",
+          "cls": "st-emotion-cache-t90byd e12uj6qz0",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "H3",
+          "cls": "",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "SPAN",
+          "cls": "st-emotion-cache-0 e12uj6qz3",
+          "text": "Diablos · Béisbol",
+          "left": -280,
+          "right": -264.140625
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stCaptionContainer",
+          "cls": "st-emotion-cache-161tk9j e12uj6qz0",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "P",
+          "cls": "",
+          "text": "Empieza con un ejemplo. En el menú de arriba puedes volver al inicio o",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "st-emotion-cache-k2h9z6 e1o1x6gp2",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdownContainer",
+          "cls": "st-emotion-cache-t90byd e12uj6qz0",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "cls": "sidebar-section",
+          "text": "Sobre el proyecto",
+          "left": -280,
+          "right": -256
+        },
+        {
+          "tag": "DIV",
+          "testid": "stElementContainer",
+          "cls": "stElementContainer element-container st-emotion-cache-3pwa5w e1a2occc1",
+          "text": "Este dashboard implementa el reto 2026 ISAC Hackathon – Diablos Rojos.",
+          "left": -280,
+          "right": -264
+        },
+        {
+          "tag": "DIV",
+          "testid": "stMarkdown",
+          "cls": "stMarkdown",
+          "text": "Este dashboard implementa el reto 2026 ISAC Hackathon – Diablos Rojos.",
+          "left": -280,
+          "right": -264
+        }
+      ]
+    },
+    "errors": []
+  }
+]

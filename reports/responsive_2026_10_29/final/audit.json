@@ -1,0 +1,1234 @@
+[
+  {
+    "profile": {
+      "name": "small",
+      "width": 320,
+      "height": 740,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 320,
+      "documentWidth": 320,
+      "mainWidth": 320,
+      "mainScrollWidth": 320,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 127,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 162,
+          "y": 155.6875,
+          "width": 127,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 127,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 162,
+          "y": 207.6875,
+          "width": 127,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 127,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 759.328125,
+          "width": 140,
+          "height": 62.78125
+        },
+        {
+          "text": "Curva",
+          "x": 164,
+          "y": 759.328125,
+          "width": 140,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 830.109375,
+          "width": 140,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 164,
+          "y": 830.109375,
+          "width": 140,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 1104.890625,
+          "width": 250,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 1158.890625,
+          "width": 250,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1745.703125,
+          "width": 250,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 288
+    },
+    "scene": {
+      "width": 288,
+      "scrollWidth": 288,
+      "height": 822,
+      "bodyHeight": 822,
+      "note": {
+        "left": 1,
+        "top": 652.984375,
+        "right": 287,
+        "bottom": 820.5625,
+        "width": 286,
+        "height": 167.578125
+      },
+      "title": {
+        "left": 15,
+        "top": 43.796875,
+        "right": 273,
+        "bottom": 70.796875,
+        "width": 258,
+        "height": 27
+      },
+      "badge": {
+        "left": 191.25,
+        "top": 264,
+        "right": 275,
+        "bottom": 299,
+        "width": 83.75,
+        "height": 35
+      },
+      "overlap": false,
+      "controlsWidth": 286,
+      "controlsScrollWidth": 286,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 362,
+          "right": 140,
+          "bottom": 406,
+          "width": 126,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 148,
+          "top": 362,
+          "right": 274,
+          "bottom": 406,
+          "width": 126,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 93,
+          "top": 414,
+          "right": 274,
+          "bottom": 459,
+          "width": 181,
+          "height": 45
+        },
+        {
+          "id": "rate",
+          "left": 93,
+          "top": 467,
+          "right": 274,
+          "bottom": 512,
+          "width": 181,
+          "height": 45
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "android",
+      "width": 360,
+      "height": 800,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 360,
+      "documentWidth": 360,
+      "mainWidth": 360,
+      "mainScrollWidth": 360,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 147,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 182,
+          "y": 155.6875,
+          "width": 147,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 147,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 182,
+          "y": 207.6875,
+          "width": 147,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 147,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 741.140625,
+          "width": 160,
+          "height": 62.78125
+        },
+        {
+          "text": "Curva",
+          "x": 184,
+          "y": 741.140625,
+          "width": 160,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 811.921875,
+          "width": 160,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 184,
+          "y": 811.921875,
+          "width": 160,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 1060.921875,
+          "width": 290,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 1114.921875,
+          "width": 290,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1655.96875,
+          "width": 290,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 328
+    },
+    "scene": {
+      "width": 328,
+      "scrollWidth": 328,
+      "height": 801,
+      "bodyHeight": 801,
+      "note": {
+        "left": 1,
+        "top": 652.984375,
+        "right": 327,
+        "bottom": 799.765625,
+        "width": 326,
+        "height": 146.78125
+      },
+      "title": {
+        "left": 15,
+        "top": 43.796875,
+        "right": 313,
+        "bottom": 70.796875,
+        "width": 298,
+        "height": 27
+      },
+      "badge": {
+        "left": 231.25,
+        "top": 264,
+        "right": 315,
+        "bottom": 299,
+        "width": 83.75,
+        "height": 35
+      },
+      "overlap": false,
+      "controlsWidth": 326,
+      "controlsScrollWidth": 326,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 362,
+          "right": 160,
+          "bottom": 406,
+          "width": 146,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 168,
+          "top": 362,
+          "right": 314,
+          "bottom": 406,
+          "width": 146,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 93,
+          "top": 414,
+          "right": 314,
+          "bottom": 459,
+          "width": 221,
+          "height": 45
+        },
+        {
+          "id": "rate",
+          "left": 93,
+          "top": 467,
+          "right": 314,
+          "bottom": 512,
+          "width": 221,
+          "height": 45
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "phone",
+      "width": 390,
+      "height": 844,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 390,
+      "documentWidth": 390,
+      "mainWidth": 390,
+      "mainScrollWidth": 390,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 197,
+          "y": 155.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 197,
+          "y": 207.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 162,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 699.140625,
+          "width": 175,
+          "height": 62.78125
+        },
+        {
+          "text": "Curva",
+          "x": 199,
+          "y": 699.140625,
+          "width": 175,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 769.921875,
+          "width": 175,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 199,
+          "y": 769.921875,
+          "width": 175,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 1018.921875,
+          "width": 320,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 1072.921875,
+          "width": 320,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1613.96875,
+          "width": 320,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 358
+    },
+    "scene": {
+      "width": 358,
+      "scrollWidth": 358,
+      "height": 739,
+      "bodyHeight": 738,
+      "note": {
+        "left": 1,
+        "top": 611.390625,
+        "right": 357,
+        "bottom": 737.375,
+        "width": 356,
+        "height": 125.984375
+      },
+      "title": {
+        "left": 15,
+        "top": 43.796875,
+        "right": 343,
+        "bottom": 70.796875,
+        "width": 328,
+        "height": 27
+      },
+      "badge": {
+        "left": 261.25,
+        "top": 264,
+        "right": 345,
+        "bottom": 299,
+        "width": 83.75,
+        "height": 35
+      },
+      "overlap": false,
+      "controlsWidth": 356,
+      "controlsScrollWidth": 356,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 362,
+          "right": 175,
+          "bottom": 406,
+          "width": 161,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 183,
+          "top": 362,
+          "right": 344,
+          "bottom": 406,
+          "width": 161,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 93,
+          "top": 414,
+          "right": 344,
+          "bottom": 459,
+          "width": 251,
+          "height": 45
+        },
+        {
+          "id": "rate",
+          "left": 93,
+          "top": 467,
+          "right": 344,
+          "bottom": 512,
+          "width": 251,
+          "height": 45
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "large-phone",
+      "width": 430,
+      "height": 932,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 430,
+      "documentWidth": 430,
+      "mainWidth": 430,
+      "mainScrollWidth": 430,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 31,
+          "y": 155.6875,
+          "width": 182,
+          "height": 48
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 217,
+          "y": 155.6875,
+          "width": 182,
+          "height": 48
+        },
+        {
+          "text": "Lanzadores",
+          "x": 31,
+          "y": 207.6875,
+          "width": 182,
+          "height": 48
+        },
+        {
+          "text": "Confianza",
+          "x": 217,
+          "y": 207.6875,
+          "width": 182,
+          "height": 48
+        },
+        {
+          "text": "Ayuda",
+          "x": 31,
+          "y": 259.6875,
+          "width": 182,
+          "height": 48
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 16,
+          "y": 675.34375,
+          "width": 195,
+          "height": 48
+        },
+        {
+          "text": "Curva",
+          "x": 219,
+          "y": 675.34375,
+          "width": 195,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 16,
+          "y": 731.34375,
+          "width": 195,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 219,
+          "y": 731.34375,
+          "width": 195,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 35,
+          "y": 980.34375,
+          "width": 360,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 35,
+          "y": 1034.34375,
+          "width": 360,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 35,
+          "y": 1549,
+          "width": 360,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 398
+    },
+    "scene": {
+      "width": 398,
+      "scrollWidth": 398,
+      "height": 739,
+      "bodyHeight": 738,
+      "note": {
+        "left": 1,
+        "top": 611.390625,
+        "right": 397,
+        "bottom": 737.375,
+        "width": 396,
+        "height": 125.984375
+      },
+      "title": {
+        "left": 15,
+        "top": 43.796875,
+        "right": 383,
+        "bottom": 70.796875,
+        "width": 368,
+        "height": 27
+      },
+      "badge": {
+        "left": 301.25,
+        "top": 264,
+        "right": 385,
+        "bottom": 299,
+        "width": 83.75,
+        "height": 35
+      },
+      "overlap": false,
+      "controlsWidth": 396,
+      "controlsScrollWidth": 396,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 362,
+          "right": 195,
+          "bottom": 406,
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 203,
+          "top": 362,
+          "right": 384,
+          "bottom": 406,
+          "width": 181,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 93,
+          "top": 414,
+          "right": 384,
+          "bottom": 459,
+          "width": 291,
+          "height": 45
+        },
+        {
+          "id": "rate",
+          "left": 93,
+          "top": 467,
+          "right": 384,
+          "bottom": 512,
+          "width": 291,
+          "height": 45
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "landscape",
+      "width": 844,
+      "height": 390,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 844,
+      "documentWidth": 844,
+      "mainWidth": 843,
+      "mainScrollWidth": 843,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 40,
+          "y": 155.6875,
+          "width": 252.328125,
+          "height": 46
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 296.328125,
+          "y": 155.6875,
+          "width": 252.328125,
+          "height": 46
+        },
+        {
+          "text": "Lanzadores",
+          "x": 552.65625,
+          "y": 155.6875,
+          "width": 252.328125,
+          "height": 46
+        },
+        {
+          "text": "Confianza",
+          "x": 40,
+          "y": 205.6875,
+          "width": 252.328125,
+          "height": 46
+        },
+        {
+          "text": "Ayuda",
+          "x": 296.328125,
+          "y": 205.6875,
+          "width": 252.328125,
+          "height": 46
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 25,
+          "y": 573.921875,
+          "width": 192.75,
+          "height": 48
+        },
+        {
+          "text": "Curva",
+          "x": 225.75,
+          "y": 573.921875,
+          "width": 192.75,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 426.5,
+          "y": 573.921875,
+          "width": 192.75,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 627.25,
+          "y": 573.921875,
+          "width": 192.75,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 48,
+          "y": 826.921875,
+          "width": 370.5,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 426.5,
+          "y": 826.921875,
+          "width": 370.5,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 48,
+          "y": 1323.1875,
+          "width": 749,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 795
+    },
+    "scene": {
+      "width": 795,
+      "scrollWidth": 795,
+      "height": 640,
+      "bodyHeight": 640,
+      "note": {
+        "left": 1,
+        "top": 554.59375,
+        "right": 794,
+        "bottom": 638.984375,
+        "width": 793,
+        "height": 84.390625
+      },
+      "title": {
+        "left": 21,
+        "top": 47.796875,
+        "right": 263.03125,
+        "bottom": 78.796875,
+        "width": 242.03125,
+        "height": 31
+      },
+      "badge": {
+        "left": 684.25,
+        "top": 23,
+        "right": 776,
+        "bottom": 62,
+        "width": 91.75,
+        "height": 39
+      },
+      "overlap": false,
+      "controlsWidth": 793,
+      "controlsScrollWidth": 793,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 432,
+          "right": 109.671875,
+          "bottom": 476,
+          "width": 95.671875,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 115.671875,
+          "top": 432,
+          "right": 202.3125,
+          "bottom": 476,
+          "width": 86.640625,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 382.09375,
+          "top": 432,
+          "right": 538.09375,
+          "bottom": 476,
+          "width": 156,
+          "height": 44
+        },
+        {
+          "id": "rate",
+          "left": 607,
+          "top": 432,
+          "right": 781,
+          "bottom": 476,
+          "width": 174,
+          "height": 44
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "mobile": true
+    },
+    "initial": {
+      "viewport": 768,
+      "documentWidth": 768,
+      "mainWidth": 767,
+      "mainScrollWidth": 767,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 40,
+          "y": 155.6875,
+          "width": 227,
+          "height": 46
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 271,
+          "y": 155.6875,
+          "width": 227,
+          "height": 46
+        },
+        {
+          "text": "Lanzadores",
+          "x": 502,
+          "y": 155.6875,
+          "width": 227,
+          "height": 46
+        },
+        {
+          "text": "Confianza",
+          "x": 40,
+          "y": 205.6875,
+          "width": 227,
+          "height": 46
+        },
+        {
+          "text": "Ayuda",
+          "x": 271,
+          "y": 205.6875,
+          "width": 227,
+          "height": 46
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 25,
+          "y": 573.921875,
+          "width": 173.75,
+          "height": 62.78125
+        },
+        {
+          "text": "Curva",
+          "x": 206.75,
+          "y": 573.921875,
+          "width": 173.75,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 388.5,
+          "y": 573.921875,
+          "width": 173.75,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 570.25,
+          "y": 573.921875,
+          "width": 173.75,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 48,
+          "y": 841.703125,
+          "width": 332.5,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 388.5,
+          "y": 841.703125,
+          "width": 332.5,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 48,
+          "y": 1337.96875,
+          "width": 673,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 719
+    },
+    "scene": {
+      "width": 719,
+      "scrollWidth": 719,
+      "height": 640,
+      "bodyHeight": 640,
+      "note": {
+        "left": 1,
+        "top": 554.59375,
+        "right": 718,
+        "bottom": 638.984375,
+        "width": 717,
+        "height": 84.390625
+      },
+      "title": {
+        "left": 21,
+        "top": 47.796875,
+        "right": 263.03125,
+        "bottom": 78.796875,
+        "width": 242.03125,
+        "height": 31
+      },
+      "badge": {
+        "left": 608.25,
+        "top": 23,
+        "right": 700,
+        "bottom": 62,
+        "width": 91.75,
+        "height": 39
+      },
+      "overlap": false,
+      "controlsWidth": 717,
+      "controlsScrollWidth": 717,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 432,
+          "right": 109.671875,
+          "bottom": 476,
+          "width": 95.671875,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 115.671875,
+          "top": 432,
+          "right": 202.3125,
+          "bottom": 476,
+          "width": 86.640625,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 306.09375,
+          "top": 432,
+          "right": 462.09375,
+          "bottom": 476,
+          "width": 156,
+          "height": 44
+        },
+        {
+          "id": "rate",
+          "left": 531,
+          "top": 432,
+          "right": 705,
+          "bottom": 476,
+          "width": 174,
+          "height": 44
+        }
+      ]
+    },
+    "errors": []
+  },
+  {
+    "profile": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "mobile": false
+    },
+    "initial": {
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "mainWidth": 1439,
+      "mainScrollWidth": 1439,
+      "buttons": [
+        {
+          "text": "Simulador",
+          "x": 420.671875,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Comparar estadios",
+          "x": 597.234375,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Lanzadores",
+          "x": 773.796875,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Confianza",
+          "x": 950.359375,
+          "y": 101,
+          "width": 172.5625,
+          "height": 46
+        },
+        {
+          "text": "Ayuda",
+          "x": 1126.921875,
+          "y": 101,
+          "width": 172.578125,
+          "height": 46
+        },
+        {
+          "text": "Recta de cuatro costuras",
+          "x": 120.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 48
+        },
+        {
+          "text": "Curva",
+          "x": 422.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 48
+        },
+        {
+          "text": "Slider",
+          "x": 724.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 48
+        },
+        {
+          "text": "Cambio",
+          "x": 1026.5,
+          "y": 488.140625,
+          "width": 294,
+          "height": 48
+        },
+        {
+          "text": "Zurdo",
+          "x": 143.5,
+          "y": 741.140625,
+          "width": 173,
+          "height": 46
+        },
+        {
+          "text": "Derecho",
+          "x": 324.5,
+          "y": 741.140625,
+          "width": 173,
+          "height": 46
+        },
+        {
+          "text": "Ver evaluación del lanzamiento",
+          "x": 143.5,
+          "y": 1263.796875,
+          "width": 354,
+          "height": 50
+        }
+      ],
+      "overflow": [],
+      "pitchCardWidth": 400
+    },
+    "scene": {
+      "width": 736,
+      "scrollWidth": 736,
+      "height": 640,
+      "bodyHeight": 640,
+      "note": {
+        "left": 1,
+        "top": 554.59375,
+        "right": 735,
+        "bottom": 638.984375,
+        "width": 734,
+        "height": 84.390625
+      },
+      "title": {
+        "left": 21,
+        "top": 47.796875,
+        "right": 263.03125,
+        "bottom": 78.796875,
+        "width": 242.03125,
+        "height": 31
+      },
+      "badge": {
+        "left": 625.25,
+        "top": 23,
+        "right": 717,
+        "bottom": 62,
+        "width": 91.75,
+        "height": 39
+      },
+      "overlap": false,
+      "controlsWidth": 734,
+      "controlsScrollWidth": 734,
+      "touchAction": "pan-y",
+      "unavailable": false,
+      "buttons": [
+        {
+          "id": "play",
+          "left": 14,
+          "top": 432,
+          "right": 109.671875,
+          "bottom": 476,
+          "width": 95.671875,
+          "height": 44
+        },
+        {
+          "id": "replay",
+          "left": 115.671875,
+          "top": 432,
+          "right": 202.3125,
+          "bottom": 476,
+          "width": 86.640625,
+          "height": 44
+        },
+        {
+          "id": "camera",
+          "left": 323.09375,
+          "top": 432,
+          "right": 479.09375,
+          "bottom": 476,
+          "width": 156,
+          "height": 44
+        },
+        {
+          "id": "rate",
+          "left": 548,
+          "top": 432,
+          "right": 722,
+          "bottom": 476,
+          "width": 174,
+          "height": 44
+        }
+      ]
+    },
+    "errors": []
+  }
+]

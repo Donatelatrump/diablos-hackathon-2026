@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:#f4f6fa;background:transparent}
+.viewer{border-radius:20px;overflow:hidden;border:1px solid #ffffff19;background:#112c39;box-shadow:0 12px 28px #172d3815}
+.stage{position:relative;height:440px;overflow:hidden;background:radial-gradient(ellipse at 50% 20%,#416279,#102a36 75%)}
+canvas{display:block;width:100%;height:100%;touch-action:pan-y;cursor:grab}canvas:active{cursor:grabbing}
+.heading{position:absolute;z-index:2;top:24px;left:26px;pointer-events:none}.eyebrow{font-size:10px;letter-spacing:.2em;color:#a1d8cd;font-weight:700}
+h2{margin:7px 0 5px;font-size:25px;font-weight:700;letter-spacing:-.04em}.subtitle{font-size:12px;color:#d2e3eb}
+.badge{position:absolute;top:26px;right:26px;z-index:2;border-radius:30px;background:#ffffff10;border:1px solid #ffffff28;padding:9px 14px;color:#ffdbb0;font-size:13px;font-weight:650;backdrop-filter:blur(8px)}
+.hint{position:absolute;left:24px;bottom:17px;font-size:11px;color:#c1d8df;pointer-events:none}.status{position:absolute;right:24px;bottom:17px;font-size:11px;color:#b5e0d3}
+.controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap;background:#fff;padding:15px 20px;border-bottom:1px solid #e8e9eb}
+button,select{font:600 12px "Segoe UI",Arial,sans-serif;min-height:40px;border-radius:9px;border:1px solid #e1e5e7;background:#f8faf9;color:#40515a;padding:9px 13px;cursor:pointer}button:hover,select:hover{background:#edf3f0}button:focus-visible,select:focus-visible{outline:2px solid #c3263c;outline-offset:3px}
+#play{background:#be2941;border-color:#be2941;color:white;min-width:91px}#play:hover{background:#a82037}.select-group{display:flex;align-items:center;gap:7px}.select-group:first-of-type{margin-left:auto}label{font-size:11px;color:#68747c}
+.note{background:#fff;color:#747b82;font-size:11px;line-height:1.6;padding:12px 20px;margin:0}.note b{color:#435761;font-weight:600}
+.movement{padding:10px 20px;background:#eaf2ee;color:#345e54;font-size:12px;border-bottom:1px solid #d9e6df}.movement span{display:block;font-size:10px;color:#677e76;margin-top:4px}
+#unavailable{display:none;position:absolute;inset:100px 30px 70px;align-items:center;justify-content:center;text-align:center;color:#d2e3eb;font-size:14px;line-height:1.7}
+@media(max-width:640px){.stage{height:370px}.heading{top:18px;left:18px}h2{font-size:20px;max-width:220px}.badge{top:19px;right:14px;padding:7px 10px;font-size:11px}.eyebrow{font-size:9px}.controls{gap:7px;padding:12px}.select-group:first-of-type{margin-left:0}.select-group{flex:1}.select-group select{flex:1;min-width:0}label{font-size:10px}.note{padding:10px 14px;font-size:10px}.hint{font-size:10px;left:15px}.status{right:15px;font-size:10px}}
+/* Daylight ballpark, coordinated with the editorial page around the iframe. */
+body { color:#25372c; }
+.viewer { border:1px solid #d9dfd2; border-radius:9px; background:#edf1e6; box-shadow:none; }
+.stage { height:420px; background:#edf1e6; }
+.heading { top:19px; left:20px; }
+.eyebrow { color:#688467; font-size:9px; }
+h2 { color:#22392a; font-size:23px; }
+.subtitle { color:#6d7f6b; font-size:11px; }
+.badge { background:#fffdf4d9; border:1px solid #d7decf; color:#a62a35; border-radius:5px; backdrop-filter:blur(6px); top:22px; right:18px; }
+.hint,.status { color:#3f654e; background:#fffdf4bf; padding:5px 8px; border-radius:4px; bottom:12px; font-size:10px; }
+.hint { left:12px; }.status { right:12px; }
+.controls { background:#fffef9; padding:11px 13px; gap:6px; border-color:#e4e2d5; }
+button,select { min-height:36px; border-radius:5px; padding:8px 10px; font-size:11px; background:#f8f7ef; border-color:#dedfd2; color:#51634e; }
+#play { background:#c82c38; border-color:#c82c38; }
+.note { background:#fffef9; padding:11px 14px; font-size:10px; color:#7f8473; }
+.note b { color:#54634e; }
+.movement { padding:10px 14px; background:#f1f0e6; color:#57674f; font-size:11px; border-color:#e2e3d6; }
+.movement span { color:#7d8475; font-size:9px; }
+#unavailable { color:#4e664f; }
+@media(max-width:640px) { .stage { height:350px; } .heading { left:14px; top:15px; } h2 { font-size:20px; } .hint { max-width:190px; font-size:9px; } }
+/* Keep the embedded visualizer at the same reading and touch scale as the app. */
+.subtitle,.hint,.status,.note,.movement,.movement span,.eyebrow,label { font-size:13px; line-height:1.6; color:#415342; }
+.controls button,.controls select { min-height:44px; font-size:14px; padding:10px 12px; }
+.note b,.movement b { color:#2f4933; }
+.badge { font-size:14px; color:#9c2632; }
+@media(max-width:640px) { .hint { display:none; } .status { bottom:12px; right:12px; } }
+@media(max-width:640px) {
+  .heading { right:14px; }
+  h2 { max-width:none; font-size:20px; }
+  .badge { top:auto; bottom:52px; right:12px; }
+  .controls { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .controls button { width:100%; min-width:0; }
+  .select-group { grid-column:1 / -1; display:grid; grid-template-columns:72px minmax(0,1fr); }
+  .select-group select { width:100%; font-size:16px; }
+}
+</style></head>
+<body><section class="viewer" aria-label="Escena tridimensional del lanzamiento elegido">
+<div class="stage" id="stage"><div class="heading"><div class="eyebrow">EL LANZAMIENTO EN 3D</div><h2>__PITCH__</h2><div class="subtitle">Pitcher __HAND__ · Movimiento ilustrado</div></div><div class="badge" id="speed"></div>
+<canvas id="scene" tabindex="0" aria-label="Campo de béisbol en 3D con pitcher, pelota, trayectoria y zona de strike. Arrastra para girar o usa el selector de cámara."></canvas>
+<div id="unavailable" role="status">No se pudo abrir la escena 3D en este navegador. Prueba activando la aceleración gráfica o usando otro navegador.</div>
+<span class="hint">Arrastra para girar la vista · Rueda para acercarte</span><span class="status" id="status" aria-live="off">Preparando lanzamiento</span></div>
+<div class="controls"><button id="play" type="button">Pausar</button><button id="replay" type="button">↻ Repetir</button>
+<div class="select-group"><label for="camera">Vista</label><select id="camera"><option value="catcher">Desde el catcher</option><option value="side">Campo completo</option><option value="pitcher">Desde el pitcher</option></select></div>
+<div class="select-group"><label for="rate">Velocidad</label><select id="rate"><option value="0.25">Cámara lenta</option><option value="1">Tiempo aproximado</option></select></div></div>
+<div class="movement"><b id="movement"></b><span>Línea roja: lanzamiento elegido · Línea azul punteada: referencia sin movimiento inducido, a 90 mph.</span></div>
+<p class="note"><b>Misma dirección inicial para comparar el movimiento.</b> Cada lanzamiento puede terminar en un punto diferente, incluso fuera de la zona de strike. El movimiento se amplifica 2.5 veces para apreciarlo. Es una ilustración: no predice la ubicación real ni el efecto del estadio elegido.</p></section>
+<script>const data=__MEASUREMENTS__;window.pitchVisualData=data;</script>
+<script>__THREE_SCENE__</script>
+</body></html>
