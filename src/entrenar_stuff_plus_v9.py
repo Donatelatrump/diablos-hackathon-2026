@@ -377,7 +377,8 @@ def load_bundle(path):
     for task, item in meta["tasks"].items():
         if not item["model"]:
             continue
-        model_path = require_local_file(path / item["model"])
+        # Bundles trained on Windows must also load inside the Linux container.
+        model_path = require_local_file(path / item["model"].replace("\\", "/"))
         if v6.file_hash(model_path) != item["sha256"]:
             raise ValueError(f"Hash de modelo incorrecto: {task}")
         cls = CatBoostClassifier if TASKS[task][3] == "classification" else CatBoostRegressor

@@ -7,6 +7,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import numpy as np
 import pandas as pd
@@ -38,6 +39,21 @@ def synthetic_data():
 
 
 class IntegrityTests(unittest.TestCase):
+    def test_windows_bundle_paths_are_portable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            model_path = root / 'modelos' / 'stuff_run_value.cbm'
+            model_path.parent.mkdir()
+            model_path.write_bytes(b'model fixture')
+            meta = {'tasks': {'stuff_run_value': {
+                'model': r'modelos\stuff_run_value.cbm',
+                'sha256': v9.v6.file_hash(model_path),
+            }}}
+            (root / 'bundle.json').write_text(json.dumps(meta))
+            with patch.object(v9, 'CatBoostRegressor') as model:
+                v9.load_bundle(root)
+            model.return_value.load_model.assert_called_once_with(str(model_path))
+
     def test_feature_boundaries(self):
         forbidden = set(v9.ARSENAL + ["Balls", "Strikes", "PlateLocHeight", "PlateLocSide", "BatterSide",
                                       "altitude_category", "year", "pitcher_anon_id", "ExitSpeed", "PitchCall", "ZoneSpeed"])

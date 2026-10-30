@@ -11,7 +11,7 @@ Desde la raíz: `python3 src/dashboard_api.py`. En otra terminal: `cd frontend &
 ## Vistas
 
 - **Simulador:** perfiles del bundle, mediciones físicas, contexto, comparación y puntuaciones del pipeline Python existente; resultados marcados como desactualizados al editar el formulario.
-- **Comparar estadios:** hasta tres escenarios, controles avanzados, perfiles físicos y diferencias guardadas para Harp Helú.
+- **Comparar estadios:** dos estadios seleccionables, nombres reales y tabla de probabilidades con diferencias en puntos porcentuales. Mantiene las mismas mediciones físicas y marca los resultados como desactualizados al cambiar la selección.
 - **Lanzadores:** filtros por temporada y muestra, búsqueda, ficha, repertorio y mapa de movimiento. Sin bundle local utiliza el reporte integral guardado, identificado como una referencia distinta.
 - **Confianza:** métricas y tamaño de muestra de las pruebas de temporada, lanzadores nuevos y estadio no visto. Los dos últimos provienen de los reportes por estadios, independientemente del modelo de simulación seleccionado.
 - **Ayuda:** interpretación de índices y documentos originales descargables.

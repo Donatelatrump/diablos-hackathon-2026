@@ -5,8 +5,8 @@ services:
       - "127.0.0.1:8000:8000"
     volumes:
       - type: bind
-        source: ./stuff_plus_output_v9_incremental
-        target: /app/stuff_plus_output_v9_incremental
+        source: ./stuff_plus_output_v9_estadios
+        target: /app/stuff_plus_output_v9_estadios
         read_only: true
         bind:
           create_host_path: false

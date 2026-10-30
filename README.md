@@ -11,7 +11,7 @@ El proyecto incorpora un experimento **v9 independiente** con separación físic
 ### Docker (React + API Python)
 
 Con Docker Desktop iniciado y el modelo entrenado en
-`stuff_plus_output_v9_incremental/`, ejecuta desde la raíz:
+`stuff_plus_output_v9_estadios/`, ejecuta desde la raíz:
 
 ```bash
 docker compose up --build -d

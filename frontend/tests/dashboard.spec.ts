@@ -44,7 +44,7 @@ test('simulation submits edited measurements and marks old results stale', async
   await expect(page.getByText('Los datos cambiaron.')).toBeVisible();
   await page.route('**/api/simulate', route => route.fulfill({ status: 503, json: { error: 'Modelo no disponible para esta prueba.' } }));
   await page.getByRole('button', { name: 'Estimar Stuff+' }).click();
-  await expect(page.getByRole('alert')).toHaveText('Modelo no disponible para esta prueba.');
+  await expect(page.locator('form').getByRole('alert')).toHaveText('Modelo no disponible para esta prueba.');
 });
 
 test('API connection failure can be retried', async ({ page }) => {
@@ -54,4 +54,34 @@ test('API connection failure can be retried', async ({ page }) => {
   await page.unroute('**/api/bootstrap');
   await page.getByRole('button', { name: 'Reintentar' }).click();
   await expect(page.getByRole('heading', { name: 'Simulador de lanzamientos.' })).toBeVisible();
+});
+
+test('two selected stadiums show real model probability differences', async ({ page, request }) => {
+  const bootstrap = await (await request.get('/api/bootstrap')).json();
+  test.skip(!bootstrap.runs.some((r: { id: string }) => r.id === 'stuff_plus_output_v9_estadios'), 'Requires the real stadium model');
+  await page.goto('/#simulador');
+  await page.getByRole('combobox', { name: 'Tipo de lanzamiento', exact: true }).selectOption('Four-Seam');
+  await page.getByRole('combobox', { name: 'Mano del lanzador', exact: true }).selectOption({ label: 'Derecho' });
+  await page.getByRole('combobox', { name: 'Escenario 1', exact: true }).selectOption('mexico_ahh');
+  await page.getByRole('combobox', { name: 'Escenario 2', exact: true }).selectOption('monterrey_beisbol');
+  const response = page.waitForResponse(r => r.url().endsWith('/api/simulate') && r.request().method() === 'POST');
+  await page.getByRole('button', { name: 'Estimar Stuff+' }).click();
+  const result = await (await response).json();
+  expect(result.results.map((r: { stadium_id: string }) => r.stadium_id)).toEqual(['mexico_ahh', 'monterrey_beisbol']);
+  expect(result.results[0].stuff_plus).toBe(result.results[1].stuff_plus);
+  expect(result.results[0].p_whiff).not.toBe(result.results[1].p_whiff);
+  await expect(page.locator('.results .score-card').first()).toContainText('Estadio Alfredo Harp Helu');
+  await expect(page.locator('.results .score-card').nth(1)).toContainText('Estadio Mobil Super');
+  const row = page.locator('.results tbody tr').filter({ hasText: 'Swing fallido por lanzamiento' });
+  await expect(row).toBeVisible();
+  const cells = await row.locator('td').allTextContents();
+  expect(cells[1]).not.toBe(cells[2]);
+  expect(Number(cells[3])).not.toBe(0);
+  await page.getByRole('combobox', { name: 'Escenario 2', exact: true }).selectOption('veracruz_avila');
+  await expect(page.getByText('Los datos cambiaron.')).toBeVisible();
+  const updated = page.waitForResponse(r => r.url().endsWith('/api/simulate') && r.request().method() === 'POST');
+  await page.getByRole('button', { name: 'Estimar Stuff+' }).click();
+  expect((await (await updated).json()).results[1].stadium_id).toBe('veracruz_avila');
+  await expect(page.locator('.results .score-card').nth(1)).not.toContainText('Estadio Mobil Super');
+  await expect(page.getByText('Los datos cambiaron.')).toHaveCount(0);
 });
