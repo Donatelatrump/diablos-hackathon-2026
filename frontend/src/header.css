@@ -1,0 +1,127 @@
+/* Floating navigation stays in flow so it never covers the page heading. */
+:root {
+  --page-width: 1280px;
+  --page-gutter: 32px;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+#root > main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--page-width);
+  padding-inline: var(--page-gutter);
+}
+.masthead {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  width: calc(var(--page-width) - 2 * var(--page-gutter));
+  max-width: calc(100% - 2 * var(--page-gutter));
+  margin: 16px auto 0;
+  background: rgba(24, 24, 27, .88);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, .13);
+  border-radius: 999px;
+  box-shadow: 0 8px 28px rgba(24, 24, 27, .16);
+  transition: width 700ms cubic-bezier(.22, 1, .36, 1), max-width 700ms ease;
+}
+.masthead.is-compact { width: 920px; }
+.masthead .header-inner {
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 8px 16px 8px 28px;
+}
+.masthead .brand { gap: 8px; }
+.masthead .brand img { width: 34px; height: 34px; object-fit: contain; }
+.masthead .brand b { font-size: 24px; }
+.masthead .brand small { display: none; }
+.masthead nav {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 3px;
+  width: auto;
+}
+.masthead nav::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc((100% - (var(--tab-count) - 1) * 3px) / var(--tab-count));
+  border-radius: 999px;
+  background: var(--red);
+  transform: translateX(calc(var(--active-tab) * (100% + 3px)));
+  transition: transform 300ms cubic-bezier(.22, 1, .36, 1);
+  z-index: 0;
+  pointer-events: none;
+}
+.masthead nav a.active { background: transparent; }
+.masthead nav a {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  padding: 11px 13px;
+  border-radius: 999px;
+  white-space: nowrap;
+  font-size: 12px;
+  text-align: center;
+  transition: color 180ms ease;
+}
+.masthead nav a:hover { background: transparent; color: white; }
+.section-transition { animation: section-enter 240ms ease-out; }
+@keyframes section-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .masthead, .masthead nav::before, .masthead nav a { transition: none; }
+  .section-transition { animation: none; }
+}
+.masthead a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+.skip:focus { position: fixed; z-index: 30; }
+html { scroll-padding-top: 100px; }
+.stadium-comparison { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 700px) {
+  .stadium-comparison { grid-template-columns: 1fr; }
+}
+footer {
+  max-width: none;
+  margin: 0;
+  padding: 28px max(var(--page-gutter), calc((100% - var(--page-width)) / 2 + var(--page-gutter)));
+  background: #18181b;
+  border-top: 0;
+  color: #d4d4d8;
+}
+footer b { color: #fff; }
+@media (max-width: 700px) {
+  :root { --page-gutter: 18px; }
+  footer { margin: 0; padding: 24px var(--page-gutter); }
+
+}
+@media (max-width: 800px) {
+  .masthead { top: 10px; margin-top: 10px; }
+  .masthead.is-compact { max-width: calc(100% - 2 * var(--page-gutter) - 16px); }
+  .masthead .header-inner { gap: 12px; padding: 7px 12px 7px 20px; }
+  .masthead .brand img { width: 30px; height: 30px; }
+  .masthead .brand b { font-size: 21px; }
+  .masthead nav { grid-auto-columns: 142px; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  .masthead nav::before { width: 142px; }
+  .masthead nav::-webkit-scrollbar { display: none; }
+  .masthead nav a { padding: 12px 11px; }
+}
+@media (max-width: 480px) {
+  .masthead .brand span { display: none; }
+  .masthead .header-inner { gap: 8px; }
+}
