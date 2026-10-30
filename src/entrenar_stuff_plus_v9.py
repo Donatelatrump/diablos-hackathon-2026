@@ -8,6 +8,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import sys
+import time
 from pathlib import Path
 
 import duckdb
@@ -22,6 +24,38 @@ import entrenar_stuff_plus_v6 as v6
 from proyecto_io import data_path, require_local_file
 
 SEED = 904
+
+
+class TrainingProgress:
+    """CatBoost callback with throttled terminal and redirected-log output."""
+
+    def __init__(self, task, iterations):
+        self.task = task
+        self.total = iterations
+        self.started = time.monotonic()
+        self.last_update = 0.
+        self.iteration = 0
+        self.terminal = sys.stderr.isatty()
+
+    def render(self, final=False):
+        now = time.monotonic()
+        if not final and self.iteration != 1 and now - self.last_update < 5:
+            return
+        self.last_update = now
+        fraction = min(self.iteration / max(self.total, 1), 1.)
+        filled = int(25 * fraction)
+        elapsed = now - self.started
+        message = (f"{self.task} [{'#' * filled}{'-' * (25 - filled)}] "
+                   f"{self.iteration}/{self.total} iterations · {elapsed:.0f}s"
+                   + (" · training finished" if final else ""))
+        print(("\r" if self.terminal else "") + message,
+              end="\n" if final or not self.terminal else "", file=sys.stderr, flush=True)
+
+    def after_iteration(self, info):
+        self.iteration = info.iteration
+        self.render()
+        return True
+
 ARSENAL = ["velo_diff_vs_fb", "ivb_diff_vs_fb", "hb_diff_vs_fb", "release_distance_vs_fb",
            "pitch_usage_pct", "arsenal_history_available", "arsenal_reliability"]
 PHYSICAL = [c for c in v5.PHYSICAL if c not in ARSENAL] + v6.SHAPE_DERIVED
@@ -376,6 +410,7 @@ def train(args):
     source = data_path(args.parquet)
     if args.salida.exists() and any(args.salida.iterdir()):
         raise FileExistsError("La salida ya existe; usa una carpeta nueva para conservar el experimento")
+    print("Loading and preparing training data…", flush=True)
     raw = read_rows(source, args.test_year, True)
     validate_frame(raw, training=True)
     stadium_context = getattr(args, "stadium_context", False)
@@ -411,7 +446,9 @@ def train(args):
     selection = frame.loc[frame.partition.isin(ROLES[3:])].reset_index(drop=True)
     models, tasks = {}, {}
     (args.salida / "modelos").mkdir()
-    for task in [name for name in TASKS if name in args.tasks]:
+    selected_tasks = [name for name in TASKS if name in args.tasks]
+    for task_number, task in enumerate(selected_tasks, 1):
+        print(f"Task {task_number}/{len(selected_tasks)}: {task}", flush=True)
         spec = task_spec(task, stadium_context)
         tr, va, ca, se = [rows.loc[v5.eligible(rows, spec)].reset_index(drop=True) for rows in [fit, stop, cal, selection]]
         if tr.empty:
@@ -434,8 +471,14 @@ def train(args):
                         random_seed=SEED, thread_count=args.hilos, loss_function="Logloss" if classification else "RMSE",
                         allow_writing_files=False, verbose=False)
             target = lambda rows: rows[spec[0]].to_numpy() if classification else rows[spec[0]].to_numpy()-baseline_predict(rows, baseline)
-            model.fit(model_features(tr, spec[1]), target(tr), cat_features=[c for c in spec[1] if c in v5.CATEGORICAL or c == "stadium_id"],
-                      eval_set=(model_features(va, spec[1]), target(va)), early_stopping_rounds=35, use_best_model=True)
+            progress = TrainingProgress(task, args.iteraciones)
+            try:
+                model.fit(model_features(tr, spec[1]), target(tr), cat_features=[c for c in spec[1] if c in v5.CATEGORICAL or c == "stadium_id"],
+                          eval_set=(model_features(va, spec[1]), target(va)), early_stopping_rounds=35,
+                          use_best_model=True, callbacks=[progress])
+            finally:
+                progress.render(final=True)
+            print(f"{task}: calibrating and selecting candidates…", flush=True)
             pcal, psel = [predict_raw(model, rows, task, baseline, spec[1]) for rows in [ca, se]]
             processors = fit_postprocessors(ca[spec[0]], pcal, baseline_predict(ca, baseline), classification)
             base = baseline_predict(se, baseline)
