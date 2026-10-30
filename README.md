@@ -8,6 +8,90 @@ El proyecto incorpora un experimento **v9 independiente** con separación físic
 
 ## Ejecutar
 
+### Docker (React + API Python)
+
+Con Docker Desktop iniciado y el modelo entrenado en
+`stuff_plus_output_v9_incremental/`, ejecuta desde la raíz:
+
+```bash
+docker compose up --build -d
+```
+
+Abre **http://localhost:8000**. Un solo contenedor sirve React y la API.
+Los modelos se montan en modo lectura desde tu equipo; no se incluyen en la
+imagen ni se vuelven a entrenar. No necesitas iniciar Vite ni Streamlit.
+
+```bash
+docker compose logs -f
+docker compose down
+```
+
+Después de volver a entrenar, ejecuta `docker compose restart` para vaciar
+la caché de inferencia. Si cambias el código, repite el comando con `--build`.
+
+### Frontend React + TypeScript
+
+Para desarrollar con hot refresh dentro de Docker:
+
+```bash
+docker compose -f compose.yaml -f compose.dev.yaml up --build -d
+```
+
+Abre **http://localhost:5173**. Los cambios en `frontend/src` se reflejan
+automáticamente. Vite envía las llamadas API al contenedor Python. Las
+dependencias Node viven en un volumen Docker separado de las de tu equipo.
+Si cambias `package.json` o el lockfile, reinicia el frontend con
+`docker compose -f compose.yaml -f compose.dev.yaml restart frontend`.
+El código Python también está montado; después de editarlo, ejecuta
+`docker compose -f compose.yaml -f compose.dev.yaml restart dashboard`.
+Para detener ambos contenedores:
+
+```bash
+docker compose -f compose.yaml -f compose.dev.yaml down
+```
+
+El nuevo frontend está en `frontend/`. Conserva la identidad visual, la escena 3D y las vistas de simulación, comparación, lanzadores, confianza, ayuda y resultados históricos. La inferencia continúa en Python mediante `src/dashboard_api.py`.
+
+Terminal 1, desde la raíz:
+
+```bash
+python3 src/dashboard_api.py
+```
+
+Terminal 2:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Abre **http://127.0.0.1:5173**. Requiere Node.js 20.19+ o 22.12+ y Python 3.11+. La API sirve los reportes guardados sin dependencias adicionales. Para simular, instala `requirements/requirements-entrega.txt` en el entorno Python y proporciona un bundle v9 completo en una de sus rutas habituales. Si no hay modelos, la interfaz muestra el estado no disponible sin inventar puntuaciones; ofrece los reportes históricos guardados y una ilustración del lanzamiento.
+
+Para compilar y servir todo desde Python:
+
+```bash
+cd frontend
+npm run build
+cd ..
+python3 src/dashboard_api.py
+```
+
+Abre **http://127.0.0.1:8000**. Este servidor está pensado para uso local y escucha solo en `127.0.0.1`.
+
+Verificación:
+
+```bash
+python3 -m unittest tests.test_dashboard_api -v
+cd frontend
+npm run build
+npm test
+```
+
+Las pruebas de navegador usan Google Chrome instalado y arrancan ambos servidores automáticamente. Consulta [la guía de migración](frontend/README.md) para el alcance y la estructura.
+
+### Interfaz Streamlit existente
+
 Si ya tienes el entorno y los modelos locales, inicia directamente:
 
 ```bash

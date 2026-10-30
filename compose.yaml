@@ -1,0 +1,13 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - type: bind
+        source: ./stuff_plus_output_v9_incremental
+        target: /app/stuff_plus_output_v9_incremental
+        read_only: true
+        bind:
+          create_host_path: false
+    restart: unless-stopped
