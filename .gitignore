@@ -113,3 +113,19 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Published model runs.
+!/stuff_plus_output_v9_estadios/
+!/stuff_plus_output_v9_estadios_park/
+!/stuff_plus_output_v9_estadios_pitcher/
+
+# Keep local credentials and confidential Excel files out of publications.
+*.[xX][lL][sS]
+*.[xX][lL][sS][xX]
+*.[xX][lL][sS][mM]
+*.[xX][lL][sS][bB]
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.aws/
